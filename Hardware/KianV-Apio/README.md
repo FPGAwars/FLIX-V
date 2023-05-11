@@ -45,3 +45,4 @@ If you want to make it persistent, execute the following command:
 apio raw "fujprog -l 4 -j FLASH  hardware.bit"
 ```
 
+![Screenshot](Images/04-apio.png)
