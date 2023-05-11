@@ -13,5 +13,5 @@ This program is in charge of preparing and initilizing the system for running th
 ```
 apio raw "fujprog -l 4 -j FLASH -f $((1024*1024*1))  Linux/boot.bin"
 ```
-![Screenshot](../Images/01-linux.png)
+![Screenshot](Images/01-linux.png)
 
