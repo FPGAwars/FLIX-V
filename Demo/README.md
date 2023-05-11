@@ -75,8 +75,9 @@ Now log in as root:
 
 ... and you are now ready to feel the power of Linux running on the FPGA...
 
-* Youtube video:
+* Youtube videos:
 
 [![Click to see the youtube video](http://img.youtube.com/vi/X3PfOpjIHhs/0.jpg)](https://www.youtube.com/watch?v=X3PfOpjIHhs)
 
+[![Click to see the youtube video](http://img.youtube.com/vi/F4EDP8qkS5s/0.jpg)](https://www.youtube.com/watch?v=X3PfOpjIHhs)
 
