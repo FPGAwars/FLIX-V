@@ -31,7 +31,7 @@ apio raw "fujprog -l 10 -j FLASH -f $((1024*1024*2)) kernel.bin"
 
 This process takes around 4 minutes
 
-## Flashing de DTB Image
+## Flashing the DTB Image
 
 The DTB (Device Tree Blob) is a binary that contains information about the hardware configuration: devices, system resources, peripherals....
 
@@ -40,4 +40,12 @@ apio raw "fujprog -l 4 -j FLASH -f $((1024*1024*7)) kianv32mb.dtb"
 ```
 
 ![Screenshot](Images/04-linux.png)
+
+# Flashing the KianV bitstream
+
+TODO
+
+# Running Linux!
+
+TODO
 
