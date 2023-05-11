@@ -12,7 +12,7 @@ It was a dream to run Linux (open source software) on a Open source processor (R
 
 ![Linux animation](Images/Linux-anim-1.gif)
 
-## How to try keep
+## How to try
 
 Follow the [instructions given in the Demo folder](Demo/README.md)
 
