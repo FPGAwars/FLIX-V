@@ -4,6 +4,7 @@ Linux is composed of 3 parts that are written into the flash memory at different
 
 * **0x100000** (1024*1024, 1MB). **Boot**. File: `boot.bin`
 * **0x200000** (1024*1024*2, 2MB), **Kernel**. File: `kernel.bin`
+* **0x700000** (1024*1024*7), 7MB), **DTB**. File: `kianv32mb.dtb`
 
 ## Flashing the Bootloader
 
@@ -30,3 +31,10 @@ apio raw "fujprog -l 10 -j FLASH -f $((1024*1024*2)) kernel.bin"
 
 This process takes around 4 minutes
 
+## Flashing de DTB Image
+
+The DTB (Device Tree Blob) is a binary that contains information about the hardware configuration: devices, system resources, peripherals....
+
+```
+apio raw "fujprog -l 4 -j FLASH -f $((1024*1024*7)) kianv32mb.dtb"
+```
