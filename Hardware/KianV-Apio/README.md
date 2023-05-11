@@ -34,3 +34,14 @@ apio upload
 ```
 
 ![Screenshot](Images/03-apio.png)
+
+It uploads the bitstream and configures the FPGA. This configuration is temporal (if the board is power off the configuration is lost)
+
+5. **Upload the bitstream to the Flash** (optional)
+
+If you want to make it persistent, execute the following command:
+
+```
+apio raw "fujprog -l 4 -j FLASH  hardware.bit"
+```
+

@@ -84,7 +84,7 @@ module soc (
 
      //////////////////////////////////////////////////////////////////////////////
     //-- IO Leds
-    reg [7:0] led_r = 8'hFE;
+    reg [7:0] led_r = 8'hF0;
     assign led = led_r;
 
     wire led_valid = cpu_mem_valid && cpu_mem_addr == 32'h1200_0000 && wr;
