@@ -24,3 +24,9 @@ apio raw "fujprog -l 4 -j FLASH -f $((1024*1024*1))  Linux/boot.bin"
 apio raw "fujprog -l 10 -j FLASH -f $((1024*1024*2)) kernel.bin"
 ```
 
+![Screenshot](Images/02-linux.png)
+
+![Screenshot](Images/03-linux.png)
+
+This process takes around 4 minutes
+
