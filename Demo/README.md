@@ -41,11 +41,36 @@ apio raw "fujprog -l 4 -j FLASH -f $((1024*1024*7)) kianv32mb.dtb"
 
 ![Screenshot](Images/04-linux.png)
 
+
 # Flashing the KianV bitstream
 
-TODO
+* Command:
+
+```
+apio raw "fujprog -l 4 -j FLASH Soc-Kianv-ULX3S-12F.bit"
+```
+
+![Screenshot](Images/05-linux.png)
 
 # Running Linux!
 
-TODO
+After flashing the Kianv soc, Linux will boot. Open a serial terminal configured for the custom speed of 3000000 bauds
 
+A very simple and useful terminal for linux is ```tio```
+
+* Command:
+
+```
+tio -m INLCRNL /dev/ttyUSB0 -b 3000000
+```
+
+![Screenshot](Images/06-linux.png)
+
+
+![Screenshot](Images/07-linux.png)
+
+Now log in as root:
+
+![Alt text](Images/08-linux.png)
+
+... and you are now ready to feel the power of Linux running on the FPGA...
