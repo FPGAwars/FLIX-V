@@ -12,6 +12,9 @@ It was a dream to run Linux (open source software) on a Open source processor (R
 
 ![Linux animation](Images/Linux-anim-1.gif)
 
+## How to try keep
+
+Follow the [instructions given in the Demo folder](Demo/README.md)
 
 ## Credits
 * Based on this work: [KianRiscV](https://github.com/splinedrive/kianRiscV) by @splinedrive
