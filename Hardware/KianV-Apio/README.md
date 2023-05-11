@@ -25,3 +25,12 @@ apio build
 
 It takes around 50 seconds (on my machine). When it is done, the bitstream is generated in the file `hardware.bit`
 
+4. **Upload the bitstream to the FPGA**
+
+* Command:
+
+```
+apio upload
+```
+
+![Screenshot](Images/03-apio.png)
