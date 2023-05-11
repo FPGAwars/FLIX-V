@@ -38,3 +38,6 @@ The DTB (Device Tree Blob) is a binary that contains information about the hardw
 ```
 apio raw "fujprog -l 4 -j FLASH -f $((1024*1024*7)) kianv32mb.dtb"
 ```
+
+![Screenshot](Images/04-linux.png)
+
