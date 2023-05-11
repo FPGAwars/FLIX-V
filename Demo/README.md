@@ -7,6 +7,8 @@ If you want to try Linux on your FPGA board, follow these steps
 * Install [APIO](https://github.com/FPGAwars/apio/wiki)
 * **Board**: [Radiona ULX3S-12F](https://radiona.org/ulx3s/)
 
+![ULX3S-12F board](Images/Radiona-ULX3S-12F.jpg)
+
 
 ## Step 1: Flashing linux
 
@@ -66,7 +68,11 @@ apio raw "fujprog -l 4 -j FLASH Soc-Kianv-ULX3S-12F.bit"
 
 # Step 3: Running Linux!
 
-After flashing the Kianv soc, Linux will boot. Open a serial terminal configured for the custom speed of **3000000 bauds**
+After flashing the Kianv soc, Linux will boot. 
+
+![Screenshot](Images/Radiona-ULX3S-12F-2.jpg)
+
+Open a serial terminal configured for the custom speed of **3000000 bauds**
 
 A very simple and useful terminal for linux is [tio](https://github.com/tio/tio)
 
