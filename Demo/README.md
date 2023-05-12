@@ -14,9 +14,9 @@ If you want to try Linux on your FPGA board, follow these steps
 
 Linux is composed of 3 parts that are written into the flash memory at different addresses
 
-* **0x100000** (1024*1024, 1MB). **Boot**. File: `boot.bin`
-* **0x200000** (1024*1024*2, 2MB), **Kernel**. File: `kernel.bin`
-* **0x700000** (1024*1024*7), 7MB), **DTB**. File: `kianv32mb.dtb`
+* **0x100000** (1024\*1024, 1MB). **Boot**. File: `boot.bin`
+* **0x200000** (1024\*1024\*2, 2MB), **Kernel**. File: `kernel.bin`
+* **0x700000** (1024\*1024\*7), 7MB), **DTB**. File: `kianv32mb.dtb`
 
 ## Step 1.1: Flash the Bootloader
 
