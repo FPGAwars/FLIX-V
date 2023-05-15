@@ -1,8 +1,7 @@
 #-- Programa para enviar un valor a los LEDs
 
 	.eqv LEDS 0x12000000
-	.eqv UART 0x10000000
-	.eqv VALOR 0xF0
+	.eqv VALUE 0x03
 	
 	.text
 	
@@ -20,8 +19,8 @@
 	
 	#-- Primer instruccion que se ejecuta
 	#-- Puntero a la uart
-	li t1, 0x01
 	li t0, LEDS
+	li t1, 0x03
 	sw t1, 0(t0)
 inf:	b inf
 	
