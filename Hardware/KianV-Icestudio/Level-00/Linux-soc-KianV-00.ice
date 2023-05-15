@@ -796,7 +796,7 @@
           "id": "c2b63e68-be78-491a-949e-fff5d61681f6",
           "type": "basic.output",
           "data": {
-            "name": "flash_io2",
+            "name": "flash_io3",
             "virtual": false,
             "pins": [
               {
