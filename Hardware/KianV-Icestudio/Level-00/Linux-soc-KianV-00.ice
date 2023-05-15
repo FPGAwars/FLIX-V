@@ -204,6 +204,26 @@
           }
         },
         {
+          "id": "0d81f134-8121-416a-9109-ad99098e45ba",
+          "type": "basic.input",
+          "data": {
+            "name": "RX",
+            "virtual": false,
+            "pins": [
+              {
+                "index": "0",
+                "name": "ftdi_txd",
+                "value": "M1"
+              }
+            ],
+            "clock": false
+          },
+          "position": {
+            "x": 344,
+            "y": 296
+          }
+        },
+        {
           "id": "2198083f-2a0c-461b-98a6-f33bb001086f",
           "type": "basic.output",
           "data": {
@@ -225,26 +245,6 @@
           },
           "position": {
             "x": 1456,
-            "y": 304
-          }
-        },
-        {
-          "id": "0d81f134-8121-416a-9109-ad99098e45ba",
-          "type": "basic.input",
-          "data": {
-            "name": "RX",
-            "virtual": false,
-            "pins": [
-              {
-                "index": "0",
-                "name": "ftdi_txd",
-                "value": "M1"
-              }
-            ],
-            "clock": false
-          },
-          "position": {
-            "x": 352,
             "y": 304
           }
         },
@@ -384,8 +384,8 @@
             ]
           },
           "position": {
-            "x": 336,
-            "y": 496
+            "x": 344,
+            "y": 480
           }
         },
         {
@@ -520,8 +520,8 @@
             ]
           },
           "position": {
-            "x": 338,
-            "y": 696
+            "x": 336,
+            "y": 672
           }
         },
         {
@@ -622,6 +622,26 @@
           }
         },
         {
+          "id": "d34eac5d-8f35-46d6-bf81-0a73250fc165",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "io2_in",
+            "blockColor": "darkgreen",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 336,
+            "y": 856
+          }
+        },
+        {
           "id": "6201bf84-6ca0-46e3-a5b3-904ec316f425",
           "type": "basic.inputLabel",
           "data": {
@@ -655,26 +675,6 @@
           "position": {
             "x": 1144,
             "y": 872
-          }
-        },
-        {
-          "id": "d34eac5d-8f35-46d6-bf81-0a73250fc165",
-          "type": "basic.outputLabel",
-          "data": {
-            "name": "io2_in",
-            "blockColor": "darkgreen",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": 344,
-            "y": 888
           }
         },
         {
@@ -713,7 +713,7 @@
           },
           "position": {
             "x": 1144,
-            "y": 936
+            "y": 944
           }
         },
         {
@@ -777,6 +777,26 @@
           }
         },
         {
+          "id": "843811c8-a1dc-4395-92af-0e1aa06bb2c5",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "io3_in",
+            "blockColor": "darkgreen",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 328,
+            "y": 1040
+          }
+        },
+        {
           "id": "f00aa475-fe6b-4da5-84df-7b230454ee4d",
           "type": "basic.inputLabel",
           "data": {
@@ -793,26 +813,6 @@
           },
           "position": {
             "x": 1152,
-            "y": 1072
-          }
-        },
-        {
-          "id": "843811c8-a1dc-4395-92af-0e1aa06bb2c5",
-          "type": "basic.outputLabel",
-          "data": {
-            "name": "io3_in",
-            "blockColor": "darkgreen",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": 346,
             "y": 1080
           }
         },
@@ -860,8 +860,8 @@
             "readonly": true
           },
           "position": {
-            "x": 344,
-            "y": 240
+            "x": 336,
+            "y": 232
           },
           "size": {
             "width": 160,
@@ -933,6 +933,18 @@
           }
         },
         {
+          "id": "b036e9a9-fcd2-4f20-b684-26b5d507b24f",
+          "type": "c4f23ad05c2010ec9bd213c8814c9238873037ae",
+          "position": {
+            "x": -416,
+            "y": 432
+          },
+          "size": {
+            "width": 96,
+            "height": 128
+          }
+        },
+        {
           "id": "8a22f6e9-6a0a-495b-8867-958fe6678799",
           "type": "basic.code",
           "data": {
@@ -955,6 +967,11 @@
                 },
                 {
                   "name": "flash_io3_in"
+                },
+                {
+                  "name": "sdram_dq_in",
+                  "range": "[15:0]",
+                  "size": 16
                 }
               ],
               "out": [
@@ -1018,11 +1035,19 @@
                 },
                 {
                   "name": "flash_io3_out"
+                },
+                {
+                  "name": "sdram_dq_out",
+                  "range": "[15:0]",
+                  "size": 16
+                },
+                {
+                  "name": "sdram_oe"
                 }
               ]
             },
             "params": [],
-            "code": "// @include soc-top.v\n// @include defines_soc.vh\n// @include riscv_defines.vh\n// @include kianv_harris_mc_edition.v\n// @include csr_utilities.vh\n// @include riscv_priv_csr_status.vh\n// @include mcause.vh\n// @include misa.vh\n// @include rv32_amo_opcodes.vh\n// @include datapath_unit.v\n// @include csr_exception_handler.v\n// @include design_elements.v\n// @include divider.v\n// @include multiplier.v\n// @include alu.v\n// @include load_alignment.v\n// @include store_alignment.v\n// @include extend.v\n// @include register_file.v\n// @include control_unit.v\n// @include multiplier_extension_decoder.v\n// @include alu_decoder.v\n// @include csr_decoder.v\n// @include store_decoder.v\n// @include load_decoder.v\n// @include main_fsm.v\n// @include divider_decoder.v\n// @include multiplier_decoder.v\n// @include clint.v\n// @include bram.v\n// @include mt48lc16m16a2_ctrl.v\n// @include rx_uart.v\n// @include tx_uart.v\n// @include qqspi.v\n// @include pll.v\n// @include fifo.v\n\n\nsoc u1 (\n\n  //-- Inputs\n  .clk_osc (clk),\n  .uart_tx (uart_tx),\n  .uart_rx (uart_rx),\n  .led (led),\n  .flash_csn (flash_csn),\n  .flash_oe (flash_oe),\n  .flash_io0_in (flash_io0_in),\n  .flash_io1_in (flash_io1_in),\n  .flash_io2_in (flash_io2_in),\n  .flash_io3_in (flash_io3_in),\n  \n  //-- Outputs\n  .sdram_clk (sdram_clk),\n  .sdram_cke (sdram_cke),\n  .sdram_dqm (sdram_dqm),\n  .sdram_addr (sdram_addr),\n  .sdram_ba (sdram_ba),\n  .sdram_csn (sdram_csn),\n  .sdram_wen (sdram_wen),\n  .sdram_rasn (sdram_rasn),\n  .sdram_casn (sdram_casn),\n  \n  .flash_io0_out (flash_io0_out),\n  .flash_io1_out (flash_io1_out),\n  .flash_io2_out (flash_io2_out),\n  .flash_io3_out (flash_io3_out)\n  \n  //-- Inout\n  //-- TODO\n);\n\n\n/* input wire [15:0] sdram_dq_in,\n        output wire [15:0] sdram_dq_out,\n        output wire sdram_oe\n        */"
+            "code": "// @include soc-top.v\n// @include defines_soc.vh\n// @include riscv_defines.vh\n// @include kianv_harris_mc_edition.v\n// @include csr_utilities.vh\n// @include riscv_priv_csr_status.vh\n// @include mcause.vh\n// @include misa.vh\n// @include rv32_amo_opcodes.vh\n// @include datapath_unit.v\n// @include csr_exception_handler.v\n// @include design_elements.v\n// @include divider.v\n// @include multiplier.v\n// @include alu.v\n// @include load_alignment.v\n// @include store_alignment.v\n// @include extend.v\n// @include register_file.v\n// @include control_unit.v\n// @include multiplier_extension_decoder.v\n// @include alu_decoder.v\n// @include csr_decoder.v\n// @include store_decoder.v\n// @include load_decoder.v\n// @include main_fsm.v\n// @include divider_decoder.v\n// @include multiplier_decoder.v\n// @include clint.v\n// @include bram.v\n// @include mt48lc16m16a2_ctrl.v\n// @include rx_uart.v\n// @include tx_uart.v\n// @include qqspi.v\n// @include pll.v\n// @include fifo.v\n\n\nsoc u1 (\n\n  //-- Inputs\n  .clk_osc (clk),\n  .uart_tx (uart_tx),\n  .uart_rx (uart_rx),\n  .led (led),\n  .flash_csn (flash_csn),\n  .flash_oe (flash_oe),\n  .flash_io0_in (flash_io0_in),\n  .flash_io1_in (flash_io1_in),\n  .flash_io2_in (flash_io2_in),\n  .flash_io3_in (flash_io3_in),\n  \n  .sdram_dq_in (sdram_dq_in),\n  \n  //-- Outputs\n  .sdram_clk (sdram_clk),\n  .sdram_cke (sdram_cke),\n  .sdram_dqm (sdram_dqm),\n  .sdram_addr (sdram_addr),\n  .sdram_ba (sdram_ba),\n  .sdram_csn (sdram_csn),\n  .sdram_wen (sdram_wen),\n  .sdram_rasn (sdram_rasn),\n  .sdram_casn (sdram_casn),\n  \n  .flash_io0_out (flash_io0_out),\n  .flash_io1_out (flash_io1_out),\n  .flash_io2_out (flash_io2_out),\n  .flash_io3_out (flash_io3_out),\n  \n  .sdram_dq_out (sdram_dq_out),\n  .sdram_oe (sdram_oe)\n  \n  //-- Inout\n  //-- TODO\n);\n\n"
           },
           "position": {
             "x": 536,
@@ -1030,19 +1055,7 @@
           },
           "size": {
             "width": 488,
-            "height": 1160
-          }
-        },
-        {
-          "id": "b036e9a9-fcd2-4f20-b684-26b5d507b24f",
-          "type": "c4f23ad05c2010ec9bd213c8814c9238873037ae",
-          "position": {
-            "x": -416,
-            "y": 432
-          },
-          "size": {
-            "width": 96,
-            "height": 128
+            "height": 1304
           }
         }
       ],
