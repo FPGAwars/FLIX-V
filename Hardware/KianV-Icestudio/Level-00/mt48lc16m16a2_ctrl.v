@@ -51,7 +51,11 @@ module mt48lc16m16a2_ctrl #(
     output wire sdram_wen,
     output wire sdram_rasn,
     output wire sdram_casn,
-    inout wire [15:0] sdram_dq
+    inout wire [15:0] sdram_dq,
+
+    input  [15:0] sdram_dq_in,
+    output wire [15:0] sdram_dq_out,
+    output wire sdram_oe
 );
 
   localparam ONE_MICROSECOND = SDRAM_CLK_FREQ;
@@ -148,6 +152,10 @@ module mt48lc16m16a2_ctrl #(
 
   reg [15:0] dq;
   reg [15:0] dq_nxt;
+
+  assign sdram_dq_out = dq;
+  assign sdram_oe = oe;
+
   assign sdram_dq = oe ? dq : 16'hz;
 
   reg oe;
@@ -281,7 +289,7 @@ module mt48lc16m16a2_ctrl #(
       COL_READL: begin
         command_nxt    = CMD_NOP;
         dqm_nxt        = 2'b00;
-        dout_nxt[15:0] = sdram_dq;
+        dout_nxt[15:0] = sdram_dq_in;
         //wait_states_nxt = TRP;
         // ret_state_nxt   = COL_READH;
         state_nxt      = COL_READH;
@@ -290,7 +298,7 @@ module mt48lc16m16a2_ctrl #(
       COL_READH: begin
         command_nxt      = CMD_NOP;
         dqm_nxt          = 2'b00;
-        dout_nxt[31:16]  = sdram_dq;
+        dout_nxt[31:16]  = sdram_dq_in;
         wait_states_nxt  = TRP;
         update_ready_nxt = 1'b1;
         ret_state_nxt    = IDLE;

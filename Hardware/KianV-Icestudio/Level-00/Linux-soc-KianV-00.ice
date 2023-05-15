@@ -840,7 +840,7 @@
           "id": "99b3aa94-e0ab-4f4c-b3b5-63ca291aa46e",
           "type": "basic.info",
           "data": {
-            "info": "module soc (\n        inout  wire [15:0] sdram_dq\n    );\n    \n   \n//  sdram_addr\n//  A0-A10 row address, A0-A7 column address\n\n// sdram_ba  //-- Bank select A11, A12\n",
+            "info": "module soc (\n        inout  wire [15:0] sdram_dq\n    );\n    \n   \n",
             "readonly": false
           },
           "position": {
@@ -848,8 +848,8 @@
             "y": 32
           },
           "size": {
-            "width": 344,
-            "height": 232
+            "width": 352,
+            "height": 96
           }
         },
         {
@@ -1022,7 +1022,7 @@
               ]
             },
             "params": [],
-            "code": "// @include soc-top.v\n// @include defines_soc.vh\n// @include riscv_defines.vh\n// @include kianv_harris_mc_edition.v\n// @include csr_utilities.vh\n// @include riscv_priv_csr_status.vh\n// @include mcause.vh\n// @include misa.vh\n// @include rv32_amo_opcodes.vh\n// @include datapath_unit.v\n// @include csr_exception_handler.v\n// @include design_elements.v\n// @include divider.v\n// @include multiplier.v\n// @include alu.v\n// @include load_alignment.v\n// @include store_alignment.v\n// @include extend.v\n// @include register_file.v\n// @include control_unit.v\n// @include multiplier_extension_decoder.v\n// @include alu_decoder.v\n// @include csr_decoder.v\n// @include store_decoder.v\n// @include load_decoder.v\n// @include main_fsm.v\n// @include divider_decoder.v\n// @include multiplier_decoder.v\n// @include clint.v\n// @include bram.v\n// @include mt48lc16m16a2_ctrl.v\n// @include rx_uart.v\n// @include tx_uart.v\n// @include qqspi.v\n// @include pll.v\n// @include fifo.v\n\n\nsoc u1 (\n\n  //-- Inputs\n  .clk_osc (clk),\n  .uart_tx (uart_tx),\n  .uart_rx (uart_rx),\n  .led (led),\n  .flash_csn (flash_csn),\n  .flash_oe (flash_oe),\n  .flash_io0_in (flash_io0_in),\n  \n  //-- Outputs\n  .sdram_clk (sdram_clk),\n  .sdram_cke (sdram_cke),\n  .sdram_dqm (sdram_dqm),\n  .sdram_addr (sdram_addr),\n  .sdram_ba (sdram_ba),\n  .sdram_csn (sdram_csn),\n  .sdram_wen (sdram_wen),\n  .sdram_rasn (sdram_rasn),\n  .sdram_casn (sdram_casn),\n  \n  .flash_io0_out (flash_io0_out),\n  \n  //-- Inout\n  //-- TODO\n);\n\n\n"
+            "code": "// @include soc-top.v\n// @include defines_soc.vh\n// @include riscv_defines.vh\n// @include kianv_harris_mc_edition.v\n// @include csr_utilities.vh\n// @include riscv_priv_csr_status.vh\n// @include mcause.vh\n// @include misa.vh\n// @include rv32_amo_opcodes.vh\n// @include datapath_unit.v\n// @include csr_exception_handler.v\n// @include design_elements.v\n// @include divider.v\n// @include multiplier.v\n// @include alu.v\n// @include load_alignment.v\n// @include store_alignment.v\n// @include extend.v\n// @include register_file.v\n// @include control_unit.v\n// @include multiplier_extension_decoder.v\n// @include alu_decoder.v\n// @include csr_decoder.v\n// @include store_decoder.v\n// @include load_decoder.v\n// @include main_fsm.v\n// @include divider_decoder.v\n// @include multiplier_decoder.v\n// @include clint.v\n// @include bram.v\n// @include mt48lc16m16a2_ctrl.v\n// @include rx_uart.v\n// @include tx_uart.v\n// @include qqspi.v\n// @include pll.v\n// @include fifo.v\n\n\nsoc u1 (\n\n  //-- Inputs\n  .clk_osc (clk),\n  .uart_tx (uart_tx),\n  .uart_rx (uart_rx),\n  .led (led),\n  .flash_csn (flash_csn),\n  .flash_oe (flash_oe),\n  .flash_io0_in (flash_io0_in),\n  .flash_io1_in (flash_io1_in),\n  .flash_io2_in (flash_io2_in),\n  .flash_io3_in (flash_io3_in),\n  \n  //-- Outputs\n  .sdram_clk (sdram_clk),\n  .sdram_cke (sdram_cke),\n  .sdram_dqm (sdram_dqm),\n  .sdram_addr (sdram_addr),\n  .sdram_ba (sdram_ba),\n  .sdram_csn (sdram_csn),\n  .sdram_wen (sdram_wen),\n  .sdram_rasn (sdram_rasn),\n  .sdram_casn (sdram_casn),\n  \n  .flash_io0_out (flash_io0_out),\n  .flash_io1_out (flash_io1_out),\n  .flash_io2_out (flash_io2_out),\n  .flash_io3_out (flash_io3_out)\n  \n  //-- Inout\n  //-- TODO\n);\n\n\n/* input wire [15:0] sdram_dq_in,\n        output wire [15:0] sdram_dq_out,\n        output wire sdram_oe\n        */"
           },
           "position": {
             "x": 536,
