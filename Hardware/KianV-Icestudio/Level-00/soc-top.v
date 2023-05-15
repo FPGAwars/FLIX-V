@@ -31,7 +31,14 @@ module soc (
         inout  wire        flash_io3,
 
         input wire flash_io0_in,
+        input wire flash_io1_in,
+        input wire flash_io2_in,
+        input wire flash_io3_in,
+
         output wire flash_io0_out,
+        output wire flash_io1_out,
+        output wire flash_io2_out,
+        output wire flash_io3_out,
 
         output wire        sdram_clk,
         output wire        sdram_cke,
@@ -202,7 +209,15 @@ module soc (
               .oe (flash_oe),
 
               .sio0_in (flash_io0_in),
+              .sio1_in (flash_io1_in),
+              .sio2_in (flash_io2_in),
+              .sio3_in (flash_io3_in),
+
+
               .sio0_out (flash_io0_out),
+              .sio1_out (flash_io1_out),
+              .sio2_out (flash_io2_out),
+              .sio3_out (flash_io3_out)
           );
 
    
