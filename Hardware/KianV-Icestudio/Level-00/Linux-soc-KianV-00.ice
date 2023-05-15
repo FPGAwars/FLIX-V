@@ -268,8 +268,8 @@
             ]
           },
           "position": {
-            "x": 1432,
-            "y": 536
+            "x": 1440,
+            "y": 544
           }
         },
         {
@@ -289,6 +289,26 @@
           "position": {
             "x": 128,
             "y": 560
+          }
+        },
+        {
+          "id": "0d81f134-8121-416a-9109-ad99098e45ba",
+          "type": "basic.input",
+          "data": {
+            "name": "RX",
+            "virtual": false,
+            "pins": [
+              {
+                "index": "0",
+                "name": "ftdi_txd",
+                "value": "M1"
+              }
+            ],
+            "clock": false
+          },
+          "position": {
+            "x": 352,
+            "y": 600
           }
         },
         {
@@ -349,26 +369,6 @@
           }
         },
         {
-          "id": "0d81f134-8121-416a-9109-ad99098e45ba",
-          "type": "basic.input",
-          "data": {
-            "name": "RX",
-            "virtual": false,
-            "pins": [
-              {
-                "index": "0",
-                "name": "ftdi_txd",
-                "value": "M1"
-              }
-            ],
-            "clock": false
-          },
-          "position": {
-            "x": 352,
-            "y": 760
-          }
-        },
-        {
           "id": "b0740d11-106d-4ff8-ac33-2c182a19ce14",
           "type": "basic.output",
           "data": {
@@ -384,7 +384,7 @@
           },
           "position": {
             "x": 1296,
-            "y": 800
+            "y": 808
           }
         },
         {
@@ -469,7 +469,7 @@
           },
           "position": {
             "x": 352,
-            "y": 696
+            "y": 544
           },
           "size": {
             "width": 160,
@@ -505,6 +505,42 @@
           }
         },
         {
+          "id": "9362cb9b-466c-4d01-a376-4f5b83d73e2e",
+          "type": "a47f36958f1ee6a1a7b35fce605a27db7ec2b2dd",
+          "position": {
+            "x": -24,
+            "y": 576
+          },
+          "size": {
+            "width": 96,
+            "height": 64
+          }
+        },
+        {
+          "id": "0aa11cfd-8978-4ca8-98d4-66863ffbbc8d",
+          "type": "a47f36958f1ee6a1a7b35fce605a27db7ec2b2dd",
+          "position": {
+            "x": -16,
+            "y": 720
+          },
+          "size": {
+            "width": 96,
+            "height": 64
+          }
+        },
+        {
+          "id": "7f43de8f-24a8-4abe-9d55-a62db797c4a0",
+          "type": "a47f36958f1ee6a1a7b35fce605a27db7ec2b2dd",
+          "position": {
+            "x": -8,
+            "y": 872
+          },
+          "size": {
+            "width": 96,
+            "height": 64
+          }
+        },
+        {
           "id": "8a22f6e9-6a0a-495b-8867-958fe6678799",
           "type": "basic.code",
           "data": {
@@ -515,6 +551,9 @@
                 },
                 {
                   "name": "uart_rx"
+                },
+                {
+                  "name": "flash_io0_in"
                 }
               ],
               "out": [
@@ -561,11 +600,19 @@
                 },
                 {
                   "name": "flash_csn"
+                },
+                {
+                  "name": "flash_oe",
+                  "range": "[3:0]",
+                  "size": 4
+                },
+                {
+                  "name": "flash_io0_out"
                 }
               ]
             },
             "params": [],
-            "code": "// @include soc-top.v\n// @include defines_soc.vh\n// @include riscv_defines.vh\n// @include kianv_harris_mc_edition.v\n// @include csr_utilities.vh\n// @include riscv_priv_csr_status.vh\n// @include mcause.vh\n// @include misa.vh\n// @include rv32_amo_opcodes.vh\n// @include datapath_unit.v\n// @include csr_exception_handler.v\n// @include design_elements.v\n// @include divider.v\n// @include multiplier.v\n// @include alu.v\n// @include load_alignment.v\n// @include store_alignment.v\n// @include extend.v\n// @include register_file.v\n// @include control_unit.v\n// @include multiplier_extension_decoder.v\n// @include alu_decoder.v\n// @include csr_decoder.v\n// @include store_decoder.v\n// @include load_decoder.v\n// @include main_fsm.v\n// @include divider_decoder.v\n// @include multiplier_decoder.v\n// @include clint.v\n// @include bram.v\n// @include mt48lc16m16a2_ctrl.v\n// @include rx_uart.v\n// @include tx_uart.v\n// @include qqspi.v\n// @include pll.v\n// @include fifo.v\n\n\nsoc u1 (\n\n  //-- Inputs\n  .clk_osc (clk),\n  .uart_tx (uart_tx),\n  .uart_rx (uart_rx),\n  .led (led),\n  .flash_csn (flash_csn),\n  \n  //-- Outputs\n  .sdram_clk (sdram_clk),\n  .sdram_cke (sdram_cke),\n  .sdram_dqm (sdram_dqm),\n  .sdram_addr (sdram_addr),\n  .sdram_ba (sdram_ba),\n  .sdram_csn (sdram_csn),\n  .sdram_wen (sdram_wen),\n  .sdram_rasn (sdram_rasn),\n  .sdram_casn (sdram_casn)\n  \n  //-- Inout\n  //-- TODO\n);\n\n\n"
+            "code": "// @include soc-top.v\n// @include defines_soc.vh\n// @include riscv_defines.vh\n// @include kianv_harris_mc_edition.v\n// @include csr_utilities.vh\n// @include riscv_priv_csr_status.vh\n// @include mcause.vh\n// @include misa.vh\n// @include rv32_amo_opcodes.vh\n// @include datapath_unit.v\n// @include csr_exception_handler.v\n// @include design_elements.v\n// @include divider.v\n// @include multiplier.v\n// @include alu.v\n// @include load_alignment.v\n// @include store_alignment.v\n// @include extend.v\n// @include register_file.v\n// @include control_unit.v\n// @include multiplier_extension_decoder.v\n// @include alu_decoder.v\n// @include csr_decoder.v\n// @include store_decoder.v\n// @include load_decoder.v\n// @include main_fsm.v\n// @include divider_decoder.v\n// @include multiplier_decoder.v\n// @include clint.v\n// @include bram.v\n// @include mt48lc16m16a2_ctrl.v\n// @include rx_uart.v\n// @include tx_uart.v\n// @include qqspi.v\n// @include pll.v\n// @include fifo.v\n\n\nsoc u1 (\n\n  //-- Inputs\n  .clk_osc (clk),\n  .uart_tx (uart_tx),\n  .uart_rx (uart_rx),\n  .led (led),\n  .flash_csn (flash_csn),\n  .flash_oe (flash_oe),\n  .flash_io0_in (flash_io0_in),\n  \n  //-- Outputs\n  .sdram_clk (sdram_clk),\n  .sdram_cke (sdram_cke),\n  .sdram_dqm (sdram_dqm),\n  .sdram_addr (sdram_addr),\n  .sdram_ba (sdram_ba),\n  .sdram_csn (sdram_csn),\n  .sdram_wen (sdram_wen),\n  .sdram_rasn (sdram_rasn),\n  .sdram_casn (sdram_casn),\n  \n  .flash_io0_out (flash_io0_out),\n  \n  //-- Inout\n  //-- TODO\n);\n\n\n"
           },
           "position": {
             "x": 536,
@@ -573,43 +620,7 @@
           },
           "size": {
             "width": 488,
-            "height": 992
-          }
-        },
-        {
-          "id": "9362cb9b-466c-4d01-a376-4f5b83d73e2e",
-          "type": "a47f36958f1ee6a1a7b35fce605a27db7ec2b2dd",
-          "position": {
-            "x": -24,
-            "y": 576
-          },
-          "size": {
-            "width": 96,
-            "height": 64
-          }
-        },
-        {
-          "id": "0aa11cfd-8978-4ca8-98d4-66863ffbbc8d",
-          "type": "a47f36958f1ee6a1a7b35fce605a27db7ec2b2dd",
-          "position": {
-            "x": -16,
-            "y": 720
-          },
-          "size": {
-            "width": 96,
-            "height": 64
-          }
-        },
-        {
-          "id": "7f43de8f-24a8-4abe-9d55-a62db797c4a0",
-          "type": "a47f36958f1ee6a1a7b35fce605a27db7ec2b2dd",
-          "position": {
-            "x": -8,
-            "y": 872
-          },
-          "size": {
-            "width": 96,
-            "height": 64
+            "height": 1160
           }
         }
       ],

@@ -38,8 +38,18 @@ module qqspi #(
         inout wire sio0_si_mosi,
         inout wire sio2,
         inout wire sio3,
-        output reg [1:0] cs
+
+
+        input wire sio0_in,
+        output wire sio0_out,
+
+        output reg [1:0] cs,
+        output wire [3:0] oe
     );
+
+    //-- output enable
+    assign oe = sio_oe;
+
     localparam [7:0] CMD_QUAD_WRITE = 8'h38;
     localparam [7:0] CMD_FAST_READ_QUAD = 8'hEB;
     localparam [7:0] CMD_WRITE = 8'h02;
@@ -66,7 +76,10 @@ module qqspi #(
         end
     endgenerate
 
-    assign sio_in = {sio3, sio2, sio1_so_miso, sio0_si_mosi};
+    assign sio0_out = sio_out[0];
+
+    //assign sio_in = {sio3, sio2, sio1_so_miso, sio0_si_mosi};
+    assign sio_in = {0,0,0,sio0_in};
 
     localparam [2:0] S0_IDLE = 3'd0;
     localparam [2:0] S1_SELECT_DEVICE = 3'd1;

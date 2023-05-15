@@ -24,10 +24,15 @@ module soc (
         input  wire        uart_rx,
         output wire [ 7:0] led,
         output wire        flash_csn,
+        output wire [3:0]  flash_oe,
         inout  wire        flash_miso,
         inout  wire        flash_mosi,
         inout  wire        flash_io2,
         inout  wire        flash_io3,
+
+        input wire flash_io0_in,
+        output wire flash_io0_out,
+
         output wire        sdram_clk,
         output wire        sdram_cke,
         output wire [ 1:0] sdram_dqm,
@@ -193,7 +198,11 @@ module soc (
               .cs          (),
 
               .clk   (clk),
-              .resetn(resetn)
+              .resetn(resetn),
+              .oe (flash_oe),
+
+              .sio0_in (flash_io0_in),
+              .sio0_out (flash_io0_out),
           );
 
    
