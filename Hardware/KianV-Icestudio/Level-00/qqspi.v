@@ -73,15 +73,15 @@ module qqspi #(
     wire read;
     assign read = ~write;
 
-    wire [3:0] sio;
-    assign sio = {sio3, sio2, sio1_so_miso, sio0_si_mosi};
+    //wire [3:0] sio;
+    //assign sio = {sio3, sio2, sio1_so_miso, sio0_si_mosi};
 
-    genvar i;
-    generate
-        for (i = 0; i < 4; i = i + 1) begin
-            assign sio[i] = sio_oe[i] ? sio_out[i] : 1'bz;
-        end
-    endgenerate
+    //genvar i;
+    //generate
+    //    for (i = 0; i < 4; i = i + 1) begin
+    //        assign sio[i] = sio_oe[i] ? sio_out[i] : 1'bz;
+    //    end
+    //endgenerate
 
     assign sio0_out = sio_out[0];
     assign sio1_out = sio_out[1];
