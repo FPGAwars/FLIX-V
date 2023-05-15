@@ -41,7 +41,14 @@ module qqspi #(
 
 
         input wire sio0_in,
+        input wire sio1_in,
+        input wire sio2_in,
+        input wire sio3_in,
+
         output wire sio0_out,
+        output wire sio1_out,
+        output wire sio2_out,
+        output wire sio3_out,
 
         output reg [1:0] cs,
         output wire [3:0] oe
@@ -77,9 +84,12 @@ module qqspi #(
     endgenerate
 
     assign sio0_out = sio_out[0];
+    assign sio1_out = sio_out[1];
+    assign sio2_out = sio_out[2];
+    assign sio3_out = sio_out[3];
 
     //assign sio_in = {sio3, sio2, sio1_so_miso, sio0_si_mosi};
-    assign sio_in = {0,0,0,sio0_in};
+    assign sio_in = {sio3_in,sio2_in,sio1_in,sio0_in};
 
     localparam [2:0] S0_IDLE = 3'd0;
     localparam [2:0] S1_SELECT_DEVICE = 3'd1;
