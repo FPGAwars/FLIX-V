@@ -34,7 +34,7 @@ module qqspi #(
 
         output wire cen,
         output reg sclk,
-        inout wire sio1_so_miso,
+
         inout wire sio0_si_mosi,
         inout wire sio2,
         inout wire sio3,
@@ -73,22 +73,11 @@ module qqspi #(
     wire read;
     assign read = ~write;
 
-    //wire [3:0] sio;
-    //assign sio = {sio3, sio2, sio1_so_miso, sio0_si_mosi};
-
-    //genvar i;
-    //generate
-    //    for (i = 0; i < 4; i = i + 1) begin
-    //        assign sio[i] = sio_oe[i] ? sio_out[i] : 1'bz;
-    //    end
-    //endgenerate
-
     assign sio0_out = sio_out[0];
     assign sio1_out = sio_out[1];
     assign sio2_out = sio_out[2];
     assign sio3_out = sio_out[3];
 
-    //assign sio_in = {sio3, sio2, sio1_so_miso, sio0_si_mosi};
     assign sio_in = {sio3_in,sio2_in,sio1_in,sio0_in};
 
     localparam [2:0] S0_IDLE = 3'd0;
