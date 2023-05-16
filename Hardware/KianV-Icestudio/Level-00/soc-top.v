@@ -26,7 +26,6 @@ module soc (
         output wire        flash_csn,
         output wire [3:0]  flash_oe,
 
-        inout  wire        flash_mosi,
         inout  wire        flash_io2,
         inout  wire        flash_io3,
 
@@ -202,7 +201,6 @@ module soc (
 
               .cen         (flash_csn),
               .sclk        (flash_sclk),
-              .sio0_si_mosi(flash_mosi),
               .sio2        (flash_io2),
               .sio3        (flash_io3),
               .cs          (),

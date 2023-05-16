@@ -35,7 +35,6 @@ module qqspi #(
         output wire cen,
         output reg sclk,
 
-        inout wire sio0_si_mosi,
         inout wire sio2,
         inout wire sio3,
 
