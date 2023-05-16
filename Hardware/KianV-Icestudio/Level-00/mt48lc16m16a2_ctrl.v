@@ -51,7 +51,6 @@ module mt48lc16m16a2_ctrl #(
     output wire sdram_wen,
     output wire sdram_rasn,
     output wire sdram_casn,
-    inout wire [15:0] sdram_dq,
 
     input  [15:0] sdram_dq_in,
     output wire [15:0] sdram_dq_out,
@@ -155,8 +154,6 @@ module mt48lc16m16a2_ctrl #(
 
   assign sdram_dq_out = dq;
   assign sdram_oe = oe;
-
-  assign sdram_dq = oe ? dq : 16'hz;
 
   reg oe;
   reg oe_nxt;

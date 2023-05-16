@@ -45,7 +45,6 @@ module soc (
         output wire        sdram_wen,
         output wire        sdram_rasn,
         output wire        sdram_casn,
-        inout  wire [15:0] sdram_dq,
 
         input wire [15:0] sdram_dq_in,
         output wire [15:0] sdram_dq_out,
@@ -318,7 +317,6 @@ module soc (
                            .sdram_wen (sdram_wen),
                            .sdram_rasn(sdram_rasn),
                            .sdram_casn(sdram_casn),
-                           .sdram_dq  (sdram_dq),
 
                            .sdram_dq_in (sdram_dq_in),
                            .sdram_dq_out (sdram_dq_out),
