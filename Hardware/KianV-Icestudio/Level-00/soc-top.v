@@ -26,6 +26,7 @@ module soc (
         output wire        flash_csn,
         output wire [3:0]  flash_oe,
 
+        input wire [3:0] flash_io_in,
         input wire flash_io0_in,
         input wire flash_io1_in,
         input wire flash_io2_in,
@@ -203,10 +204,10 @@ module soc (
               .resetn(resetn),
               .oe (flash_oe),
 
-              .sio0_in (flash_io0_in),
-              .sio1_in (flash_io1_in),
-              .sio2_in (flash_io2_in),
-              .sio3_in (flash_io3_in),
+              .sio0_in (flash_io_in[0]),
+              .sio1_in (flash_io_in[1]),
+              .sio2_in (flash_io_in[2]),
+              .sio3_in (flash_io_in[3]),
 
 
               .sio0_out (flash_io0_out),

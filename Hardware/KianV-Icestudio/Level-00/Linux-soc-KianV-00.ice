@@ -555,6 +555,42 @@
           }
         },
         {
+          "id": "cb26b48c-5279-4c8c-91e1-bc46a7e5c31e",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "flash_io_in",
+            "range": "[3:0]",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "3",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "2",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "1",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 304,
+            "y": 584
+          }
+        },
+        {
           "id": "6921a985-3bf0-437a-a841-06d432758589",
           "type": "basic.output",
           "data": {
@@ -625,26 +661,6 @@
           },
           "position": {
             "x": 1296,
-            "y": 672
-          }
-        },
-        {
-          "id": "843811c8-a1dc-4395-92af-0e1aa06bb2c5",
-          "type": "basic.outputLabel",
-          "data": {
-            "name": "io3_in",
-            "blockColor": "darkgreen",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": 328,
             "y": 672
           }
         },
@@ -721,6 +737,26 @@
           "position": {
             "x": 1448,
             "y": 736
+          }
+        },
+        {
+          "id": "843811c8-a1dc-4395-92af-0e1aa06bb2c5",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "io3_in",
+            "blockColor": "darkgreen",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 344,
+            "y": 752
           }
         },
         {
@@ -936,26 +972,6 @@
           }
         },
         {
-          "id": "d34eac5d-8f35-46d6-bf81-0a73250fc165",
-          "type": "basic.outputLabel",
-          "data": {
-            "name": "io2_in",
-            "blockColor": "darkgreen",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": 328,
-            "y": 856
-          }
-        },
-        {
           "id": "34bc922b-b69a-45fe-9f5f-861855a801f8",
           "type": "basic.inputLabel",
           "data": {
@@ -1052,6 +1068,26 @@
           }
         },
         {
+          "id": "d34eac5d-8f35-46d6-bf81-0a73250fc165",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "io2_in",
+            "blockColor": "darkgreen",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 344,
+            "y": 920
+          }
+        },
+        {
           "id": "aee753ff-bc67-45de-9cb9-2c0e7b24cd55",
           "type": "basic.output",
           "data": {
@@ -1143,7 +1179,7 @@
           },
           "position": {
             "x": 336,
-            "y": 1040
+            "y": 1072
           }
         },
         {
@@ -1295,7 +1331,7 @@
           },
           "position": {
             "x": 336,
-            "y": 1224
+            "y": 1248
           }
         },
         {
@@ -1391,6 +1427,74 @@
           }
         },
         {
+          "id": "0f8af6ed-f9e3-4850-8247-0e3391a478e1",
+          "type": "84f0a15761ee8b753f67079819a7614923939472",
+          "position": {
+            "x": 1216,
+            "y": 1096
+          },
+          "size": {
+            "width": 96,
+            "height": 128
+          }
+        },
+        {
+          "id": "57bdc5cd-3ade-4056-8c0a-322f66ce1892",
+          "type": "c4f23ad05c2010ec9bd213c8814c9238873037ae",
+          "position": {
+            "x": 32,
+            "y": 1088
+          },
+          "size": {
+            "width": 96,
+            "height": 128
+          }
+        },
+        {
+          "id": "9ee05bd5-cce4-4dea-937a-113183ff8d15",
+          "type": "76566776e496876b299384156b16e7a50123cde8",
+          "position": {
+            "x": -208,
+            "y": 600
+          },
+          "size": {
+            "width": 96,
+            "height": 64
+          }
+        },
+        {
+          "id": "6972f423-22dd-4b70-803d-6c194e40bc95",
+          "type": "basic.info",
+          "data": {
+            "info": "flash_io3\n\nflash_io2\n\nflash_io1\n\nflash_io0",
+            "readonly": true
+          },
+          "position": {
+            "x": 88,
+            "y": 560
+          },
+          "size": {
+            "width": 136,
+            "height": 144
+          }
+        },
+        {
+          "id": "eaf53158-f666-4420-a425-5b99761a1925",
+          "type": "basic.info",
+          "data": {
+            "info": "## Flash IO pins",
+            "readonly": true
+          },
+          "position": {
+            "x": -352,
+            "y": 472
+          },
+          "size": {
+            "width": 376,
+            "height": 40
+          }
+        },
+        {
           "id": "8a22f6e9-6a0a-495b-8867-958fe6678799",
           "type": "basic.code",
           "data": {
@@ -1406,6 +1510,11 @@
                   "name": "sdram_dq_in",
                   "range": "[15:0]",
                   "size": 16
+                },
+                {
+                  "name": "flash_io_in",
+                  "range": "[3:0]",
+                  "size": 4
                 },
                 {
                   "name": "flash_io3_in"
@@ -1493,7 +1602,7 @@
               ]
             },
             "params": [],
-            "code": "// @include soc-top.v\n// @include defines_soc.vh\n// @include riscv_defines.vh\n// @include kianv_harris_mc_edition.v\n// @include csr_utilities.vh\n// @include riscv_priv_csr_status.vh\n// @include mcause.vh\n// @include misa.vh\n// @include rv32_amo_opcodes.vh\n// @include datapath_unit.v\n// @include csr_exception_handler.v\n// @include design_elements.v\n// @include divider.v\n// @include multiplier.v\n// @include alu.v\n// @include load_alignment.v\n// @include store_alignment.v\n// @include extend.v\n// @include register_file.v\n// @include control_unit.v\n// @include multiplier_extension_decoder.v\n// @include alu_decoder.v\n// @include csr_decoder.v\n// @include store_decoder.v\n// @include load_decoder.v\n// @include main_fsm.v\n// @include divider_decoder.v\n// @include multiplier_decoder.v\n// @include clint.v\n// @include bram.v\n// @include mt48lc16m16a2_ctrl.v\n// @include rx_uart.v\n// @include tx_uart.v\n// @include qqspi.v\n// @include pll.v\n// @include fifo.v\n\n\n//-- Instantiate the kianv linux soc\n//-- (It is located in the soc-top.v file)\nsoc u1 (\n\n  //-- System clock input\n  .clk_osc (clk),\n  \n  //-- Serial port\n  .uart_tx (uart_tx), //-- out\n  .uart_rx (uart_rx), //-- in\n  \n  //-- LEDs\n  .led (led), //--out\n  \n  //-- Flash memory\n  .flash_csn (flash_csn), //-- out\n  .flash_oe (flash_oe),  //-- out\n  \n  .flash_io0_in (flash_io0_in),\n  .flash_io1_in (flash_io1_in),\n  .flash_io2_in (flash_io2_in),\n  .flash_io3_in (flash_io3_in),\n  \n  .flash_io0_out (flash_io0_out),\n  .flash_io1_out (flash_io1_out),\n  .flash_io2_out (flash_io2_out),\n  .flash_io3_out (flash_io3_out),\n  \n  \n  //-- SDRAM memory\n  .sdram_clk (sdram_clk),\n  .sdram_cke (sdram_cke),\n  .sdram_dqm (sdram_dqm),\n  .sdram_addr (sdram_addr),\n  .sdram_ba (sdram_ba),\n  .sdram_csn (sdram_csn),\n  .sdram_wen (sdram_wen),\n  .sdram_rasn (sdram_rasn),\n  .sdram_casn (sdram_casn),\n  .sdram_dq_out (sdram_dq_out),\n  .sdram_dq_in (sdram_dq_in),\n  .sdram_oe (sdram_oe)\n  \n);\n\n"
+            "code": "// @include soc-top.v\n// @include defines_soc.vh\n// @include riscv_defines.vh\n// @include kianv_harris_mc_edition.v\n// @include csr_utilities.vh\n// @include riscv_priv_csr_status.vh\n// @include mcause.vh\n// @include misa.vh\n// @include rv32_amo_opcodes.vh\n// @include datapath_unit.v\n// @include csr_exception_handler.v\n// @include design_elements.v\n// @include divider.v\n// @include multiplier.v\n// @include alu.v\n// @include load_alignment.v\n// @include store_alignment.v\n// @include extend.v\n// @include register_file.v\n// @include control_unit.v\n// @include multiplier_extension_decoder.v\n// @include alu_decoder.v\n// @include csr_decoder.v\n// @include store_decoder.v\n// @include load_decoder.v\n// @include main_fsm.v\n// @include divider_decoder.v\n// @include multiplier_decoder.v\n// @include clint.v\n// @include bram.v\n// @include mt48lc16m16a2_ctrl.v\n// @include rx_uart.v\n// @include tx_uart.v\n// @include qqspi.v\n// @include pll.v\n// @include fifo.v\n\n\n//-- Instantiate the kianv linux soc\n//-- (It is located in the soc-top.v file)\nsoc u1 (\n\n  //-- System clock input\n  .clk_osc (clk),\n  \n  //-- Serial port\n  .uart_tx (uart_tx), //-- out\n  .uart_rx (uart_rx), //-- in\n  \n  //-- LEDs\n  .led (led), //--out\n  \n  //-- Flash memory\n  .flash_csn (flash_csn), //-- out\n  .flash_oe (flash_oe),  //-- out\n  \n  .flash_io_in (flash_io_in),\n  .flash_io0_in (flash_io0_in),\n  .flash_io1_in (flash_io1_in),\n  .flash_io2_in (flash_io2_in),\n  .flash_io3_in (flash_io3_in),\n  \n  .flash_io0_out (flash_io0_out),\n  .flash_io1_out (flash_io1_out),\n  .flash_io2_out (flash_io2_out),\n  .flash_io3_out (flash_io3_out),\n  \n  \n  //-- SDRAM memory\n  .sdram_clk (sdram_clk),\n  .sdram_cke (sdram_cke),\n  .sdram_dqm (sdram_dqm),\n  .sdram_addr (sdram_addr),\n  .sdram_ba (sdram_ba),\n  .sdram_csn (sdram_csn),\n  .sdram_wen (sdram_wen),\n  .sdram_rasn (sdram_rasn),\n  .sdram_casn (sdram_casn),\n  .sdram_dq_out (sdram_dq_out),\n  .sdram_dq_in (sdram_dq_in),\n  .sdram_oe (sdram_oe)\n  \n);\n\n"
           },
           "position": {
             "x": 536,
@@ -1502,74 +1611,6 @@
           "size": {
             "width": 488,
             "height": 1304
-          }
-        },
-        {
-          "id": "0f8af6ed-f9e3-4850-8247-0e3391a478e1",
-          "type": "84f0a15761ee8b753f67079819a7614923939472",
-          "position": {
-            "x": 1216,
-            "y": 1096
-          },
-          "size": {
-            "width": 96,
-            "height": 128
-          }
-        },
-        {
-          "id": "57bdc5cd-3ade-4056-8c0a-322f66ce1892",
-          "type": "c4f23ad05c2010ec9bd213c8814c9238873037ae",
-          "position": {
-            "x": 32,
-            "y": 1088
-          },
-          "size": {
-            "width": 96,
-            "height": 128
-          }
-        },
-        {
-          "id": "9ee05bd5-cce4-4dea-937a-113183ff8d15",
-          "type": "76566776e496876b299384156b16e7a50123cde8",
-          "position": {
-            "x": -208,
-            "y": 600
-          },
-          "size": {
-            "width": 96,
-            "height": 64
-          }
-        },
-        {
-          "id": "6972f423-22dd-4b70-803d-6c194e40bc95",
-          "type": "basic.info",
-          "data": {
-            "info": "flash_io3\n\nflash_io2\n\nflash_io1\n\nflash_io0",
-            "readonly": true
-          },
-          "position": {
-            "x": 88,
-            "y": 560
-          },
-          "size": {
-            "width": 136,
-            "height": 144
-          }
-        },
-        {
-          "id": "eaf53158-f666-4420-a425-5b99761a1925",
-          "type": "basic.info",
-          "data": {
-            "info": "## Flash IO pins",
-            "readonly": true
-          },
-          "position": {
-            "x": -352,
-            "y": 472
-          },
-          "size": {
-            "width": 376,
-            "height": 40
           }
         }
       ],
@@ -2007,6 +2048,17 @@
           "target": {
             "block": "6e16a873-369c-4e6d-9c71-670f6d4dcdc5",
             "port": "in"
+          },
+          "size": 4
+        },
+        {
+          "source": {
+            "block": "cb26b48c-5279-4c8c-91e1-bc46a7e5c31e",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "8a22f6e9-6a0a-495b-8867-958fe6678799",
+            "port": "flash_io_in"
           },
           "size": 4
         }
