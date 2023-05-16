@@ -726,8 +726,8 @@
             ]
           },
           "position": {
-            "x": -16,
-            "y": 728
+            "x": 72,
+            "y": 672
           }
         },
         {
@@ -747,6 +747,26 @@
           "position": {
             "x": 1104,
             "y": 800
+          }
+        },
+        {
+          "id": "6c80d9e8-a9b9-496e-ba2a-5dc60d2de7f4",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "sdram_oe",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": -352,
+            "y": 864
           }
         },
         {
@@ -819,62 +839,6 @@
           "position": {
             "x": 312,
             "y": 904
-          }
-        },
-        {
-          "id": "6c80d9e8-a9b9-496e-ba2a-5dc60d2de7f4",
-          "type": "basic.outputLabel",
-          "data": {
-            "name": "sdram_oe",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": -440,
-            "y": 920
-          }
-        },
-        {
-          "id": "0becd8ec-8d8f-47dd-a73e-9c5b48b67b43",
-          "type": "basic.inputLabel",
-          "data": {
-            "name": "flash_io",
-            "range": "[3:0]",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "3",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "2",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "1",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": 1144,
-            "y": 984
           }
         },
         {
@@ -969,8 +933,8 @@
             ]
           },
           "position": {
-            "x": -136,
-            "y": 1032
+            "x": -48,
+            "y": 976
           }
         },
         {
@@ -1065,8 +1029,44 @@
             ]
           },
           "position": {
-            "x": -432,
-            "y": 1032
+            "x": -344,
+            "y": 976
+          }
+        },
+        {
+          "id": "0becd8ec-8d8f-47dd-a73e-9c5b48b67b43",
+          "type": "basic.inputLabel",
+          "data": {
+            "name": "flash_io",
+            "range": "[3:0]",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "3",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "2",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "1",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 1144,
+            "y": 984
           }
         },
         {
@@ -1105,8 +1105,8 @@
           "id": "55375f98-3483-4111-b6e6-ad386f8cf30e",
           "type": "2bcfc726c0d44cac862c799c3b0d630ed97832c1",
           "position": {
-            "x": -280,
-            "y": 984
+            "x": -192,
+            "y": 928
           },
           "size": {
             "width": 96,
@@ -1213,8 +1213,8 @@
             "readonly": true
           },
           "position": {
-            "x": -432,
-            "y": 864
+            "x": -344,
+            "y": 808
           },
           "size": {
             "width": 376,
@@ -1427,8 +1427,8 @@
           },
           "vertices": [
             {
-              "x": -320,
-              "y": 968
+              "x": -232,
+              "y": 912
             }
           ]
         },
