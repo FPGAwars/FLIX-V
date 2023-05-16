@@ -29,20 +29,27 @@ module soc (
         input wire [3:0] flash_io_in,
         output wire [3:0] flash_io_out,
 
-        output wire        sdram_clk,
+        /*output wire        sdram_clk,
         output wire        sdram_cke,
-        output wire [ 1:0] sdram_dqm,
-        output wire [12:0] sdram_addr,  //  A0-A10 row address, A0-A7 column address
-        output wire [ 1:0] sdram_ba,    // bank select A11,A12
         output wire        sdram_csn,
         output wire        sdram_wen,
         output wire        sdram_rasn,
-        output wire        sdram_casn,
+        output wire        sdram_casn,*/
+
+        output wire [5:0] sdram_ctrl,
+
+        output wire [ 1:0] sdram_dqm,
+        output wire [ 1:0] sdram_ba,    // bank select A11,A12
+        output wire [12:0] sdram_addr,  //  A0-A10 row address, A0-A7 column address
 
         input wire [15:0] sdram_dq_in,
         output wire [15:0] sdram_dq_out,
         output wire sdram_oe
     );
+
+    wire sdram_clk, sdram_cke, sdram_csn, sdram_wen, sdram_rasn, sdram_casn;
+
+    assign sdram_ctrl = {sdram_clk, sdram_cke, sdram_csn, sdram_wen, sdram_rasn, sdram_casn};
 
     wire clk;
 

@@ -86,25 +86,6 @@
           }
         },
         {
-          "id": "b681b49f-2c38-4a39-8d9b-d8b37d4a2456",
-          "type": "basic.output",
-          "data": {
-            "name": "SDRAM",
-            "virtual": false,
-            "pins": [
-              {
-                "index": "0",
-                "name": "sdram_clk",
-                "value": "F19"
-              }
-            ]
-          },
-          "position": {
-            "x": 1152,
-            "y": 184
-          }
-        },
-        {
           "id": "54b2820d-d90e-4a86-b111-cc4c93aa5d63",
           "type": "basic.output",
           "data": {
@@ -185,25 +166,6 @@
           }
         },
         {
-          "id": "6b83223c-b2d4-41c0-a53f-3ece1ba56efb",
-          "type": "basic.output",
-          "data": {
-            "name": "SDRAM",
-            "virtual": false,
-            "pins": [
-              {
-                "index": "0",
-                "name": "sdram_cke",
-                "value": "F20"
-              }
-            ]
-          },
-          "position": {
-            "x": 1312,
-            "y": 256
-          }
-        },
-        {
           "id": "2198083f-2a0c-461b-98a6-f33bb001086f",
           "type": "basic.output",
           "data": {
@@ -224,8 +186,8 @@
             ]
           },
           "position": {
-            "x": 1456,
-            "y": 304
+            "x": 1448,
+            "y": 344
           }
         },
         {
@@ -246,101 +208,6 @@
           "position": {
             "x": 336,
             "y": 504
-          }
-        },
-        {
-          "id": "1e41225e-1371-4199-a4e2-21e16c886b33",
-          "type": "basic.output",
-          "data": {
-            "name": "ram_dq",
-            "virtual": false,
-            "range": "[15:0]",
-            "pins": [
-              {
-                "index": "15",
-                "name": "sdram_d15",
-                "value": "J17"
-              },
-              {
-                "index": "14",
-                "name": "sdram_d14",
-                "value": "J18"
-              },
-              {
-                "index": "13",
-                "name": "sdram_d13",
-                "value": "F18"
-              },
-              {
-                "index": "12",
-                "name": "sdram_d12",
-                "value": "E18"
-              },
-              {
-                "index": "11",
-                "name": "sdram_d11",
-                "value": "C20"
-              },
-              {
-                "index": "10",
-                "name": "sdram_d10",
-                "value": "D19"
-              },
-              {
-                "index": "9",
-                "name": "sdram_d9",
-                "value": "D20"
-              },
-              {
-                "index": "8",
-                "name": "sdram_d8",
-                "value": "E19"
-              },
-              {
-                "index": "7",
-                "name": "sdram_d7",
-                "value": "U20"
-              },
-              {
-                "index": "6",
-                "name": "sdram_d6",
-                "value": "T17"
-              },
-              {
-                "index": "5",
-                "name": "sdram_d5",
-                "value": "T18"
-              },
-              {
-                "index": "4",
-                "name": "sdram_d4",
-                "value": "P18"
-              },
-              {
-                "index": "3",
-                "name": "sdram_d3",
-                "value": "N18"
-              },
-              {
-                "index": "2",
-                "name": "sdram_d2",
-                "value": "M18"
-              },
-              {
-                "index": "1",
-                "name": "sdram_d1",
-                "value": "L18"
-              },
-              {
-                "index": "0",
-                "name": "sdram_d0",
-                "value": "J16"
-              }
-            ]
-          },
-          "position": {
-            "x": 2064,
-            "y": 512
           }
         },
         {
@@ -399,27 +266,8 @@
             ]
           },
           "position": {
-            "x": 56,
-            "y": 592
-          }
-        },
-        {
-          "id": "20db8ef8-c68e-4fdb-8fa6-4ba6c1d0ac07",
-          "type": "basic.output",
-          "data": {
-            "name": "sdram_csn",
-            "virtual": false,
-            "pins": [
-              {
-                "index": "0",
-                "name": "sdram_csn",
-                "value": "P20"
-              }
-            ]
-          },
-          "position": {
-            "x": 1264,
-            "y": 624
+            "x": 72,
+            "y": 608
           }
         },
         {
@@ -454,47 +302,8 @@
             ]
           },
           "position": {
-            "x": -312,
-            "y": 640
-          }
-        },
-        {
-          "id": "6c80d9e8-a9b9-496e-ba2a-5dc60d2de7f4",
-          "type": "basic.outputLabel",
-          "data": {
-            "name": "sdram_oe",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": 1656,
-            "y": 704
-          }
-        },
-        {
-          "id": "6921a985-3bf0-437a-a841-06d432758589",
-          "type": "basic.output",
-          "data": {
-            "name": "sdram_wen",
-            "virtual": false,
-            "pins": [
-              {
-                "index": "0",
-                "name": "sdram_wen",
-                "value": "T20"
-              }
-            ]
-          },
-          "position": {
-            "x": 1448,
-            "y": 712
+            "x": -296,
+            "y": 656
           }
         },
         {
@@ -529,8 +338,8 @@
             ]
           },
           "position": {
-            "x": -312,
-            "y": 712
+            "x": -296,
+            "y": 728
           }
         },
         {
@@ -565,219 +374,8 @@
             ]
           },
           "position": {
-            "x": 24,
-            "y": 768
-          }
-        },
-        {
-          "id": "b0740d11-106d-4ff8-ac33-2c182a19ce14",
-          "type": "basic.output",
-          "data": {
-            "name": "sdram_rasn",
-            "virtual": false,
-            "pins": [
-              {
-                "index": "0",
-                "name": "sdram_rasn",
-                "value": "R20"
-              }
-            ]
-          },
-          "position": {
-            "x": 1256,
-            "y": 792
-          }
-        },
-        {
-          "id": "fda727e8-01a6-48ad-9703-171f979e2ecc",
-          "type": "basic.inputLabel",
-          "data": {
-            "name": "dq_in",
-            "range": "[15:0]",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "15",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "14",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "13",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "12",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "11",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "10",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "9",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "8",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "7",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "6",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "5",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "4",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "3",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "2",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "1",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": 1960,
-            "y": 816
-          }
-        },
-        {
-          "id": "5a6df196-6c50-44ea-a1a7-701c78c13f78",
-          "type": "basic.outputLabel",
-          "data": {
-            "name": "ram_dq",
-            "range": "[15:0]",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "15",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "14",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "13",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "12",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "11",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "10",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "9",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "8",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "7",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "6",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "5",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "4",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "3",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "2",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "1",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": 1664,
-            "y": 816
+            "x": 40,
+            "y": 784
           }
         },
         {
@@ -877,25 +475,6 @@
           }
         },
         {
-          "id": "fd7f6327-1d1e-4cad-b6ab-4d917fa06748",
-          "type": "basic.output",
-          "data": {
-            "name": "sdram_casn",
-            "virtual": false,
-            "pins": [
-              {
-                "index": "0",
-                "name": "sdram_casn",
-                "value": "T19"
-              }
-            ]
-          },
-          "position": {
-            "x": 1432,
-            "y": 872
-          }
-        },
-        {
           "id": "9efbe51d-7410-46fb-94a3-aa0846199e43",
           "type": "basic.inputLabel",
           "data": {
@@ -911,8 +490,148 @@
             ]
           },
           "position": {
-            "x": 1176,
-            "y": 952
+            "x": 1128,
+            "y": 896
+          }
+        },
+        {
+          "id": "1e41225e-1371-4199-a4e2-21e16c886b33",
+          "type": "basic.output",
+          "data": {
+            "name": "ram_dq",
+            "virtual": false,
+            "range": "[15:0]",
+            "pins": [
+              {
+                "index": "15",
+                "name": "sdram_d15",
+                "value": "J17"
+              },
+              {
+                "index": "14",
+                "name": "sdram_d14",
+                "value": "J18"
+              },
+              {
+                "index": "13",
+                "name": "sdram_d13",
+                "value": "F18"
+              },
+              {
+                "index": "12",
+                "name": "sdram_d12",
+                "value": "E18"
+              },
+              {
+                "index": "11",
+                "name": "sdram_d11",
+                "value": "C20"
+              },
+              {
+                "index": "10",
+                "name": "sdram_d10",
+                "value": "D19"
+              },
+              {
+                "index": "9",
+                "name": "sdram_d9",
+                "value": "D20"
+              },
+              {
+                "index": "8",
+                "name": "sdram_d8",
+                "value": "E19"
+              },
+              {
+                "index": "7",
+                "name": "sdram_d7",
+                "value": "U20"
+              },
+              {
+                "index": "6",
+                "name": "sdram_d6",
+                "value": "T17"
+              },
+              {
+                "index": "5",
+                "name": "sdram_d5",
+                "value": "T18"
+              },
+              {
+                "index": "4",
+                "name": "sdram_d4",
+                "value": "P18"
+              },
+              {
+                "index": "3",
+                "name": "sdram_d3",
+                "value": "N18"
+              },
+              {
+                "index": "2",
+                "name": "sdram_d2",
+                "value": "M18"
+              },
+              {
+                "index": "1",
+                "name": "sdram_d1",
+                "value": "L18"
+              },
+              {
+                "index": "0",
+                "name": "sdram_d0",
+                "value": "J16"
+              }
+            ]
+          },
+          "position": {
+            "x": 48,
+            "y": 920
+          }
+        },
+        {
+          "id": "74e8d732-f6c5-40cf-ac4b-2af9c08b2c1e",
+          "type": "basic.output",
+          "data": {
+            "name": "sdram_ctr",
+            "virtual": false,
+            "range": "[5:0]",
+            "pins": [
+              {
+                "index": "5",
+                "name": "sdram_clk",
+                "value": "F19"
+              },
+              {
+                "index": "4",
+                "name": "sdram_cke",
+                "value": "F20"
+              },
+              {
+                "index": "3",
+                "name": "sdram_csn",
+                "value": "P20"
+              },
+              {
+                "index": "2",
+                "name": "sdram_wen",
+                "value": "T20"
+              },
+              {
+                "index": "1",
+                "name": "sdram_rasn",
+                "value": "R20"
+              },
+              {
+                "index": "0",
+                "name": "sdram_casn",
+                "value": "T19"
+              }
+            ]
+          },
+          "position": {
+            "x": 1344,
+            "y": 968
           }
         },
         {
@@ -1007,27 +726,28 @@
             ]
           },
           "position": {
-            "x": 1288,
-            "y": 1032
+            "x": 1184,
+            "y": 976
           }
         },
         {
-          "id": "aee753ff-bc67-45de-9cb9-2c0e7b24cd55",
-          "type": "basic.output",
+          "id": "6c80d9e8-a9b9-496e-ba2a-5dc60d2de7f4",
+          "type": "basic.outputLabel",
           "data": {
-            "name": "Flash",
-            "virtual": false,
+            "name": "sdram_oe",
+            "blockColor": "fuchsia",
+            "virtual": true,
             "pins": [
               {
                 "index": "0",
-                "name": "flash_csn",
-                "value": "R2"
+                "name": "NULL",
+                "value": "NULL"
               }
             ]
           },
           "position": {
-            "x": 1400,
-            "y": 1120
+            "x": -376,
+            "y": 1112
           }
         },
         {
@@ -1067,6 +787,217 @@
           }
         },
         {
+          "id": "aee753ff-bc67-45de-9cb9-2c0e7b24cd55",
+          "type": "basic.output",
+          "data": {
+            "name": "Flash",
+            "virtual": false,
+            "pins": [
+              {
+                "index": "0",
+                "name": "flash_csn",
+                "value": "R2"
+              }
+            ]
+          },
+          "position": {
+            "x": 1208,
+            "y": 1184
+          }
+        },
+        {
+          "id": "fda727e8-01a6-48ad-9703-171f979e2ecc",
+          "type": "basic.inputLabel",
+          "data": {
+            "name": "dq_in",
+            "range": "[15:0]",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "15",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "14",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "13",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "12",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "11",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "10",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "9",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "8",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "7",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "6",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "5",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "4",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "3",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "2",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "1",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": -72,
+            "y": 1224
+          }
+        },
+        {
+          "id": "5a6df196-6c50-44ea-a1a7-701c78c13f78",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "ram_dq",
+            "range": "[15:0]",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "15",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "14",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "13",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "12",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "11",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "10",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "9",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "8",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "7",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "6",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "5",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "4",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "3",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "2",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "1",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": -368,
+            "y": 1224
+          }
+        },
+        {
           "id": "6201bf84-6ca0-46e3-a5b3-904ec316f425",
           "type": "basic.inputLabel",
           "data": {
@@ -1098,8 +1029,8 @@
             ]
           },
           "position": {
-            "x": 1168,
-            "y": 1200
+            "x": 1176,
+            "y": 1280
           }
         },
         {
@@ -1134,8 +1065,8 @@
             ]
           },
           "position": {
-            "x": 1160,
-            "y": 1280
+            "x": 1144,
+            "y": 1376
           }
         },
         {
@@ -1174,8 +1105,8 @@
           "id": "55375f98-3483-4111-b6e6-ad386f8cf30e",
           "type": "2bcfc726c0d44cac862c799c3b0d630ed97832c1",
           "position": {
-            "x": 1816,
-            "y": 768
+            "x": -216,
+            "y": 1176
           },
           "size": {
             "width": 96,
@@ -1234,8 +1165,8 @@
           "id": "9ee05bd5-cce4-4dea-937a-113183ff8d15",
           "type": "76566776e496876b299384156b16e7a50123cde8",
           "position": {
-            "x": -128,
-            "y": 656
+            "x": -112,
+            "y": 672
           },
           "size": {
             "width": 96,
@@ -1250,8 +1181,8 @@
             "readonly": true
           },
           "position": {
-            "x": 168,
-            "y": 616
+            "x": 184,
+            "y": 632
           },
           "size": {
             "width": 136,
@@ -1266,8 +1197,24 @@
             "readonly": true
           },
           "position": {
-            "x": -272,
-            "y": 528
+            "x": -256,
+            "y": 544
+          },
+          "size": {
+            "width": 376,
+            "height": 40
+          }
+        },
+        {
+          "id": "02e51667-4cd8-4fd4-aa63-41062292b005",
+          "type": "basic.info",
+          "data": {
+            "info": "## SDRAM IO pins",
+            "readonly": true
+          },
+          "position": {
+            "x": -368,
+            "y": 1056
           },
           "size": {
             "width": 376,
@@ -1348,6 +1295,11 @@
                   "size": 16
                 },
                 {
+                  "name": "sdram_ctrl",
+                  "range": "[5:0]",
+                  "size": 6
+                },
+                {
                   "name": "flash_csn"
                 },
                 {
@@ -1363,7 +1315,7 @@
               ]
             },
             "params": [],
-            "code": "// @include soc-top.v\n// @include defines_soc.vh\n// @include riscv_defines.vh\n// @include kianv_harris_mc_edition.v\n// @include csr_utilities.vh\n// @include riscv_priv_csr_status.vh\n// @include mcause.vh\n// @include misa.vh\n// @include rv32_amo_opcodes.vh\n// @include datapath_unit.v\n// @include csr_exception_handler.v\n// @include design_elements.v\n// @include divider.v\n// @include multiplier.v\n// @include alu.v\n// @include load_alignment.v\n// @include store_alignment.v\n// @include extend.v\n// @include register_file.v\n// @include control_unit.v\n// @include multiplier_extension_decoder.v\n// @include alu_decoder.v\n// @include csr_decoder.v\n// @include store_decoder.v\n// @include load_decoder.v\n// @include main_fsm.v\n// @include divider_decoder.v\n// @include multiplier_decoder.v\n// @include clint.v\n// @include bram.v\n// @include mt48lc16m16a2_ctrl.v\n// @include rx_uart.v\n// @include tx_uart.v\n// @include qqspi.v\n// @include pll.v\n// @include fifo.v\n\n\n//-- Instantiate the kianv linux soc\n//-- (It is located in the soc-top.v file)\nsoc u1 (\n\n  //-- System clock input\n  .clk_osc (clk),\n  \n  //-- Serial port\n  .uart_tx (uart_tx), //-- out\n  .uart_rx (uart_rx), //-- in\n  \n  //-- LEDs\n  .led (led), //--out\n  \n  //-- Flash memory\n  .flash_csn (flash_csn), //-- out\n  .flash_oe (flash_oe),  //-- out\n  \n  .flash_io_in (flash_io_in),\n  .flash_io_out (flash_io_out),\n  \n  //-- SDRAM memory\n  .sdram_clk (sdram_clk),\n  .sdram_cke (sdram_cke),\n  .sdram_dqm (sdram_dqm),\n  .sdram_addr (sdram_addr),\n  .sdram_ba (sdram_ba),\n  .sdram_csn (sdram_csn),\n  .sdram_wen (sdram_wen),\n  .sdram_rasn (sdram_rasn),\n  .sdram_casn (sdram_casn),\n  .sdram_dq_out (sdram_dq_out),\n  .sdram_dq_in (sdram_dq_in),\n  .sdram_oe (sdram_oe)\n  \n);\n\n"
+            "code": "// @include soc-top.v\n// @include defines_soc.vh\n// @include riscv_defines.vh\n// @include kianv_harris_mc_edition.v\n// @include csr_utilities.vh\n// @include riscv_priv_csr_status.vh\n// @include mcause.vh\n// @include misa.vh\n// @include rv32_amo_opcodes.vh\n// @include datapath_unit.v\n// @include csr_exception_handler.v\n// @include design_elements.v\n// @include divider.v\n// @include multiplier.v\n// @include alu.v\n// @include load_alignment.v\n// @include store_alignment.v\n// @include extend.v\n// @include register_file.v\n// @include control_unit.v\n// @include multiplier_extension_decoder.v\n// @include alu_decoder.v\n// @include csr_decoder.v\n// @include store_decoder.v\n// @include load_decoder.v\n// @include main_fsm.v\n// @include divider_decoder.v\n// @include multiplier_decoder.v\n// @include clint.v\n// @include bram.v\n// @include mt48lc16m16a2_ctrl.v\n// @include rx_uart.v\n// @include tx_uart.v\n// @include qqspi.v\n// @include pll.v\n// @include fifo.v\n\n\n//-- Instantiate the kianv linux soc\n//-- (It is located in the soc-top.v file)\nsoc u1 (\n\n  //-- System clock input\n  .clk_osc (clk),\n  \n  //-- Serial port\n  .uart_tx (uart_tx), //-- out\n  .uart_rx (uart_rx), //-- in\n  \n  //-- LEDs\n  .led (led), //--out\n  \n  //-- Flash memory\n  .flash_csn (flash_csn), //-- out\n  .flash_oe (flash_oe),  //-- out\n  \n  .flash_io_in (flash_io_in),\n  .flash_io_out (flash_io_out),\n  \n  //-- SDRAM memory\n  \n  .sdram_ctrl (sdram_ctrl),\n  \n  /*.sdram_clk (sdram_clk),\n  .sdram_cke (sdram_cke),\n  .sdram_csn (sdram_csn),\n  .sdram_wen (sdram_wen),\n  .sdram_rasn (sdram_rasn),\n  .sdram_casn (sdram_casn),*/\n  \n  .sdram_dqm (sdram_dqm),\n  .sdram_ba (sdram_ba),\n  .sdram_addr (sdram_addr),\n  \n  .sdram_dq_out (sdram_dq_out),\n  .sdram_dq_in (sdram_dq_in),\n  .sdram_oe (sdram_oe)\n  \n);\n\n"
           },
           "position": {
             "x": 536,
@@ -1410,26 +1362,6 @@
         {
           "source": {
             "block": "8a22f6e9-6a0a-495b-8867-958fe6678799",
-            "port": "sdram_clk"
-          },
-          "target": {
-            "block": "b681b49f-2c38-4a39-8d9b-d8b37d4a2456",
-            "port": "in"
-          }
-        },
-        {
-          "source": {
-            "block": "8a22f6e9-6a0a-495b-8867-958fe6678799",
-            "port": "sdram_cke"
-          },
-          "target": {
-            "block": "6b83223c-b2d4-41c0-a53f-3ece1ba56efb",
-            "port": "in"
-          }
-        },
-        {
-          "source": {
-            "block": "8a22f6e9-6a0a-495b-8867-958fe6678799",
             "port": "sdram_dqm"
           },
           "target": {
@@ -1459,46 +1391,6 @@
             "port": "in"
           },
           "size": 2
-        },
-        {
-          "source": {
-            "block": "8a22f6e9-6a0a-495b-8867-958fe6678799",
-            "port": "sdram_csn"
-          },
-          "target": {
-            "block": "20db8ef8-c68e-4fdb-8fa6-4ba6c1d0ac07",
-            "port": "in"
-          }
-        },
-        {
-          "source": {
-            "block": "8a22f6e9-6a0a-495b-8867-958fe6678799",
-            "port": "sdram_wen"
-          },
-          "target": {
-            "block": "6921a985-3bf0-437a-a841-06d432758589",
-            "port": "in"
-          }
-        },
-        {
-          "source": {
-            "block": "8a22f6e9-6a0a-495b-8867-958fe6678799",
-            "port": "sdram_rasn"
-          },
-          "target": {
-            "block": "b0740d11-106d-4ff8-ac33-2c182a19ce14",
-            "port": "in"
-          }
-        },
-        {
-          "source": {
-            "block": "8a22f6e9-6a0a-495b-8867-958fe6678799",
-            "port": "sdram_casn"
-          },
-          "target": {
-            "block": "fd7f6327-1d1e-4cad-b6ab-4d917fa06748",
-            "port": "in"
-          }
         },
         {
           "source": {
@@ -1553,8 +1445,8 @@
           },
           "vertices": [
             {
-              "x": 1776,
-              "y": 752
+              "x": -256,
+              "y": 1160
             }
           ]
         },
@@ -1667,6 +1559,17 @@
             "port": "inlabel"
           },
           "size": 4
+        },
+        {
+          "source": {
+            "block": "8a22f6e9-6a0a-495b-8867-958fe6678799",
+            "port": "sdram_ctrl"
+          },
+          "target": {
+            "block": "74e8d732-f6c5-40cf-ac4b-2af9c08b2c1e",
+            "port": "in"
+          },
+          "size": 6
         }
       ]
     }
