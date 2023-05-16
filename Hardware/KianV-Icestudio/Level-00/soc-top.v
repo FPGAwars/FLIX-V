@@ -27,10 +27,6 @@ module soc (
         output wire [3:0]  flash_oe,
 
         input wire [3:0] flash_io_in,
-        input wire flash_io0_in,
-        input wire flash_io1_in,
-        input wire flash_io2_in,
-        input wire flash_io3_in,
 
         output wire flash_io0_out,
         output wire flash_io1_out,
