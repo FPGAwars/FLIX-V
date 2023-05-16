@@ -29,13 +29,6 @@ module soc (
         input wire [3:0] flash_io_in,
         output wire [3:0] flash_io_out,
 
-        /*output wire        sdram_clk,
-        output wire        sdram_cke,
-        output wire        sdram_csn,
-        output wire        sdram_wen,
-        output wire        sdram_rasn,
-        output wire        sdram_casn,*/
-
         output wire [5:0] sdram_ctrl,
 
         output wire [ 1:0] sdram_dqm,

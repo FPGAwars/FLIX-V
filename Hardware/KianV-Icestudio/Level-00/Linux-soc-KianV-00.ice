@@ -62,8 +62,8 @@
             ]
           },
           "position": {
-            "x": 1416,
-            "y": -96
+            "x": 1304,
+            "y": -88
           }
         },
         {
@@ -81,8 +81,8 @@
             ]
           },
           "position": {
-            "x": 1128,
-            "y": 8
+            "x": 1136,
+            "y": 64
           }
         },
         {
@@ -161,8 +161,8 @@
             ]
           },
           "position": {
-            "x": 1696,
-            "y": 200
+            "x": 1440,
+            "y": 144
           }
         },
         {
@@ -186,8 +186,8 @@
             ]
           },
           "position": {
-            "x": 1448,
-            "y": 344
+            "x": 1144,
+            "y": 232
           }
         },
         {
@@ -206,33 +206,8 @@
             "clock": false
           },
           "position": {
-            "x": 336,
-            "y": 504
-          }
-        },
-        {
-          "id": "29ef0f48-0fde-482f-821e-02b8e055e9f9",
-          "type": "basic.output",
-          "data": {
-            "name": "ba",
-            "virtual": false,
-            "range": "[1:0]",
-            "pins": [
-              {
-                "index": "1",
-                "name": "sdram_ba1",
-                "value": "N20"
-              },
-              {
-                "index": "0",
-                "name": "sdram_ba0",
-                "value": "P19"
-              }
-            ]
-          },
-          "position": {
-            "x": 1560,
-            "y": 528
+            "x": 352,
+            "y": 400
           }
         },
         {
@@ -266,8 +241,33 @@
             ]
           },
           "position": {
-            "x": 72,
-            "y": 608
+            "x": 8,
+            "y": 416
+          }
+        },
+        {
+          "id": "29ef0f48-0fde-482f-821e-02b8e055e9f9",
+          "type": "basic.output",
+          "data": {
+            "name": "ba",
+            "virtual": false,
+            "range": "[1:0]",
+            "pins": [
+              {
+                "index": "1",
+                "name": "sdram_ba1",
+                "value": "N20"
+              },
+              {
+                "index": "0",
+                "name": "sdram_ba0",
+                "value": "P19"
+              }
+            ]
+          },
+          "position": {
+            "x": 1152,
+            "y": 416
           }
         },
         {
@@ -302,8 +302,28 @@
             ]
           },
           "position": {
-            "x": -296,
-            "y": 656
+            "x": -360,
+            "y": 464
+          }
+        },
+        {
+          "id": "9efbe51d-7410-46fb-94a3-aa0846199e43",
+          "type": "basic.inputLabel",
+          "data": {
+            "name": "sdram_oe",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 1152,
+            "y": 528
           }
         },
         {
@@ -338,8 +358,8 @@
             ]
           },
           "position": {
-            "x": -296,
-            "y": 728
+            "x": -360,
+            "y": 536
           }
         },
         {
@@ -374,8 +394,149 @@
             ]
           },
           "position": {
-            "x": 40,
-            "y": 784
+            "x": -24,
+            "y": 592
+          }
+        },
+        {
+          "id": "34bc922b-b69a-45fe-9f5f-861855a801f8",
+          "type": "basic.inputLabel",
+          "data": {
+            "name": "ram_dq",
+            "range": "[15:0]",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "15",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "14",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "13",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "12",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "11",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "10",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "9",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "8",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "7",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "6",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "5",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "4",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "3",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "2",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "1",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 1152,
+            "y": 616
+          }
+        },
+        {
+          "id": "74e8d732-f6c5-40cf-ac4b-2af9c08b2c1e",
+          "type": "basic.output",
+          "data": {
+            "name": "sdram_ctr",
+            "virtual": false,
+            "range": "[5:0]",
+            "pins": [
+              {
+                "index": "5",
+                "name": "sdram_clk",
+                "value": "F19"
+              },
+              {
+                "index": "4",
+                "name": "sdram_cke",
+                "value": "F20"
+              },
+              {
+                "index": "3",
+                "name": "sdram_csn",
+                "value": "P20"
+              },
+              {
+                "index": "2",
+                "name": "sdram_wen",
+                "value": "T20"
+              },
+              {
+                "index": "1",
+                "name": "sdram_rasn",
+                "value": "R20"
+              },
+              {
+                "index": "0",
+                "name": "sdram_casn",
+                "value": "T19"
+              }
+            ]
+          },
+          "position": {
+            "x": 1296,
+            "y": 632
           }
         },
         {
@@ -471,27 +632,7 @@
           },
           "position": {
             "x": 304,
-            "y": 832
-          }
-        },
-        {
-          "id": "9efbe51d-7410-46fb-94a3-aa0846199e43",
-          "type": "basic.inputLabel",
-          "data": {
-            "name": "sdram_oe",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": 1128,
-            "y": 896
+            "y": 648
           }
         },
         {
@@ -585,124 +726,38 @@
             ]
           },
           "position": {
-            "x": 48,
-            "y": 920
+            "x": -16,
+            "y": 728
           }
         },
         {
-          "id": "74e8d732-f6c5-40cf-ac4b-2af9c08b2c1e",
+          "id": "aee753ff-bc67-45de-9cb9-2c0e7b24cd55",
           "type": "basic.output",
           "data": {
-            "name": "sdram_ctr",
+            "name": "Flash",
             "virtual": false,
-            "range": "[5:0]",
             "pins": [
               {
-                "index": "5",
-                "name": "sdram_clk",
-                "value": "F19"
-              },
-              {
-                "index": "4",
-                "name": "sdram_cke",
-                "value": "F20"
-              },
-              {
-                "index": "3",
-                "name": "sdram_csn",
-                "value": "P20"
-              },
-              {
-                "index": "2",
-                "name": "sdram_wen",
-                "value": "T20"
-              },
-              {
-                "index": "1",
-                "name": "sdram_rasn",
-                "value": "R20"
-              },
-              {
                 "index": "0",
-                "name": "sdram_casn",
-                "value": "T19"
+                "name": "flash_csn",
+                "value": "R2"
               }
             ]
           },
           "position": {
-            "x": 1344,
-            "y": 968
+            "x": 1104,
+            "y": 800
           }
         },
         {
-          "id": "34bc922b-b69a-45fe-9f5f-861855a801f8",
+          "id": "6201bf84-6ca0-46e3-a5b3-904ec316f425",
           "type": "basic.inputLabel",
           "data": {
-            "name": "ram_dq",
-            "range": "[15:0]",
+            "name": "oe",
+            "range": "[3:0]",
             "blockColor": "fuchsia",
             "virtual": true,
             "pins": [
-              {
-                "index": "15",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "14",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "13",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "12",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "11",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "10",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "9",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "8",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "7",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "6",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "5",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "4",
-                "name": "NULL",
-                "value": "NULL"
-              },
               {
                 "index": "3",
                 "name": "NULL",
@@ -726,28 +781,8 @@
             ]
           },
           "position": {
-            "x": 1184,
-            "y": 976
-          }
-        },
-        {
-          "id": "6c80d9e8-a9b9-496e-ba2a-5dc60d2de7f4",
-          "type": "basic.outputLabel",
-          "data": {
-            "name": "sdram_oe",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": -376,
-            "y": 1112
+            "x": 1136,
+            "y": 896
           }
         },
         {
@@ -782,27 +817,64 @@
             ]
           },
           "position": {
-            "x": 320,
-            "y": 1160
+            "x": 312,
+            "y": 904
           }
         },
         {
-          "id": "aee753ff-bc67-45de-9cb9-2c0e7b24cd55",
-          "type": "basic.output",
+          "id": "6c80d9e8-a9b9-496e-ba2a-5dc60d2de7f4",
+          "type": "basic.outputLabel",
           "data": {
-            "name": "Flash",
-            "virtual": false,
+            "name": "sdram_oe",
+            "blockColor": "fuchsia",
+            "virtual": true,
             "pins": [
               {
                 "index": "0",
-                "name": "flash_csn",
-                "value": "R2"
+                "name": "NULL",
+                "value": "NULL"
               }
             ]
           },
           "position": {
-            "x": 1208,
-            "y": 1184
+            "x": -440,
+            "y": 920
+          }
+        },
+        {
+          "id": "0becd8ec-8d8f-47dd-a73e-9c5b48b67b43",
+          "type": "basic.inputLabel",
+          "data": {
+            "name": "flash_io",
+            "range": "[3:0]",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "3",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "2",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "1",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 1144,
+            "y": 984
           }
         },
         {
@@ -897,8 +969,8 @@
             ]
           },
           "position": {
-            "x": -72,
-            "y": 1224
+            "x": -136,
+            "y": 1032
           }
         },
         {
@@ -993,80 +1065,8 @@
             ]
           },
           "position": {
-            "x": -368,
-            "y": 1224
-          }
-        },
-        {
-          "id": "6201bf84-6ca0-46e3-a5b3-904ec316f425",
-          "type": "basic.inputLabel",
-          "data": {
-            "name": "oe",
-            "range": "[3:0]",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "3",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "2",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "1",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": 1176,
-            "y": 1280
-          }
-        },
-        {
-          "id": "0becd8ec-8d8f-47dd-a73e-9c5b48b67b43",
-          "type": "basic.inputLabel",
-          "data": {
-            "name": "flash_io",
-            "range": "[3:0]",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "3",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "2",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "1",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": 1144,
-            "y": 1376
+            "x": -432,
+            "y": 1032
           }
         },
         {
@@ -1077,8 +1077,8 @@
             "readonly": true
           },
           "position": {
-            "x": 328,
-            "y": 440
+            "x": 344,
+            "y": 336
           },
           "size": {
             "width": 160,
@@ -1093,8 +1093,8 @@
             "readonly": true
           },
           "position": {
-            "x": 1248,
-            "y": 8
+            "x": 1144,
+            "y": 16
           },
           "size": {
             "width": 160,
@@ -1105,8 +1105,8 @@
           "id": "55375f98-3483-4111-b6e6-ad386f8cf30e",
           "type": "2bcfc726c0d44cac862c799c3b0d630ed97832c1",
           "position": {
-            "x": -216,
-            "y": 1176
+            "x": -280,
+            "y": 984
           },
           "size": {
             "width": 96,
@@ -1165,8 +1165,8 @@
           "id": "9ee05bd5-cce4-4dea-937a-113183ff8d15",
           "type": "76566776e496876b299384156b16e7a50123cde8",
           "position": {
-            "x": -112,
-            "y": 672
+            "x": -176,
+            "y": 480
           },
           "size": {
             "width": 96,
@@ -1181,8 +1181,8 @@
             "readonly": true
           },
           "position": {
-            "x": 184,
-            "y": 632
+            "x": 120,
+            "y": 440
           },
           "size": {
             "width": 136,
@@ -1197,8 +1197,8 @@
             "readonly": true
           },
           "position": {
-            "x": -256,
-            "y": 544
+            "x": -320,
+            "y": 352
           },
           "size": {
             "width": 376,
@@ -1213,8 +1213,8 @@
             "readonly": true
           },
           "position": {
-            "x": -368,
-            "y": 1056
+            "x": -432,
+            "y": 864
           },
           "size": {
             "width": 376,
@@ -1254,12 +1254,6 @@
                   "size": 8
                 },
                 {
-                  "name": "sdram_clk"
-                },
-                {
-                  "name": "sdram_cke"
-                },
-                {
                   "name": "sdram_dqm",
                   "range": "[1:0]",
                   "size": 2
@@ -1273,18 +1267,6 @@
                   "name": "sdram_ba",
                   "range": "[1:0]",
                   "size": 2
-                },
-                {
-                  "name": "sdram_csn"
-                },
-                {
-                  "name": "sdram_wen"
-                },
-                {
-                  "name": "sdram_rasn"
-                },
-                {
-                  "name": "sdram_casn"
                 },
                 {
                   "name": "sdram_oe"
@@ -1315,15 +1297,15 @@
               ]
             },
             "params": [],
-            "code": "// @include soc-top.v\n// @include defines_soc.vh\n// @include riscv_defines.vh\n// @include kianv_harris_mc_edition.v\n// @include csr_utilities.vh\n// @include riscv_priv_csr_status.vh\n// @include mcause.vh\n// @include misa.vh\n// @include rv32_amo_opcodes.vh\n// @include datapath_unit.v\n// @include csr_exception_handler.v\n// @include design_elements.v\n// @include divider.v\n// @include multiplier.v\n// @include alu.v\n// @include load_alignment.v\n// @include store_alignment.v\n// @include extend.v\n// @include register_file.v\n// @include control_unit.v\n// @include multiplier_extension_decoder.v\n// @include alu_decoder.v\n// @include csr_decoder.v\n// @include store_decoder.v\n// @include load_decoder.v\n// @include main_fsm.v\n// @include divider_decoder.v\n// @include multiplier_decoder.v\n// @include clint.v\n// @include bram.v\n// @include mt48lc16m16a2_ctrl.v\n// @include rx_uart.v\n// @include tx_uart.v\n// @include qqspi.v\n// @include pll.v\n// @include fifo.v\n\n\n//-- Instantiate the kianv linux soc\n//-- (It is located in the soc-top.v file)\nsoc u1 (\n\n  //-- System clock input\n  .clk_osc (clk),\n  \n  //-- Serial port\n  .uart_tx (uart_tx), //-- out\n  .uart_rx (uart_rx), //-- in\n  \n  //-- LEDs\n  .led (led), //--out\n  \n  //-- Flash memory\n  .flash_csn (flash_csn), //-- out\n  .flash_oe (flash_oe),  //-- out\n  \n  .flash_io_in (flash_io_in),\n  .flash_io_out (flash_io_out),\n  \n  //-- SDRAM memory\n  \n  .sdram_ctrl (sdram_ctrl),\n  \n  /*.sdram_clk (sdram_clk),\n  .sdram_cke (sdram_cke),\n  .sdram_csn (sdram_csn),\n  .sdram_wen (sdram_wen),\n  .sdram_rasn (sdram_rasn),\n  .sdram_casn (sdram_casn),*/\n  \n  .sdram_dqm (sdram_dqm),\n  .sdram_ba (sdram_ba),\n  .sdram_addr (sdram_addr),\n  \n  .sdram_dq_out (sdram_dq_out),\n  .sdram_dq_in (sdram_dq_in),\n  .sdram_oe (sdram_oe)\n  \n);\n\n"
+            "code": "// @include soc-top.v\n// @include defines_soc.vh\n// @include riscv_defines.vh\n// @include kianv_harris_mc_edition.v\n// @include csr_utilities.vh\n// @include riscv_priv_csr_status.vh\n// @include mcause.vh\n// @include misa.vh\n// @include rv32_amo_opcodes.vh\n// @include datapath_unit.v\n// @include csr_exception_handler.v\n// @include design_elements.v\n// @include divider.v\n// @include multiplier.v\n// @include alu.v\n// @include load_alignment.v\n// @include store_alignment.v\n// @include extend.v\n// @include register_file.v\n// @include control_unit.v\n// @include multiplier_extension_decoder.v\n// @include alu_decoder.v\n// @include csr_decoder.v\n// @include store_decoder.v\n// @include load_decoder.v\n// @include main_fsm.v\n// @include divider_decoder.v\n// @include multiplier_decoder.v\n// @include clint.v\n// @include bram.v\n// @include mt48lc16m16a2_ctrl.v\n// @include rx_uart.v\n// @include tx_uart.v\n// @include qqspi.v\n// @include pll.v\n// @include fifo.v\n\n\n//-- Instantiate the kianv linux soc\n//-- (It is located in the soc-top.v file)\nsoc u1 (\n\n  //-- System clock input\n  .clk_osc (clk),\n  \n  //-- Serial port\n  .uart_tx (uart_tx), //-- out\n  .uart_rx (uart_rx), //-- in\n  \n  //-- LEDs\n  .led (led), //--out\n  \n  //-- Flash memory\n  .flash_csn (flash_csn), //-- out\n  .flash_oe (flash_oe),  //-- out\n  \n  .flash_io_in (flash_io_in),\n  .flash_io_out (flash_io_out),\n  \n  //-- SDRAM memory\n  .sdram_ctrl (sdram_ctrl),\n  .sdram_dqm (sdram_dqm),\n  .sdram_ba (sdram_ba),\n  .sdram_addr (sdram_addr),\n  \n  .sdram_dq_out (sdram_dq_out),\n  .sdram_dq_in (sdram_dq_in),\n  .sdram_oe (sdram_oe)\n  \n);\n\n"
           },
           "position": {
             "x": 536,
             "y": 48
           },
           "size": {
-            "width": 488,
-            "height": 1304
+            "width": 472,
+            "height": 1016
           }
         }
       ],
@@ -1445,8 +1427,8 @@
           },
           "vertices": [
             {
-              "x": -256,
-              "y": 1160
+              "x": -320,
+              "y": 968
             }
           ]
         },
