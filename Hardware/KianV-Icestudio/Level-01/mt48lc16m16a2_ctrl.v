@@ -39,23 +39,32 @@ module mt48lc16m16a2_ctrl #(
     input wire [31:0] din,
     input wire [3:0] wmask,
     input wire valid,
+
     output reg [31:0] dout,
     output reg ready,
 
-    output wire sdram_clk,
-    output wire sdram_cke,
+    output wire [5:0] sdram_ctrl,
+
     output wire [1:0] sdram_dqm,
     output wire [12:0] sdram_addr,  //  A0-A12 row address, A0-A8 column address
     output wire [1:0] sdram_ba,  // bank select A11,A12
+
+    input  [15:0] sdram_dq_in,
+    output wire [15:0] sdram_dq_out,
+    output wire sdram_oe,
+
+    output wire sdram_clk,
+    output wire sdram_cke,
     output wire sdram_csn,
     output wire sdram_wen,
     output wire sdram_rasn,
     output wire sdram_casn,
 
-    input  [15:0] sdram_dq_in,
-    output wire [15:0] sdram_dq_out,
-    output wire sdram_oe
 );
+
+ //wire sdram_clk, sdram_cke, sdram_csn, sdram_wen, sdram_rasn, sdram_casn;
+
+  assign sdram_ctrl = {sdram_clk, sdram_cke, sdram_csn, sdram_wen, sdram_rasn, sdram_casn};
 
   localparam ONE_MICROSECOND = SDRAM_CLK_FREQ;
   localparam WAIT_100US = 100 * ONE_MICROSECOND;  // 64 * 1/64e6 = 1us => 100 * 1us
