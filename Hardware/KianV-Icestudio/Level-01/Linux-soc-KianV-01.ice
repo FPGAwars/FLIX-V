@@ -67,6 +67,26 @@
           }
         },
         {
+          "id": "187e1fb1-930e-46d4-a6f1-4bee30864ae4",
+          "type": "basic.inputLabel",
+          "data": {
+            "name": "clk",
+            "blockColor": "yellow",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": -320,
+            "y": 16
+          }
+        },
+        {
           "id": "c870c633-f189-403d-a121-669c90eb7f1f",
           "type": "basic.output",
           "data": {
@@ -83,6 +103,26 @@
           "position": {
             "x": 1520,
             "y": 64
+          }
+        },
+        {
+          "id": "f5c13002-54c6-4e21-b3b5-733fc84051d3",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "clk",
+            "blockColor": "yellow",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 384,
+            "y": 120
           }
         },
         {
@@ -181,8 +221,28 @@
             "clock": false
           },
           "position": {
-            "x": -296,
+            "x": -1008,
             "y": 152
+          }
+        },
+        {
+          "id": "ff59fe80-8669-4f11-8f9a-ee978261cfab",
+          "type": "basic.inputLabel",
+          "data": {
+            "name": "resetn",
+            "blockColor": "red",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 112,
+            "y": 160
           }
         },
         {
@@ -208,6 +268,26 @@
           "position": {
             "x": 1520,
             "y": 224
+          }
+        },
+        {
+          "id": "857eb4a5-a366-41a5-97b6-60b7922699ef",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "resetn",
+            "blockColor": "red",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 368,
+            "y": 336
           }
         },
         {
@@ -1141,8 +1221,8 @@
             "readonly": true
           },
           "position": {
-            "x": -416,
-            "y": -48
+            "x": -856,
+            "y": -136
           },
           "size": {
             "width": 672,
@@ -1157,8 +1237,8 @@
             "readonly": true
           },
           "position": {
-            "x": -648,
-            "y": 152
+            "x": -816,
+            "y": 352
           },
           "size": {
             "width": 440,
@@ -1288,12 +1368,59 @@
             "code": "\n`define SYSTEM_CLK 70_000_000\n`define SYSTEM_CLK_MHZ  (`SYSTEM_CLK / 1_000_000)\npll #(\n  .freq(`SYSTEM_CLK_MHZ)\n) pll_I0 (\n    clk_osc,\n    clk,\n    locked\n);"
           },
           "position": {
-            "x": -120,
+            "x": -832,
             "y": 112
           },
           "size": {
-            "width": 496,
+            "width": 448,
             "height": 144
+          }
+        },
+        {
+          "id": "adc6ac18-7399-41c2-b195-57376faa35e6",
+          "type": "basic.info",
+          "data": {
+            "info": "**PLL**",
+            "readonly": true
+          },
+          "position": {
+            "x": -688,
+            "y": 80
+          },
+          "size": {
+            "width": 120,
+            "height": 32
+          }
+        },
+        {
+          "id": "f5d605dd-bc4d-4b3c-bd5e-b8fdfdc1e0fc",
+          "type": "basic.code",
+          "data": {
+            "ports": {
+              "in": [
+                {
+                  "name": "clk"
+                },
+                {
+                  "name": "locked"
+                }
+              ],
+              "out": [
+                {
+                  "name": "resetn"
+                }
+              ]
+            },
+            "params": [],
+            "code": "// reset\nreg [11:0] rst_cnt = 0;\nassign resetn = &rst_cnt;\n\nalways @(posedge clk) begin\n    if (!locked) rst_cnt <= 0;\n    else if (!resetn) rst_cnt <= rst_cnt + 1;\nend"
+          },
+          "position": {
+            "x": -264,
+            "y": 112
+          },
+          "size": {
+            "width": 312,
+            "height": 152
           }
         },
         {
@@ -1306,7 +1433,7 @@
                   "name": "clk"
                 },
                 {
-                  "name": "locked"
+                  "name": "resetn"
                 },
                 {
                   "name": "uart_rx"
@@ -1378,7 +1505,7 @@
               ]
             },
             "params": [],
-            "code": "// @include defines_soc.vh\n// @include riscv_defines.vh\n// @include kianv_harris_mc_edition.v\n// @include csr_utilities.vh\n// @include riscv_priv_csr_status.vh\n// @include mcause.vh\n// @include misa.vh\n// @include rv32_amo_opcodes.vh\n// @include datapath_unit.v\n// @include csr_exception_handler.v\n// @include design_elements.v\n// @include divider.v\n// @include multiplier.v\n// @include alu.v\n// @include load_alignment.v\n// @include store_alignment.v\n// @include extend.v\n// @include register_file.v\n// @include control_unit.v\n// @include multiplier_extension_decoder.v\n// @include alu_decoder.v\n// @include csr_decoder.v\n// @include store_decoder.v\n// @include load_decoder.v\n// @include main_fsm.v\n// @include divider_decoder.v\n// @include multiplier_decoder.v\n// @include clint.v\n// @include bram.v\n// @include mt48lc16m16a2_ctrl.v\n// @include rx_uart.v\n// @include tx_uart.v\n// @include qqspi.v\n// @include pll.v\n// @include fifo.v\n\n//----------------------------------\n//-- Verilog from soc-top.v\n//----------------------------------\n`default_nettype none\n`include \"defines_soc.vh\"\n\n\nwire sdram_clk, sdram_cke, sdram_csn, sdram_wen, sdram_rasn, sdram_casn;\n \nassign sdram_ctrl = {sdram_clk, sdram_cke, sdram_csn, sdram_wen, sdram_rasn, sdram_casn};\n\nwire clk;\n\nwire [31:0] PC;\n\n// cpu\nwire [31:0] pc;\nwire [ 5:0] ctrl_state;\n\nwire cpu_mem_ready;\nwire cpu_mem_valid;\n\nwire [ 3:0] cpu_mem_wstrb;\nwire [31:0] cpu_mem_addr;\nwire [31:0] cpu_mem_wdata;\nwire [31:0] cpu_mem_rdata;\n\nwire [31:0] bram_rdata;\nreg  bram_ready;\nwire bram_valid;\n\n// uart\nwire uart_tx_valid;\nreg uart_tx_ready;\n// uart\nwire uart_rx_valid;\nreg uart_rx_ready;\n\n// spi flash memory\nwire [31:0] spi_nor_mem_data;\nwire spi_nor_mem_ready;\nwire spi_nor_mem_valid;\n\n\n// cpu_freq\nwire system_cpu_freq_valid;\nreg system_cpu_freq_ready;\n\n// RISC-V is byte-addressable, alignment memory devices word organized\n// memory interface\nwire wr = |cpu_mem_wstrb;\nwire rd = ~wr;\n\nwire [29:0] word_aligned_addr = {cpu_mem_addr[31:2]};\n\nreg [7:0] ledPC=0;\n\nalways @(posedge clk) begin\n  if ((cpu_mem_addr[31:0] == 'h2010_0028) & cpu_mem_ready) begin\n    ledPC[7] <= 1;\n  end\nend\n\n//-- IO Leds\nreg [7:0] led_r = 8'hF9;\nassign led = led_r;\n\nwire led_valid = cpu_mem_valid && cpu_mem_addr == 32'h1200_0000 && wr;\n\n\nalways @(posedge clk) begin\n    if (led_valid )\n         led_r <= cpu_mem_wdata[7:0]; \nend\n\nwire locked;\n\n\nlocalparam BYTE_ADDRESS_LEN = 32;\nlocalparam BYTES_PER_BLOCK = 4;\nlocalparam DATA_LEN = 32;\nlocalparam BLOCK_ADDRESS_LEN = BYTE_ADDRESS_LEN - $clog2(BYTES_PER_BLOCK);\n\nlocalparam BRAM_ADDR_WIDTH = $clog2(`BRAM_WORDS);\n\n// reset\nreg [11:0] rst_cnt = 0;\nwire resetn = &rst_cnt;\n\nalways @(posedge clk) begin\n    if (!locked) rst_cnt <= 0;\n    else if (!resetn) rst_cnt <= rst_cnt + 1;\nend\n\n// cpu_freq\nassign system_cpu_freq_valid   = !system_cpu_freq_ready && cpu_mem_valid && (cpu_mem_addr == `CPU_FREQ_REG_ADDR) && !wr;\nalways @(posedge clk) \n  system_cpu_freq_ready <= !resetn ? 1'b0 : system_cpu_freq_valid;\n\n// SPI nor flash\nassign spi_nor_mem_valid = !spi_nor_mem_ready && cpu_mem_valid &&\n       (cpu_mem_addr >= `SPI_NOR_MEM_ADDR_START && cpu_mem_addr < `SPI_NOR_MEM_ADDR_END) && !wr;\n\nwire spi_state;\n\nqqspi #(\n    .QUAD_MODE(`QUAD_SPI_FLASH_MODE),\n    .CEN_NPOL(1'b0),\n    .PSRAM_SPIFLASH(1'b0)\n) spi_nor_flash_I (\n    .addr ({1'b0, word_aligned_addr[21:0]}),\n    .wdata(),\n    .rdata(spi_nor_mem_data),\n    .wstrb(4'b0000),\n    .ready(spi_nor_mem_ready),\n    .valid(spi_nor_mem_valid),\n\n    .cen         (flash_csn),\n    .sclk        (flash_clk),\n    .cs          (),\n\n    .clk   (clk),\n    .resetn(resetn),\n    .oe (flash_oe),\n\n    .sio0_in (flash_io_in[0]),\n    .sio1_in (flash_io_in[1]),\n    .sio2_in (flash_io_in[2]),\n    .sio3_in (flash_io_in[3]),\n\n\n    .sio0_out (flash_io_out[0]),\n    .sio1_out (flash_io_out[1]),\n    .sio2_out (flash_io_out[2]),\n    .sio3_out (flash_io_out[3])\n);\n\n\n/////////////////////////////////////////////////////////////////////////////\n\nwire uart_tx_valid_wr;\n\n// I have changed to blocked tx\nassign uart_tx_valid = ~uart_tx_ready && cpu_mem_valid && cpu_mem_addr == `UART_TX_ADDR;\n//assign uart_tx_valid = ~uart_tx_rdy && cpu_mem_valid && cpu_mem_addr == `UART_TX_ADDR; // blocking\nassign uart_tx_valid_wr = wr && uart_tx_valid;\nalways @(posedge clk) uart_tx_ready <= !resetn ? 1'b0 : uart_tx_valid_wr;\n\nreg  uart_tx_busy;\nwire uart_tx_rdy;\n\ntx_uart #(\n    .SYSTEM_CLK(`SYSTEM_CLK),\n    .BAUDRATE  (`BAUDRATE)\n) tx_uart_i (\n    .clk    (clk),\n    .resetn (resetn),\n    .valid  (uart_tx_valid_wr),\n    .tx_data(cpu_mem_wdata[7:0]),\n    .div    (`SYSTEM_CLK / `BAUDRATE),\n    .tx_out (uart_tx),\n    .ready  (uart_tx_rdy),\n    //.leds (led) //-- conectar a los LEDs\n);\n\nalways @(posedge clk) begin\n  if (!resetn) begin\n    uart_tx_busy <= 0;\n  end else begin\n    case (1'b1)\n                (!uart_tx_busy && uart_tx_valid_wr): uart_tx_busy <= 1'b1;\n                (uart_tx_busy && uart_tx_rdy): uart_tx_busy <= 1'b0;\n    endcase\n  end\nend\n\n\n/////////////////////////////////////////////////////////////////////////////\nwire uart_lsr_valid_rd = ~uart_lsr_rdy && rd && cpu_mem_valid && cpu_mem_addr == `UART_LSR_ADDR;\nreg uart_lsr_rdy;\nalways @(posedge clk) uart_lsr_rdy <= !resetn ? 1'b0 : uart_lsr_valid_rd;\n\n/////////////////////////////////////////////////////////////////////////////\n\nwire uart_rx_valid_rd;\nwire [31:0] rx_uart_data;\n\nassign uart_rx_valid = ~uart_rx_ready && cpu_mem_valid && cpu_mem_addr == `UART_RX_ADDR;\nassign uart_rx_valid_rd = rd && uart_rx_valid;\n\nalways @(posedge clk) begin\n    uart_rx_ready <= !resetn ? 1'b0 : uart_rx_valid_rd;\nend\n\nwire rx_uart_rdy = uart_rx_ready;\nrx_uart #(\n    .SYSTEM_CLK(`SYSTEM_CLK),\n    .BAUDRATE  (`BAUDRATE)\n) rx_uart_i (\n    .clk    (clk),\n    .resetn (resetn),\n    .rx_in  (uart_rx),\n    .error  (),\n    .data_rd(rx_uart_rdy), // pop\n    .data   (rx_uart_data)\n);\n\n/////////////////////////////////////////////////////////////////////////////\n\nwire [31:0] mem_sdram_rdata;\n\nwire mem_sdram_valid;\nwire mem_sdram_ready;\n\nassign mem_sdram_valid = !mem_sdram_ready && cpu_mem_valid &&\n      (cpu_mem_addr >= `SDRAM_MEM_ADDR_START && cpu_mem_addr < `SDRAM_MEM_ADDR_END);\n\n\nmt48lc16m16a2_ctrl #(\n    .SDRAM_CLK_FREQ(`SYSTEM_CLK_MHZ / 1_000_000)\n) sdram_i (\n    .clk   (clk),\n    .resetn(resetn),\n    .addr  (cpu_mem_addr),\n    .din   (cpu_mem_wdata),\n    .dout  (mem_sdram_rdata),\n    .wmask (cpu_mem_wstrb),\n    .valid (mem_sdram_valid),\n    .ready (mem_sdram_ready),\n\n    .sdram_clk (sdram_clk),\n    .sdram_cke (sdram_cke),\n    .sdram_dqm (sdram_dqm),\n    .sdram_addr(sdram_addr),\n    .sdram_ba  (sdram_ba),\n    .sdram_csn (sdram_csn),\n    .sdram_wen (sdram_wen),\n    .sdram_rasn(sdram_rasn),\n    .sdram_casn(sdram_casn),\n\n    .sdram_dq_in (sdram_dq_in),\n    .sdram_dq_out (sdram_dq_out),\n    .sdram_oe (sdram_oe)\n);\n\n/////////////////////////////////////////////////////////////////////////////\n\n// BRAM\nassign bram_valid = !bram_ready && cpu_mem_valid && (cpu_mem_addr < (`BRAM_WORDS << 2));\nalways @(posedge clk) bram_ready <= !resetn ? 0 : bram_valid;\n\nbram #(\n    .WIDTH        (BRAM_ADDR_WIDTH),\n    .SHOW_FIRMWARE(0),\n    .INIT_FILE    (`FIRMWARE_BRAM)\n) bram_I (\n    .clk  (clk),\n    .addr (word_aligned_addr[BRAM_ADDR_WIDTH-1:0]),\n    .wdata(cpu_mem_wdata),\n    .rdata(bram_rdata),\n    .wmask(cpu_mem_wstrb & {4{bram_valid}})\n);\n\n/////////////////////////////////////////////////////////////////////////////\nwire IRQ3;\nwire IRQ7;\nwire clint_valid;\nwire clint_ready;\nwire [31:0] clint_rdata;\n\nclint #(\n    .SYSTEM_CLK(`SYSTEM_CLK),\n    .CLOCK_TICK(1000000)\n) clint_I (\n    .clk     (clk),\n    .resetn  (resetn),\n    .valid   (cpu_mem_valid),\n    .addr    (cpu_mem_addr),\n    .wmask   (cpu_mem_wstrb),\n    .wdata   (cpu_mem_wdata),\n    .rdata   (clint_rdata),\n    .IRQ3    (IRQ3),\n    .IRQ7    (IRQ7),\n    .is_valid(clint_valid),\n    .ready   (clint_ready)\n);\n\n\n/////////////////////////////////////////////////////////////////////////////\n//Kian\n/////////////////////////////////////////////////////////////////////////////\nkianv_harris_mc_edition #(\n    .RESET_ADDR(`RESET_ADDR)\n) kianv_I (\n    .clk      (clk),\n    .resetn   (resetn),\n    .mem_ready(cpu_mem_ready),\n    .mem_valid(cpu_mem_valid),\n    .mem_wstrb(cpu_mem_wstrb),\n    .mem_addr (cpu_mem_addr),\n    .mem_wdata(cpu_mem_wdata),\n    .mem_rdata(cpu_mem_rdata),\n    .access_fault(access_fault),\n    .IRQ3     (IRQ3),\n    .IRQ7     (IRQ7),\n    .PC       (PC)\n);\n\n\n/////////////////////////////////////////////////////////////////////////////\nwire is_io = (cpu_mem_addr >= 32'h10_000_000 && cpu_mem_addr <= 32'h12_000_000);\nwire unmatched_io = !(cpu_mem_addr == `UART_LSR_ADDR || cpu_mem_addr == `UART_TX_ADDR || cpu_mem_addr == `UART_RX_ADDR || clint_valid);\nwire is_bram = (cpu_mem_addr[31]);\n\nwire access_fault = cpu_mem_valid & (unmatched_io || !is_bram);\n\nreg io_ready;\nreg [31:0] io_rdata;\nreg [7:0] byteswaiting;\n\nalways @(*) begin\n    io_rdata = 0;\n    io_ready = 1'b0;\n    if (is_io) begin\n        if (uart_lsr_rdy) begin\n            byteswaiting = {1'b0, !uart_tx_busy, !uart_tx_busy, 1'b0, 3'b0, !(&rx_uart_data)};\n            io_rdata = {16'b0, byteswaiting, 8'b0};\n            io_ready = 1'b1;\n        end else if (uart_rx_ready) begin\n            io_rdata = rx_uart_data;\n            io_ready = 1'b1;\n        end else if (uart_tx_ready) begin\n            io_rdata = 0;\n            io_ready = 1'b1;\n            //io_ready = uart_tx_rdy; // blocking\n        end else if (clint_ready) begin\n            io_rdata = clint_rdata;\n            io_ready = 1'b1;\n        end else if (unmatched_io) begin\n            io_rdata = 0;\n            io_ready = 1'b1;\n        end\n    end\nend\n\n/////////////////////////////////////////////////////////////////////////////\nassign cpu_mem_ready = bram_ready\n    || spi_nor_mem_ready\n    || system_cpu_freq_ready\n    || mem_sdram_ready\n    || io_ready\n    ;\n\nassign cpu_mem_rdata   =\n    bram_ready               ? bram_rdata                   :\n    spi_nor_mem_ready        ? spi_nor_mem_data             :\n    system_cpu_freq_ready    ? `SYSTEM_CLK                  :\n    mem_sdram_ready          ? mem_sdram_rdata              :\n    io_ready                 ? io_rdata                     :\n    32'h 0000_0000;\n\n"
+            "code": "// @include defines_soc.vh\n// @include riscv_defines.vh\n// @include kianv_harris_mc_edition.v\n// @include csr_utilities.vh\n// @include riscv_priv_csr_status.vh\n// @include mcause.vh\n// @include misa.vh\n// @include rv32_amo_opcodes.vh\n// @include datapath_unit.v\n// @include csr_exception_handler.v\n// @include design_elements.v\n// @include divider.v\n// @include multiplier.v\n// @include alu.v\n// @include load_alignment.v\n// @include store_alignment.v\n// @include extend.v\n// @include register_file.v\n// @include control_unit.v\n// @include multiplier_extension_decoder.v\n// @include alu_decoder.v\n// @include csr_decoder.v\n// @include store_decoder.v\n// @include load_decoder.v\n// @include main_fsm.v\n// @include divider_decoder.v\n// @include multiplier_decoder.v\n// @include clint.v\n// @include bram.v\n// @include mt48lc16m16a2_ctrl.v\n// @include rx_uart.v\n// @include tx_uart.v\n// @include qqspi.v\n// @include pll.v\n// @include fifo.v\n\n//----------------------------------\n//-- Verilog from soc-top.v\n//----------------------------------\n`default_nettype none\n`include \"defines_soc.vh\"\n\n\nwire sdram_clk, sdram_cke, sdram_csn, sdram_wen, sdram_rasn, sdram_casn;\n \nassign sdram_ctrl = {sdram_clk, sdram_cke, sdram_csn, sdram_wen, sdram_rasn, sdram_casn};\n\nwire clk;\n\nwire [31:0] PC;\n\n// cpu\nwire [31:0] pc;\nwire [ 5:0] ctrl_state;\n\nwire cpu_mem_ready;\nwire cpu_mem_valid;\n\nwire [ 3:0] cpu_mem_wstrb;\nwire [31:0] cpu_mem_addr;\nwire [31:0] cpu_mem_wdata;\nwire [31:0] cpu_mem_rdata;\n\nwire [31:0] bram_rdata;\nreg  bram_ready;\nwire bram_valid;\n\n// uart\nwire uart_tx_valid;\nreg uart_tx_ready;\n// uart\nwire uart_rx_valid;\nreg uart_rx_ready;\n\n// spi flash memory\nwire [31:0] spi_nor_mem_data;\nwire spi_nor_mem_ready;\nwire spi_nor_mem_valid;\n\n\n// cpu_freq\nwire system_cpu_freq_valid;\nreg system_cpu_freq_ready;\n\n// RISC-V is byte-addressable, alignment memory devices word organized\n// memory interface\nwire wr = |cpu_mem_wstrb;\nwire rd = ~wr;\n\nwire [29:0] word_aligned_addr = {cpu_mem_addr[31:2]};\n\nreg [7:0] ledPC=0;\n\nalways @(posedge clk) begin\n  if ((cpu_mem_addr[31:0] == 'h2010_0028) & cpu_mem_ready) begin\n    ledPC[7] <= 1;\n  end\nend\n\n//-- IO Leds\nreg [7:0] led_r = 8'hF9;\nassign led = led_r;\n\nwire led_valid = cpu_mem_valid && cpu_mem_addr == 32'h1200_0000 && wr;\n\n\nalways @(posedge clk) begin\n    if (led_valid )\n         led_r <= cpu_mem_wdata[7:0]; \nend\n\n\nlocalparam BYTE_ADDRESS_LEN = 32;\nlocalparam BYTES_PER_BLOCK = 4;\nlocalparam DATA_LEN = 32;\nlocalparam BLOCK_ADDRESS_LEN = BYTE_ADDRESS_LEN - $clog2(BYTES_PER_BLOCK);\n\nlocalparam BRAM_ADDR_WIDTH = $clog2(`BRAM_WORDS);\n\n// cpu_freq\nassign system_cpu_freq_valid   = !system_cpu_freq_ready && cpu_mem_valid && (cpu_mem_addr == `CPU_FREQ_REG_ADDR) && !wr;\nalways @(posedge clk) \n  system_cpu_freq_ready <= !resetn ? 1'b0 : system_cpu_freq_valid;\n\n// SPI nor flash\nassign spi_nor_mem_valid = !spi_nor_mem_ready && cpu_mem_valid &&\n       (cpu_mem_addr >= `SPI_NOR_MEM_ADDR_START && cpu_mem_addr < `SPI_NOR_MEM_ADDR_END) && !wr;\n\nwire spi_state;\n\nqqspi #(\n    .QUAD_MODE(`QUAD_SPI_FLASH_MODE),\n    .CEN_NPOL(1'b0),\n    .PSRAM_SPIFLASH(1'b0)\n) spi_nor_flash_I (\n    .addr ({1'b0, word_aligned_addr[21:0]}),\n    .wdata(),\n    .rdata(spi_nor_mem_data),\n    .wstrb(4'b0000),\n    .ready(spi_nor_mem_ready),\n    .valid(spi_nor_mem_valid),\n\n    .cen         (flash_csn),\n    .sclk        (flash_clk),\n    .cs          (),\n\n    .clk   (clk),\n    .resetn(resetn),\n    .oe (flash_oe),\n\n    .sio0_in (flash_io_in[0]),\n    .sio1_in (flash_io_in[1]),\n    .sio2_in (flash_io_in[2]),\n    .sio3_in (flash_io_in[3]),\n\n\n    .sio0_out (flash_io_out[0]),\n    .sio1_out (flash_io_out[1]),\n    .sio2_out (flash_io_out[2]),\n    .sio3_out (flash_io_out[3])\n);\n\n\n/////////////////////////////////////////////////////////////////////////////\n\nwire uart_tx_valid_wr;\n\n// I have changed to blocked tx\nassign uart_tx_valid = ~uart_tx_ready && cpu_mem_valid && cpu_mem_addr == `UART_TX_ADDR;\n//assign uart_tx_valid = ~uart_tx_rdy && cpu_mem_valid && cpu_mem_addr == `UART_TX_ADDR; // blocking\nassign uart_tx_valid_wr = wr && uart_tx_valid;\nalways @(posedge clk) uart_tx_ready <= !resetn ? 1'b0 : uart_tx_valid_wr;\n\nreg  uart_tx_busy;\nwire uart_tx_rdy;\n\ntx_uart #(\n    .SYSTEM_CLK(`SYSTEM_CLK),\n    .BAUDRATE  (`BAUDRATE)\n) tx_uart_i (\n    .clk    (clk),\n    .resetn (resetn),\n    .valid  (uart_tx_valid_wr),\n    .tx_data(cpu_mem_wdata[7:0]),\n    .div    (`SYSTEM_CLK / `BAUDRATE),\n    .tx_out (uart_tx),\n    .ready  (uart_tx_rdy),\n    //.leds (led) //-- conectar a los LEDs\n);\n\nalways @(posedge clk) begin\n  if (!resetn) begin\n    uart_tx_busy <= 0;\n  end else begin\n    case (1'b1)\n                (!uart_tx_busy && uart_tx_valid_wr): uart_tx_busy <= 1'b1;\n                (uart_tx_busy && uart_tx_rdy): uart_tx_busy <= 1'b0;\n    endcase\n  end\nend\n\n\n/////////////////////////////////////////////////////////////////////////////\nwire uart_lsr_valid_rd = ~uart_lsr_rdy && rd && cpu_mem_valid && cpu_mem_addr == `UART_LSR_ADDR;\nreg uart_lsr_rdy;\nalways @(posedge clk) uart_lsr_rdy <= !resetn ? 1'b0 : uart_lsr_valid_rd;\n\n/////////////////////////////////////////////////////////////////////////////\n\nwire uart_rx_valid_rd;\nwire [31:0] rx_uart_data;\n\nassign uart_rx_valid = ~uart_rx_ready && cpu_mem_valid && cpu_mem_addr == `UART_RX_ADDR;\nassign uart_rx_valid_rd = rd && uart_rx_valid;\n\nalways @(posedge clk) begin\n    uart_rx_ready <= !resetn ? 1'b0 : uart_rx_valid_rd;\nend\n\nwire rx_uart_rdy = uart_rx_ready;\nrx_uart #(\n    .SYSTEM_CLK(`SYSTEM_CLK),\n    .BAUDRATE  (`BAUDRATE)\n) rx_uart_i (\n    .clk    (clk),\n    .resetn (resetn),\n    .rx_in  (uart_rx),\n    .error  (),\n    .data_rd(rx_uart_rdy), // pop\n    .data   (rx_uart_data)\n);\n\n/////////////////////////////////////////////////////////////////////////////\n\nwire [31:0] mem_sdram_rdata;\n\nwire mem_sdram_valid;\nwire mem_sdram_ready;\n\nassign mem_sdram_valid = !mem_sdram_ready && cpu_mem_valid &&\n      (cpu_mem_addr >= `SDRAM_MEM_ADDR_START && cpu_mem_addr < `SDRAM_MEM_ADDR_END);\n\n\nmt48lc16m16a2_ctrl #(\n    .SDRAM_CLK_FREQ(`SYSTEM_CLK_MHZ / 1_000_000)\n) sdram_i (\n    .clk   (clk),\n    .resetn(resetn),\n    .addr  (cpu_mem_addr),\n    .din   (cpu_mem_wdata),\n    .dout  (mem_sdram_rdata),\n    .wmask (cpu_mem_wstrb),\n    .valid (mem_sdram_valid),\n    .ready (mem_sdram_ready),\n\n    .sdram_clk (sdram_clk),\n    .sdram_cke (sdram_cke),\n    .sdram_dqm (sdram_dqm),\n    .sdram_addr(sdram_addr),\n    .sdram_ba  (sdram_ba),\n    .sdram_csn (sdram_csn),\n    .sdram_wen (sdram_wen),\n    .sdram_rasn(sdram_rasn),\n    .sdram_casn(sdram_casn),\n\n    .sdram_dq_in (sdram_dq_in),\n    .sdram_dq_out (sdram_dq_out),\n    .sdram_oe (sdram_oe)\n);\n\n/////////////////////////////////////////////////////////////////////////////\n\n// BRAM\nassign bram_valid = !bram_ready && cpu_mem_valid && (cpu_mem_addr < (`BRAM_WORDS << 2));\nalways @(posedge clk) bram_ready <= !resetn ? 0 : bram_valid;\n\nbram #(\n    .WIDTH        (BRAM_ADDR_WIDTH),\n    .SHOW_FIRMWARE(0),\n    .INIT_FILE    (`FIRMWARE_BRAM)\n) bram_I (\n    .clk  (clk),\n    .addr (word_aligned_addr[BRAM_ADDR_WIDTH-1:0]),\n    .wdata(cpu_mem_wdata),\n    .rdata(bram_rdata),\n    .wmask(cpu_mem_wstrb & {4{bram_valid}})\n);\n\n/////////////////////////////////////////////////////////////////////////////\nwire IRQ3;\nwire IRQ7;\nwire clint_valid;\nwire clint_ready;\nwire [31:0] clint_rdata;\n\nclint #(\n    .SYSTEM_CLK(`SYSTEM_CLK),\n    .CLOCK_TICK(1000000)\n) clint_I (\n    .clk     (clk),\n    .resetn  (resetn),\n    .valid   (cpu_mem_valid),\n    .addr    (cpu_mem_addr),\n    .wmask   (cpu_mem_wstrb),\n    .wdata   (cpu_mem_wdata),\n    .rdata   (clint_rdata),\n    .IRQ3    (IRQ3),\n    .IRQ7    (IRQ7),\n    .is_valid(clint_valid),\n    .ready   (clint_ready)\n);\n\n\n/////////////////////////////////////////////////////////////////////////////\n//Kian\n/////////////////////////////////////////////////////////////////////////////\nkianv_harris_mc_edition #(\n    .RESET_ADDR(`RESET_ADDR)\n) kianv_I (\n    .clk      (clk),\n    .resetn   (resetn),\n    .mem_ready(cpu_mem_ready),\n    .mem_valid(cpu_mem_valid),\n    .mem_wstrb(cpu_mem_wstrb),\n    .mem_addr (cpu_mem_addr),\n    .mem_wdata(cpu_mem_wdata),\n    .mem_rdata(cpu_mem_rdata),\n    .access_fault(access_fault),\n    .IRQ3     (IRQ3),\n    .IRQ7     (IRQ7),\n    .PC       (PC)\n);\n\n\n/////////////////////////////////////////////////////////////////////////////\nwire is_io = (cpu_mem_addr >= 32'h10_000_000 && cpu_mem_addr <= 32'h12_000_000);\nwire unmatched_io = !(cpu_mem_addr == `UART_LSR_ADDR || cpu_mem_addr == `UART_TX_ADDR || cpu_mem_addr == `UART_RX_ADDR || clint_valid);\nwire is_bram = (cpu_mem_addr[31]);\n\nwire access_fault = cpu_mem_valid & (unmatched_io || !is_bram);\n\nreg io_ready;\nreg [31:0] io_rdata;\nreg [7:0] byteswaiting;\n\nalways @(*) begin\n    io_rdata = 0;\n    io_ready = 1'b0;\n    if (is_io) begin\n        if (uart_lsr_rdy) begin\n            byteswaiting = {1'b0, !uart_tx_busy, !uart_tx_busy, 1'b0, 3'b0, !(&rx_uart_data)};\n            io_rdata = {16'b0, byteswaiting, 8'b0};\n            io_ready = 1'b1;\n        end else if (uart_rx_ready) begin\n            io_rdata = rx_uart_data;\n            io_ready = 1'b1;\n        end else if (uart_tx_ready) begin\n            io_rdata = 0;\n            io_ready = 1'b1;\n            //io_ready = uart_tx_rdy; // blocking\n        end else if (clint_ready) begin\n            io_rdata = clint_rdata;\n            io_ready = 1'b1;\n        end else if (unmatched_io) begin\n            io_rdata = 0;\n            io_ready = 1'b1;\n        end\n    end\nend\n\n/////////////////////////////////////////////////////////////////////////////\nassign cpu_mem_ready = bram_ready\n    || spi_nor_mem_ready\n    || system_cpu_freq_ready\n    || mem_sdram_ready\n    || io_ready\n    ;\n\nassign cpu_mem_rdata   =\n    bram_ready               ? bram_rdata                   :\n    spi_nor_mem_ready        ? spi_nor_mem_data             :\n    system_cpu_freq_ready    ? `SYSTEM_CLK                  :\n    mem_sdram_ready          ? mem_sdram_rdata              :\n    io_ready                 ? io_rdata                     :\n    32'h 0000_0000;\n\n"
           },
           "position": {
             "x": 536,
@@ -1387,6 +1514,22 @@
           "size": {
             "width": 776,
             "height": 1072
+          }
+        },
+        {
+          "id": "9721b8c7-2491-45bb-b229-74c84017187e",
+          "type": "basic.info",
+          "data": {
+            "info": "**RESET**",
+            "readonly": true
+          },
+          "position": {
+            "x": -136,
+            "y": 72
+          },
+          "size": {
+            "width": 120,
+            "height": 32
           }
         }
       ],
@@ -1660,7 +1803,7 @@
             "port": "clk"
           },
           "target": {
-            "block": "8a22f6e9-6a0a-495b-8867-958fe6678799",
+            "block": "f5d605dd-bc4d-4b3c-bd5e-b8fdfdc1e0fc",
             "port": "clk"
           }
         },
@@ -1670,8 +1813,48 @@
             "port": "locked"
           },
           "target": {
-            "block": "8a22f6e9-6a0a-495b-8867-958fe6678799",
+            "block": "f5d605dd-bc4d-4b3c-bd5e-b8fdfdc1e0fc",
             "port": "locked"
+          }
+        },
+        {
+          "source": {
+            "block": "4059310f-6443-4e18-9907-bca62d9e9725",
+            "port": "clk"
+          },
+          "target": {
+            "block": "187e1fb1-930e-46d4-a6f1-4bee30864ae4",
+            "port": "inlabel"
+          }
+        },
+        {
+          "source": {
+            "block": "f5c13002-54c6-4e21-b3b5-733fc84051d3",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "8a22f6e9-6a0a-495b-8867-958fe6678799",
+            "port": "clk"
+          }
+        },
+        {
+          "source": {
+            "block": "f5d605dd-bc4d-4b3c-bd5e-b8fdfdc1e0fc",
+            "port": "resetn"
+          },
+          "target": {
+            "block": "ff59fe80-8669-4f11-8f9a-ee978261cfab",
+            "port": "inlabel"
+          }
+        },
+        {
+          "source": {
+            "block": "857eb4a5-a366-41a5-97b6-60b7922699ef",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "8a22f6e9-6a0a-495b-8867-958fe6678799",
+            "port": "resetn"
           }
         }
       ]
