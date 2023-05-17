@@ -20,7 +20,6 @@
 `define KIANV_SOC
 
 `define CPU_FREQ_REG_ADDR 32'h 30_000_010
-`define BAUDRATE          3_000_000
 
 `define UART_TX_ADDR      32'h 10_000_000
 `define UART_RX_ADDR      32'h 10_000_000
@@ -46,7 +45,5 @@
 `define SPI_NOR_MEM_ADDR_END      ((`SPI_NOR_MEM_ADDR_START) + (16*1024*1024))
 
 `define RESET_ADDR        (`SPI_NOR_MEM_ADDR_START + `SPI_MEMORY_OFFSET)
-`define FIRMWARE_BRAM     ""
-`define BRAM_WORDS        (1024*16)
 
 `endif
