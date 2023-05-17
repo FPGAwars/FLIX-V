@@ -3595,6 +3595,22 @@
             "width": 472,
             "height": 768
           }
+        },
+        {
+          "id": "b9e1cbf9-6ced-4907-b0d8-0711fadcb83d",
+          "type": "basic.info",
+          "data": {
+            "info": "**SDRAM CONTROLLER**",
+            "readonly": true
+          },
+          "position": {
+            "x": -792,
+            "y": 784
+          },
+          "size": {
+            "width": 216,
+            "height": 32
+          }
         }
       ],
       "wires": [
