@@ -884,6 +884,101 @@
           }
         },
         {
+          "id": "1e41225e-1371-4199-a4e2-21e16c886b33",
+          "type": "basic.output",
+          "data": {
+            "name": "ram_dq",
+            "virtual": false,
+            "range": "[15:0]",
+            "pins": [
+              {
+                "index": "15",
+                "name": "sdram_d15",
+                "value": "J17"
+              },
+              {
+                "index": "14",
+                "name": "sdram_d14",
+                "value": "J18"
+              },
+              {
+                "index": "13",
+                "name": "sdram_d13",
+                "value": "F18"
+              },
+              {
+                "index": "12",
+                "name": "sdram_d12",
+                "value": "E18"
+              },
+              {
+                "index": "11",
+                "name": "sdram_d11",
+                "value": "C20"
+              },
+              {
+                "index": "10",
+                "name": "sdram_d10",
+                "value": "D19"
+              },
+              {
+                "index": "9",
+                "name": "sdram_d9",
+                "value": "D20"
+              },
+              {
+                "index": "8",
+                "name": "sdram_d8",
+                "value": "E19"
+              },
+              {
+                "index": "7",
+                "name": "sdram_d7",
+                "value": "U20"
+              },
+              {
+                "index": "6",
+                "name": "sdram_d6",
+                "value": "T17"
+              },
+              {
+                "index": "5",
+                "name": "sdram_d5",
+                "value": "T18"
+              },
+              {
+                "index": "4",
+                "name": "sdram_d4",
+                "value": "P18"
+              },
+              {
+                "index": "3",
+                "name": "sdram_d3",
+                "value": "N18"
+              },
+              {
+                "index": "2",
+                "name": "sdram_d2",
+                "value": "M18"
+              },
+              {
+                "index": "1",
+                "name": "sdram_d1",
+                "value": "L18"
+              },
+              {
+                "index": "0",
+                "name": "sdram_d0",
+                "value": "J16"
+              }
+            ]
+          },
+          "position": {
+            "x": 2264,
+            "y": 624
+          }
+        },
+        {
           "id": "9efbe51d-7410-46fb-94a3-aa0846199e43",
           "type": "basic.inputLabel",
           "data": {
@@ -997,101 +1092,6 @@
           "position": {
             "x": 296,
             "y": 688
-          }
-        },
-        {
-          "id": "1e41225e-1371-4199-a4e2-21e16c886b33",
-          "type": "basic.output",
-          "data": {
-            "name": "ram_dq",
-            "virtual": false,
-            "range": "[15:0]",
-            "pins": [
-              {
-                "index": "15",
-                "name": "sdram_d15",
-                "value": "J17"
-              },
-              {
-                "index": "14",
-                "name": "sdram_d14",
-                "value": "J18"
-              },
-              {
-                "index": "13",
-                "name": "sdram_d13",
-                "value": "F18"
-              },
-              {
-                "index": "12",
-                "name": "sdram_d12",
-                "value": "E18"
-              },
-              {
-                "index": "11",
-                "name": "sdram_d11",
-                "value": "C20"
-              },
-              {
-                "index": "10",
-                "name": "sdram_d10",
-                "value": "D19"
-              },
-              {
-                "index": "9",
-                "name": "sdram_d9",
-                "value": "D20"
-              },
-              {
-                "index": "8",
-                "name": "sdram_d8",
-                "value": "E19"
-              },
-              {
-                "index": "7",
-                "name": "sdram_d7",
-                "value": "U20"
-              },
-              {
-                "index": "6",
-                "name": "sdram_d6",
-                "value": "T17"
-              },
-              {
-                "index": "5",
-                "name": "sdram_d5",
-                "value": "T18"
-              },
-              {
-                "index": "4",
-                "name": "sdram_d4",
-                "value": "P18"
-              },
-              {
-                "index": "3",
-                "name": "sdram_d3",
-                "value": "N18"
-              },
-              {
-                "index": "2",
-                "name": "sdram_d2",
-                "value": "M18"
-              },
-              {
-                "index": "1",
-                "name": "sdram_d1",
-                "value": "L18"
-              },
-              {
-                "index": "0",
-                "name": "sdram_d0",
-                "value": "J16"
-              }
-            ]
-          },
-          "position": {
-            "x": -536,
-            "y": 720
           }
         },
         {
@@ -1233,6 +1233,46 @@
           "position": {
             "x": 1624,
             "y": 800
+          }
+        },
+        {
+          "id": "6c80d9e8-a9b9-496e-ba2a-5dc60d2de7f4",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "sdram_oe",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 1840,
+            "y": 816
+          }
+        },
+        {
+          "id": "50a2e346-2caf-485f-b51a-dd9a08f74765",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "clk",
+            "blockColor": "yellow",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": -1104,
+            "y": 848
           }
         },
         {
@@ -1412,11 +1452,203 @@
           }
         },
         {
-          "id": "6c80d9e8-a9b9-496e-ba2a-5dc60d2de7f4",
+          "id": "fda727e8-01a6-48ad-9703-171f979e2ecc",
+          "type": "basic.inputLabel",
+          "data": {
+            "name": "dq_in",
+            "range": "[15:0]",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "15",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "14",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "13",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "12",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "11",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "10",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "9",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "8",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "7",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "6",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "5",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "4",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "3",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "2",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "1",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 2144,
+            "y": 928
+          }
+        },
+        {
+          "id": "5a6df196-6c50-44ea-a1a7-701c78c13f78",
           "type": "basic.outputLabel",
           "data": {
-            "name": "sdram_oe",
+            "name": "ram_dq",
+            "range": "[15:0]",
             "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "15",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "14",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "13",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "12",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "11",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "10",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "9",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "8",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "7",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "6",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "5",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "4",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "3",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "2",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "1",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 1848,
+            "y": 928
+          }
+        },
+        {
+          "id": "89d40203-5bb7-4f7e-bda5-e6036e26da46",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "resetn",
+            "blockColor": "red",
             "virtual": true,
             "pins": [
               {
@@ -1427,8 +1659,8 @@
             ]
           },
           "position": {
-            "x": -960,
-            "y": 912
+            "x": -1104,
+            "y": 952
           }
         },
         {
@@ -1598,198 +1830,6 @@
           }
         },
         {
-          "id": "fda727e8-01a6-48ad-9703-171f979e2ecc",
-          "type": "basic.inputLabel",
-          "data": {
-            "name": "dq_in",
-            "range": "[15:0]",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "15",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "14",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "13",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "12",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "11",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "10",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "9",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "8",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "7",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "6",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "5",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "4",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "3",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "2",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "1",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": -656,
-            "y": 1024
-          }
-        },
-        {
-          "id": "5a6df196-6c50-44ea-a1a7-701c78c13f78",
-          "type": "basic.outputLabel",
-          "data": {
-            "name": "ram_dq",
-            "range": "[15:0]",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "15",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "14",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "13",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "12",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "11",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "10",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "9",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "8",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "7",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "6",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "5",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "4",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "3",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "2",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "1",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": -952,
-            "y": 1024
-          }
-        },
-        {
           "id": "34437b46-c569-4021-a32c-af535264f11c",
           "type": "basic.outputLabel",
           "data": {
@@ -1865,8 +1905,8 @@
           "id": "55375f98-3483-4111-b6e6-ad386f8cf30e",
           "type": "2bcfc726c0d44cac862c799c3b0d630ed97832c1",
           "position": {
-            "x": -800,
-            "y": 976
+            "x": 2000,
+            "y": 880
           },
           "size": {
             "width": 96,
@@ -1973,8 +2013,8 @@
             "readonly": true
           },
           "position": {
-            "x": -952,
-            "y": 856
+            "x": 1848,
+            "y": 760
           },
           "size": {
             "width": 376,
@@ -2176,7 +2216,7 @@
               ]
             },
             "params": [],
-            "code": "// @include defines_soc.vh\n// @include riscv_defines.vh\n// @include kianv_harris_mc_edition.v\n// @include csr_utilities.vh\n// @include riscv_priv_csr_status.vh\n// @include mcause.vh\n// @include misa.vh\n// @include rv32_amo_opcodes.vh\n// @include datapath_unit.v\n// @include csr_exception_handler.v\n// @include design_elements.v\n// @include divider.v\n// @include multiplier.v\n// @include alu.v\n// @include load_alignment.v\n// @include store_alignment.v\n// @include extend.v\n// @include register_file.v\n// @include control_unit.v\n// @include multiplier_extension_decoder.v\n// @include alu_decoder.v\n// @include csr_decoder.v\n// @include store_decoder.v\n// @include load_decoder.v\n// @include main_fsm.v\n// @include divider_decoder.v\n// @include multiplier_decoder.v\n// @include clint.v\n// @include bram.v\n// @include mt48lc16m16a2_ctrl.v\n// @include rx_uart.v\n// @include tx_uart.v\n// @include qqspi.v\n// @include pll.v\n// @include fifo.v\n\n//----------------------------------\n//-- Verilog from soc-top.v\n//----------------------------------\n`default_nettype none\n`include \"defines_soc.vh\"\n\n\nwire sdram_clk, sdram_cke, sdram_csn, sdram_wen, sdram_rasn, sdram_casn;\n \nassign sdram_ctrl = {sdram_clk, sdram_cke, sdram_csn, sdram_wen, sdram_rasn, sdram_casn};\n\nwire clk;\n\nwire [31:0] PC;\n\n// cpu\nwire [31:0] pc;\nwire [ 5:0] ctrl_state;\n\nwire cpu_mem_ready;\nwire cpu_mem_valid;\n\nwire [ 3:0] cpu_mem_wstrb;\nwire [31:0] cpu_mem_addr;\nwire [31:0] cpu_mem_wdata;\nwire [31:0] cpu_mem_rdata;\n\nwire [31:0] bram_rdata;\nreg  bram_ready;\nwire bram_valid;\n\n// uart\nwire uart_tx_valid;\nreg uart_tx_ready;\n// uart\nwire uart_rx_valid;\nreg uart_rx_ready;\n\n// cpu_freq\nwire system_cpu_freq_valid;\nreg system_cpu_freq_ready;\n\n// RISC-V is byte-addressable, alignment memory devices word organized\n// memory interface\nwire wr = |cpu_mem_wstrb;\nwire rd = ~wr;\n\nassign word_aligned_addr = {cpu_mem_addr[31:2]};\n\nreg [7:0] ledPC=0;\n\nalways @(posedge clk) begin\n  if ((cpu_mem_addr[31:0] == 'h2010_0028) & cpu_mem_ready) begin\n    ledPC[7] <= 1;\n  end\nend\n\n//-- IO Leds\nreg [7:0] led_r = 8'hF9;\nassign led = led_r;\n\nwire led_valid = cpu_mem_valid && cpu_mem_addr == 32'h1200_0000 && wr;\n\n\nalways @(posedge clk) begin\n    if (led_valid )\n         led_r <= cpu_mem_wdata[7:0]; \nend\n\n\nlocalparam BYTE_ADDRESS_LEN = 32;\nlocalparam BYTES_PER_BLOCK = 4;\nlocalparam DATA_LEN = 32;\nlocalparam BLOCK_ADDRESS_LEN = BYTE_ADDRESS_LEN - $clog2(BYTES_PER_BLOCK);\n\nlocalparam BRAM_ADDR_WIDTH = $clog2(`BRAM_WORDS);\n\n// cpu_freq\nassign system_cpu_freq_valid   = !system_cpu_freq_ready && cpu_mem_valid && (cpu_mem_addr == `CPU_FREQ_REG_ADDR) && !wr;\nalways @(posedge clk) \n  system_cpu_freq_ready <= !resetn ? 1'b0 : system_cpu_freq_valid;\n\n// SPI nor flash\nassign spi_nor_mem_valid = !spi_nor_mem_ready && cpu_mem_valid &&\n       (cpu_mem_addr >= `SPI_NOR_MEM_ADDR_START && cpu_mem_addr < `SPI_NOR_MEM_ADDR_END) && !wr;\n\nwire spi_state;\n\n\n\n/////////////////////////////////////////////////////////////////////////////\n\nwire uart_tx_valid_wr;\n\n// I have changed to blocked tx\nassign uart_tx_valid = ~uart_tx_ready && cpu_mem_valid && cpu_mem_addr == `UART_TX_ADDR;\n//assign uart_tx_valid = ~uart_tx_rdy && cpu_mem_valid && cpu_mem_addr == `UART_TX_ADDR; // blocking\nassign uart_tx_valid_wr = wr && uart_tx_valid;\nalways @(posedge clk) uart_tx_ready <= !resetn ? 1'b0 : uart_tx_valid_wr;\n\nreg  uart_tx_busy;\nwire uart_tx_rdy;\n\ntx_uart #(\n    .SYSTEM_CLK(`SYSTEM_CLK),\n    .BAUDRATE  (`BAUDRATE)\n) tx_uart_i (\n    .clk    (clk),\n    .resetn (resetn),\n    .valid  (uart_tx_valid_wr),\n    .tx_data(cpu_mem_wdata[7:0]),\n    .div    (`SYSTEM_CLK / `BAUDRATE),\n    .tx_out (uart_tx),\n    .ready  (uart_tx_rdy),\n    //.leds (led) //-- conectar a los LEDs\n);\n\nalways @(posedge clk) begin\n  if (!resetn) begin\n    uart_tx_busy <= 0;\n  end else begin\n    case (1'b1)\n                (!uart_tx_busy && uart_tx_valid_wr): uart_tx_busy <= 1'b1;\n                (uart_tx_busy && uart_tx_rdy): uart_tx_busy <= 1'b0;\n    endcase\n  end\nend\n\n\n/////////////////////////////////////////////////////////////////////////////\nwire uart_lsr_valid_rd = ~uart_lsr_rdy && rd && cpu_mem_valid && cpu_mem_addr == `UART_LSR_ADDR;\nreg uart_lsr_rdy;\nalways @(posedge clk) uart_lsr_rdy <= !resetn ? 1'b0 : uart_lsr_valid_rd;\n\n/////////////////////////////////////////////////////////////////////////////\n\nwire uart_rx_valid_rd;\nwire [31:0] rx_uart_data;\n\nassign uart_rx_valid = ~uart_rx_ready && cpu_mem_valid && cpu_mem_addr == `UART_RX_ADDR;\nassign uart_rx_valid_rd = rd && uart_rx_valid;\n\nalways @(posedge clk) begin\n    uart_rx_ready <= !resetn ? 1'b0 : uart_rx_valid_rd;\nend\n\nwire rx_uart_rdy = uart_rx_ready;\nrx_uart #(\n    .SYSTEM_CLK(`SYSTEM_CLK),\n    .BAUDRATE  (`BAUDRATE)\n) rx_uart_i (\n    .clk    (clk),\n    .resetn (resetn),\n    .rx_in  (uart_rx),\n    .error  (),\n    .data_rd(rx_uart_rdy), // pop\n    .data   (rx_uart_data)\n);\n\n/////////////////////////////////////////////////////////////////////////////\n\nwire [31:0] mem_sdram_rdata;\n\nwire mem_sdram_valid;\nwire mem_sdram_ready;\n\nassign mem_sdram_valid = !mem_sdram_ready && cpu_mem_valid &&\n      (cpu_mem_addr >= `SDRAM_MEM_ADDR_START && cpu_mem_addr < `SDRAM_MEM_ADDR_END);\n\n`define SYSTEM_CLK 70_000_000\n`define SYSTEM_CLK_MHZ  (`SYSTEM_CLK / 1_000_000)\n\nmt48lc16m16a2_ctrl #(\n    .SDRAM_CLK_FREQ(`SYSTEM_CLK_MHZ / 1_000_000)\n) sdram_i (\n    .clk   (clk),\n    .resetn(resetn),\n    .addr  (cpu_mem_addr),\n    .din   (cpu_mem_wdata),\n    .dout  (mem_sdram_rdata),\n    .wmask (cpu_mem_wstrb),\n    .valid (mem_sdram_valid),\n    .ready (mem_sdram_ready),\n\n    .sdram_clk (sdram_clk),\n    .sdram_cke (sdram_cke),\n    .sdram_dqm (sdram_dqm),\n    .sdram_addr(sdram_addr),\n    .sdram_ba  (sdram_ba),\n    .sdram_csn (sdram_csn),\n    .sdram_wen (sdram_wen),\n    .sdram_rasn(sdram_rasn),\n    .sdram_casn(sdram_casn),\n\n    .sdram_dq_in (sdram_dq_in),\n    .sdram_dq_out (sdram_dq_out),\n    .sdram_oe (sdram_oe)\n);\n\n/////////////////////////////////////////////////////////////////////////////\n\n// BRAM\nassign bram_valid = !bram_ready && cpu_mem_valid && (cpu_mem_addr < (`BRAM_WORDS << 2));\nalways @(posedge clk) bram_ready <= !resetn ? 0 : bram_valid;\n\nbram #(\n    .WIDTH        (BRAM_ADDR_WIDTH),\n    .SHOW_FIRMWARE(0),\n    .INIT_FILE    (`FIRMWARE_BRAM)\n) bram_I (\n    .clk  (clk),\n    .addr (word_aligned_addr[BRAM_ADDR_WIDTH-1:0]),\n    .wdata(cpu_mem_wdata),\n    .rdata(bram_rdata),\n    .wmask(cpu_mem_wstrb & {4{bram_valid}})\n);\n\n/////////////////////////////////////////////////////////////////////////////\nwire IRQ3;\nwire IRQ7;\nwire clint_valid;\nwire clint_ready;\nwire [31:0] clint_rdata;\n\nclint #(\n    .SYSTEM_CLK(`SYSTEM_CLK),\n    .CLOCK_TICK(1000000)\n) clint_I (\n    .clk     (clk),\n    .resetn  (resetn),\n    .valid   (cpu_mem_valid),\n    .addr    (cpu_mem_addr),\n    .wmask   (cpu_mem_wstrb),\n    .wdata   (cpu_mem_wdata),\n    .rdata   (clint_rdata),\n    .IRQ3    (IRQ3),\n    .IRQ7    (IRQ7),\n    .is_valid(clint_valid),\n    .ready   (clint_ready)\n);\n\n\n/////////////////////////////////////////////////////////////////////////////\n//Kian\n/////////////////////////////////////////////////////////////////////////////\nkianv_harris_mc_edition #(\n    .RESET_ADDR(`RESET_ADDR)\n) kianv_I (\n    .clk      (clk),\n    .resetn   (resetn),\n    .mem_ready(cpu_mem_ready),\n    .mem_valid(cpu_mem_valid),\n    .mem_wstrb(cpu_mem_wstrb),\n    .mem_addr (cpu_mem_addr),\n    .mem_wdata(cpu_mem_wdata),\n    .mem_rdata(cpu_mem_rdata),\n    .access_fault(access_fault),\n    .IRQ3     (IRQ3),\n    .IRQ7     (IRQ7),\n    .PC       (PC)\n);\n\n\n/////////////////////////////////////////////////////////////////////////////\nwire is_io = (cpu_mem_addr >= 32'h10_000_000 && cpu_mem_addr <= 32'h12_000_000);\nwire unmatched_io = !(cpu_mem_addr == `UART_LSR_ADDR || cpu_mem_addr == `UART_TX_ADDR || cpu_mem_addr == `UART_RX_ADDR || clint_valid);\nwire is_bram = (cpu_mem_addr[31]);\n\nwire access_fault = cpu_mem_valid & (unmatched_io || !is_bram);\n\nreg io_ready;\nreg [31:0] io_rdata;\nreg [7:0] byteswaiting;\n\nalways @(*) begin\n    io_rdata = 0;\n    io_ready = 1'b0;\n    if (is_io) begin\n        if (uart_lsr_rdy) begin\n            byteswaiting = {1'b0, !uart_tx_busy, !uart_tx_busy, 1'b0, 3'b0, !(&rx_uart_data)};\n            io_rdata = {16'b0, byteswaiting, 8'b0};\n            io_ready = 1'b1;\n        end else if (uart_rx_ready) begin\n            io_rdata = rx_uart_data;\n            io_ready = 1'b1;\n        end else if (uart_tx_ready) begin\n            io_rdata = 0;\n            io_ready = 1'b1;\n            //io_ready = uart_tx_rdy; // blocking\n        end else if (clint_ready) begin\n            io_rdata = clint_rdata;\n            io_ready = 1'b1;\n        end else if (unmatched_io) begin\n            io_rdata = 0;\n            io_ready = 1'b1;\n        end\n    end\nend\n\n/////////////////////////////////////////////////////////////////////////////\nassign cpu_mem_ready = bram_ready\n    || spi_nor_mem_ready\n    || system_cpu_freq_ready\n    || mem_sdram_ready\n    || io_ready\n    ;\n\nassign cpu_mem_rdata   =\n    bram_ready               ? bram_rdata                   :\n    spi_nor_mem_ready        ? spi_nor_mem_data             :\n    system_cpu_freq_ready    ? `SYSTEM_CLK                  :\n    mem_sdram_ready          ? mem_sdram_rdata              :\n    io_ready                 ? io_rdata                     :\n    32'h 0000_0000;\n\n"
+            "code": "// @include defines_soc.vh\n// @include riscv_defines.vh\n// @include kianv_harris_mc_edition.v\n// @include csr_utilities.vh\n// @include riscv_priv_csr_status.vh\n// @include mcause.vh\n// @include misa.vh\n// @include rv32_amo_opcodes.vh\n// @include datapath_unit.v\n// @include csr_exception_handler.v\n// @include design_elements.v\n// @include divider.v\n// @include multiplier.v\n// @include alu.v\n// @include load_alignment.v\n// @include store_alignment.v\n// @include extend.v\n// @include register_file.v\n// @include control_unit.v\n// @include multiplier_extension_decoder.v\n// @include alu_decoder.v\n// @include csr_decoder.v\n// @include store_decoder.v\n// @include load_decoder.v\n// @include main_fsm.v\n// @include divider_decoder.v\n// @include multiplier_decoder.v\n// @include clint.v\n// @include bram.v\n// @include mt48lc16m16a2_ctrl.v\n// @include rx_uart.v\n// @include tx_uart.v\n// @include qqspi.v\n// @include pll.v\n// @include fifo.v\n\n//----------------------------------\n//-- Verilog from soc-top.v\n//----------------------------------\n`default_nettype none\n`include \"defines_soc.vh\"\n\n\nwire sdram_clk, sdram_cke, sdram_csn, sdram_wen, sdram_rasn, sdram_casn;\n \nassign sdram_ctrl = {sdram_clk, sdram_cke, sdram_csn, sdram_wen, sdram_rasn, sdram_casn};\n\nwire clk;\n\nwire [31:0] PC;\n\n// cpu\nwire [31:0] pc;\nwire [ 5:0] ctrl_state;\n\nwire cpu_mem_ready;\nwire cpu_mem_valid;\n\nwire [ 3:0] cpu_mem_wstrb;\nwire [31:0] cpu_mem_addr;\nwire [31:0] cpu_mem_wdata;\nwire [31:0] cpu_mem_rdata;\n\nwire [31:0] bram_rdata;\nreg  bram_ready;\nwire bram_valid;\n\n// uart\nwire uart_tx_valid;\nreg uart_tx_ready;\n// uart\nwire uart_rx_valid;\nreg uart_rx_ready;\n\n// cpu_freq\nwire system_cpu_freq_valid;\nreg system_cpu_freq_ready;\n\n// RISC-V is byte-addressable, alignment memory devices word organized\n// memory interface\nwire wr = |cpu_mem_wstrb;\nwire rd = ~wr;\n\nassign word_aligned_addr = {cpu_mem_addr[31:2]};\n\nreg [7:0] ledPC=0;\n\nalways @(posedge clk) begin\n  if ((cpu_mem_addr[31:0] == 'h2010_0028) & cpu_mem_ready) begin\n    ledPC[7] <= 1;\n  end\nend\n\n//-- IO Leds\nreg [7:0] led_r = 8'hF9;\nassign led = led_r;\n\nwire led_valid = cpu_mem_valid && cpu_mem_addr == 32'h1200_0000 && wr;\n\n\nalways @(posedge clk) begin\n    if (led_valid )\n         led_r <= cpu_mem_wdata[7:0]; \nend\n\n\nlocalparam BYTE_ADDRESS_LEN = 32;\nlocalparam BYTES_PER_BLOCK = 4;\nlocalparam DATA_LEN = 32;\nlocalparam BLOCK_ADDRESS_LEN = BYTE_ADDRESS_LEN - $clog2(BYTES_PER_BLOCK);\n\nlocalparam BRAM_ADDR_WIDTH = $clog2(`BRAM_WORDS);\n\n// cpu_freq\nassign system_cpu_freq_valid   = !system_cpu_freq_ready && cpu_mem_valid && (cpu_mem_addr == `CPU_FREQ_REG_ADDR) && !wr;\nalways @(posedge clk) \n  system_cpu_freq_ready <= !resetn ? 1'b0 : system_cpu_freq_valid;\n\n// SPI nor flash\nassign spi_nor_mem_valid = !spi_nor_mem_ready && cpu_mem_valid &&\n       (cpu_mem_addr >= `SPI_NOR_MEM_ADDR_START && cpu_mem_addr < `SPI_NOR_MEM_ADDR_END) && !wr;\n\nwire spi_state;\n\n\n\n/////////////////////////////////////////////////////////////////////////////\n\nwire uart_tx_valid_wr;\n\n// I have changed to blocked tx\nassign uart_tx_valid = ~uart_tx_ready && cpu_mem_valid && cpu_mem_addr == `UART_TX_ADDR;\n//assign uart_tx_valid = ~uart_tx_rdy && cpu_mem_valid && cpu_mem_addr == `UART_TX_ADDR; // blocking\nassign uart_tx_valid_wr = wr && uart_tx_valid;\nalways @(posedge clk) uart_tx_ready <= !resetn ? 1'b0 : uart_tx_valid_wr;\n\nreg  uart_tx_busy;\nwire uart_tx_rdy;\n\ntx_uart #(\n    .SYSTEM_CLK(`SYSTEM_CLK),\n    .BAUDRATE  (`BAUDRATE)\n) tx_uart_i (\n    .clk    (clk),\n    .resetn (resetn),\n    .valid  (uart_tx_valid_wr),\n    .tx_data(cpu_mem_wdata[7:0]),\n    .div    (`SYSTEM_CLK / `BAUDRATE),\n    .tx_out (uart_tx),\n    .ready  (uart_tx_rdy),\n    //.leds (led) //-- conectar a los LEDs\n);\n\nalways @(posedge clk) begin\n  if (!resetn) begin\n    uart_tx_busy <= 0;\n  end else begin\n    case (1'b1)\n                (!uart_tx_busy && uart_tx_valid_wr): uart_tx_busy <= 1'b1;\n                (uart_tx_busy && uart_tx_rdy): uart_tx_busy <= 1'b0;\n    endcase\n  end\nend\n\n\n/////////////////////////////////////////////////////////////////////////////\nwire uart_lsr_valid_rd = ~uart_lsr_rdy && rd && cpu_mem_valid && cpu_mem_addr == `UART_LSR_ADDR;\nreg uart_lsr_rdy;\nalways @(posedge clk) uart_lsr_rdy <= !resetn ? 1'b0 : uart_lsr_valid_rd;\n\n/////////////////////////////////////////////////////////////////////////////\n\nwire uart_rx_valid_rd;\nwire [31:0] rx_uart_data;\n\nassign uart_rx_valid = ~uart_rx_ready && cpu_mem_valid && cpu_mem_addr == `UART_RX_ADDR;\nassign uart_rx_valid_rd = rd && uart_rx_valid;\n\nalways @(posedge clk) begin\n    uart_rx_ready <= !resetn ? 1'b0 : uart_rx_valid_rd;\nend\n\nwire rx_uart_rdy = uart_rx_ready;\nrx_uart #(\n    .SYSTEM_CLK(`SYSTEM_CLK),\n    .BAUDRATE  (`BAUDRATE)\n) rx_uart_i (\n    .clk    (clk),\n    .resetn (resetn),\n    .rx_in  (uart_rx),\n    .error  (),\n    .data_rd(rx_uart_rdy), // pop\n    .data   (rx_uart_data)\n);\n\n/////////////////////////////////////////////////////////////////////////////\n\nwire [31:0] mem_sdram_rdata;\n\nwire mem_sdram_valid;\nwire mem_sdram_ready;\n\nwire is_sdram = (cpu_mem_addr >= `SDRAM_MEM_ADDR_START && cpu_mem_addr < `SDRAM_MEM_ADDR_END);\nassign mem_sdram_valid = !mem_sdram_ready && cpu_mem_valid && is_sdram;\n\n`define SYSTEM_CLK 70_000_000\n`define SYSTEM_CLK_MHZ  (`SYSTEM_CLK / 1_000_000)\n\nmt48lc16m16a2_ctrl #(\n    .SDRAM_CLK_FREQ(`SYSTEM_CLK_MHZ / 1_000_000)\n) sdram_i (\n    .clk   (clk),\n    .resetn(resetn),\n    .addr  (cpu_mem_addr),\n    .din   (cpu_mem_wdata),\n    .dout  (mem_sdram_rdata),\n    .wmask (cpu_mem_wstrb),\n    .valid (mem_sdram_valid),\n    .ready (mem_sdram_ready),\n\n    .sdram_clk (sdram_clk),\n    .sdram_cke (sdram_cke),\n    .sdram_dqm (sdram_dqm),\n    .sdram_addr(sdram_addr),\n    .sdram_ba  (sdram_ba),\n    .sdram_csn (sdram_csn),\n    .sdram_wen (sdram_wen),\n    .sdram_rasn(sdram_rasn),\n    .sdram_casn(sdram_casn),\n\n    .sdram_dq_in (sdram_dq_in),\n    .sdram_dq_out (sdram_dq_out),\n    .sdram_oe (sdram_oe)\n);\n\n/////////////////////////////////////////////////////////////////////////////\n\n// BRAM\nassign bram_valid = !bram_ready && cpu_mem_valid && (cpu_mem_addr < (`BRAM_WORDS << 2));\nalways @(posedge clk) bram_ready <= !resetn ? 0 : bram_valid;\n\nbram #(\n    .WIDTH        (BRAM_ADDR_WIDTH),\n    .SHOW_FIRMWARE(0),\n    .INIT_FILE    (`FIRMWARE_BRAM)\n) bram_I (\n    .clk  (clk),\n    .addr (word_aligned_addr[BRAM_ADDR_WIDTH-1:0]),\n    .wdata(cpu_mem_wdata),\n    .rdata(bram_rdata),\n    .wmask(cpu_mem_wstrb & {4{bram_valid}})\n);\n\n/////////////////////////////////////////////////////////////////////////////\nwire IRQ3;\nwire IRQ7;\nwire clint_valid;\nwire clint_ready;\nwire [31:0] clint_rdata;\n\nclint #(\n    .SYSTEM_CLK(`SYSTEM_CLK),\n    .CLOCK_TICK(1000000)\n) clint_I (\n    .clk     (clk),\n    .resetn  (resetn),\n    .valid   (cpu_mem_valid),\n    .addr    (cpu_mem_addr),\n    .wmask   (cpu_mem_wstrb),\n    .wdata   (cpu_mem_wdata),\n    .rdata   (clint_rdata),\n    .IRQ3    (IRQ3),\n    .IRQ7    (IRQ7),\n    .is_valid(clint_valid),\n    .ready   (clint_ready)\n);\n\n\n/////////////////////////////////////////////////////////////////////////////\n//Kian\n/////////////////////////////////////////////////////////////////////////////\nkianv_harris_mc_edition #(\n    .RESET_ADDR(`RESET_ADDR)\n) kianv_I (\n    .clk      (clk),\n    .resetn   (resetn),\n    .mem_ready(cpu_mem_ready),\n    .mem_valid(cpu_mem_valid),\n    .mem_wstrb(cpu_mem_wstrb),\n    .mem_addr (cpu_mem_addr),\n    .mem_wdata(cpu_mem_wdata),\n    .mem_rdata(cpu_mem_rdata),\n    .access_fault(access_fault),\n    .IRQ3     (IRQ3),\n    .IRQ7     (IRQ7),\n    .PC       (PC)\n);\n\n\n/////////////////////////////////////////////////////////////////////////////\nwire is_io = (cpu_mem_addr >= 32'h10_000_000 && cpu_mem_addr <= 32'h12_000_000);\nwire unmatched_io = !(cpu_mem_addr == `UART_LSR_ADDR || cpu_mem_addr == `UART_TX_ADDR || cpu_mem_addr == `UART_RX_ADDR || clint_valid);\nwire is_bram = (cpu_mem_addr[31]);\n\nwire access_fault = cpu_mem_valid & (unmatched_io || !is_bram || !is_sdram);\n\nreg io_ready;\nreg [31:0] io_rdata;\nreg [7:0] byteswaiting;\n\nalways @(*) begin\n    io_rdata = 0;\n    io_ready = 1'b0;\n    if (is_io) begin\n        if (uart_lsr_rdy) begin\n            byteswaiting = {1'b0, !uart_tx_busy, !uart_tx_busy, 1'b0, 3'b0, !(&rx_uart_data)};\n            io_rdata = {16'b0, byteswaiting, 8'b0};\n            io_ready = 1'b1;\n        end else if (uart_rx_ready) begin\n            io_rdata = rx_uart_data;\n            io_ready = 1'b1;\n        end else if (uart_tx_ready) begin\n            io_rdata = 0;\n            io_ready = 1'b1;\n            //io_ready = uart_tx_rdy; // blocking\n        end else if (clint_ready) begin\n            io_rdata = clint_rdata;\n            io_ready = 1'b1;\n        end else if (unmatched_io) begin\n            io_rdata = 0;\n            io_ready = 1'b1;\n        end\n    end\nend\n\n/////////////////////////////////////////////////////////////////////////////\nassign cpu_mem_ready = bram_ready\n    || spi_nor_mem_ready\n    || system_cpu_freq_ready\n    || mem_sdram_ready\n    || io_ready\n    ;\n\nassign cpu_mem_rdata   =\n    bram_ready               ? bram_rdata                   :\n    spi_nor_mem_ready        ? spi_nor_mem_data             :\n    system_cpu_freq_ready    ? `SYSTEM_CLK                  :\n    mem_sdram_ready          ? mem_sdram_rdata              :\n    io_ready                 ? io_rdata                     :\n    32'h 0000_0000;\n\n"
           },
           "position": {
             "x": 536,
@@ -2266,6 +2306,48 @@
           "size": {
             "width": 544,
             "height": 496
+          }
+        },
+        {
+          "id": "b17c71c5-54d6-47c5-a64f-bab840302655",
+          "type": "basic.code",
+          "data": {
+            "ports": {
+              "in": [
+                {
+                  "name": "clk"
+                },
+                {
+                  "name": "resetn"
+                },
+                {
+                  "name": "cpu_mem_addr",
+                  "range": "[24:0]",
+                  "size": 25
+                },
+                {
+                  "name": "cpu_mem_wdata",
+                  "range": "[31:0]",
+                  "size": 32
+                },
+                {
+                  "name": "cpu_mem_wstrb",
+                  "range": "[3:0]",
+                  "size": 4
+                }
+              ],
+              "out": []
+            },
+            "params": [],
+            "code": ""
+          },
+          "position": {
+            "x": -936,
+            "y": 832
+          },
+          "size": {
+            "width": 664,
+            "height": 512
           }
         }
       ],
@@ -2366,8 +2448,8 @@
           },
           "vertices": [
             {
-              "x": -840,
-              "y": 960
+              "x": 1960,
+              "y": 864
             }
           ]
         },
@@ -2674,6 +2756,26 @@
             "port": "2f25e124-c9c1-4860-83b3-e1e0bef9d7b6"
           },
           "size": 4
+        },
+        {
+          "source": {
+            "block": "50a2e346-2caf-485f-b51a-dd9a08f74765",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "b17c71c5-54d6-47c5-a64f-bab840302655",
+            "port": "clk"
+          }
+        },
+        {
+          "source": {
+            "block": "89d40203-5bb7-4f7e-bda5-e6036e26da46",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "b17c71c5-54d6-47c5-a64f-bab840302655",
+            "port": "resetn"
+          }
         }
       ]
     }
