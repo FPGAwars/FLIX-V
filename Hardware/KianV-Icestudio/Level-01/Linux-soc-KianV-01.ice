@@ -3723,6 +3723,22 @@
             "width": 768,
             "height": 1152
           }
+        },
+        {
+          "id": "1294d94b-b04a-43f7-ac73-e8d3c5b5651a",
+          "type": "basic.info",
+          "data": {
+            "info": "**UART_TX**",
+            "readonly": true
+          },
+          "position": {
+            "x": 1944,
+            "y": 1096
+          },
+          "size": {
+            "width": 216,
+            "height": 32
+          }
         }
       ],
       "wires": [
