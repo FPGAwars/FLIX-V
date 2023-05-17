@@ -41,7 +41,6 @@
 `define SDRAM_MEM_ADDR_END        ((`SDRAM_MEM_ADDR_START) + (`SDRAM_SIZE))
 
 `define SYSTEM_CLK        70_000_000
-`define SYSTEM_CLK_MHZ    (`SYSTEM_CLK / 1_000_000)
 
 `define SPI_NOR_MEM_ADDR_START    32'h 20_000_000
 
