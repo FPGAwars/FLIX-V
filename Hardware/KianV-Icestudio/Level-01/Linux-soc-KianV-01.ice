@@ -8423,7 +8423,7 @@
               ]
             },
             "params": [],
-            "code": "// cpu_freq\nwire system_cpu_freq_valid;\nreg system_cpu_freq_ready;\n\nassign system_cpu_freq_valid = !system_cpu_freq_ready && \n       cpu_mem_valid && \n       (cpu_mem_addr == `CPU_FREQ_REG_ADDR) && \n       !wr;\n       \nalways @(posedge clk) \n  system_cpu_freq_ready <= !resetn ? 1'b0 : system_cpu_freq_valid;"
+            "code": "`define CPU_FREQ_REG_ADDR 32'h 30_000_010\n\n// cpu_freq\nwire system_cpu_freq_valid;\nreg system_cpu_freq_ready;\n\nassign system_cpu_freq_valid = !system_cpu_freq_ready && \n       cpu_mem_valid && \n       (cpu_mem_addr == `CPU_FREQ_REG_ADDR) && \n       !wr;\n       \nalways @(posedge clk) \n  system_cpu_freq_ready <= !resetn ? 1'b0 : system_cpu_freq_valid;"
           },
           "position": {
             "x": 864,

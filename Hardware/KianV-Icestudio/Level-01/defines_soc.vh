@@ -19,8 +19,6 @@
 `ifndef KIANV_SOC
 `define KIANV_SOC
 
-`define CPU_FREQ_REG_ADDR 32'h 30_000_010
-
 `define UART_TX_ADDR      32'h 10_000_000
 `define UART_RX_ADDR      32'h 10_000_000
 `define UART_LSR_ADDR     32'h 10_000_005
