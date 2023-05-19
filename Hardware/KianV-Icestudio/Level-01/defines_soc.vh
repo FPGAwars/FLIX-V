@@ -21,20 +21,4 @@
 
 
 
-
-
-`define RV32M
-`define FAKE_MULTIPLIER
-`define LED_ULX3S
-
-`define UART_TX
-`define UART_RX
-
-
-
-
-`define SYSTEM_CLK        70_000_000
-`define SPI_MEMORY_OFFSET         (1024*1024)
-`define RESET_ADDR        (`SPI_NOR_MEM_ADDR_START + `SPI_MEMORY_OFFSET)
-
 `endif
