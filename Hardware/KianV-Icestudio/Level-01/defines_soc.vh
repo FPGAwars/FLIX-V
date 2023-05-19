@@ -35,12 +35,7 @@
 `define SDRAM_MEM_ADDR_END        ((`SDRAM_MEM_ADDR_START) + (`SDRAM_SIZE))
 
 `define SYSTEM_CLK        70_000_000
-
-`define SPI_NOR_MEM_ADDR_START    32'h 20_000_000
-
 `define SPI_MEMORY_OFFSET         (1024*1024)
-`define SPI_NOR_MEM_ADDR_END      ((`SPI_NOR_MEM_ADDR_START) + (16*1024*1024))
-
 `define RESET_ADDR        (`SPI_NOR_MEM_ADDR_START + `SPI_MEMORY_OFFSET)
 
 `endif
