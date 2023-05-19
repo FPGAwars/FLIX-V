@@ -20,8 +20,8 @@
 `define KIANV_SOC
 
 
-`define UART_RX_ADDR      32'h 10_000_000
-`define UART_LSR_ADDR     32'h 10_000_005
+
+
 
 `define RV32M
 `define FAKE_MULTIPLIER
@@ -30,9 +30,8 @@
 `define UART_TX
 `define UART_RX
 
-`define SDRAM_MEM_ADDR_START      32'h 80_000_000
-`define SDRAM_SIZE                (1024*1024*32)
-`define SDRAM_MEM_ADDR_END        ((`SDRAM_MEM_ADDR_START) + (`SDRAM_SIZE))
+
+
 
 `define SYSTEM_CLK        70_000_000
 `define SPI_MEMORY_OFFSET         (1024*1024)
