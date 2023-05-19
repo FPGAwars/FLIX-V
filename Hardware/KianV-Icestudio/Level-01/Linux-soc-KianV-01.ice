@@ -1218,6 +1218,42 @@
           }
         },
         {
+          "id": "cb26b48c-5279-4c8c-91e1-bc46a7e5c31e",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "flash_io_in",
+            "range": "[3:0]",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "3",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "2",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "1",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": -1144,
+            "y": 576
+          }
+        },
+        {
           "id": "44deebdd-26d3-4752-a70c-414fadf17496",
           "type": "basic.inputLabel",
           "data": {
@@ -1379,44 +1415,8 @@
             ]
           },
           "position": {
-            "x": 1536,
-            "y": 552
-          }
-        },
-        {
-          "id": "cb26b48c-5279-4c8c-91e1-bc46a7e5c31e",
-          "type": "basic.outputLabel",
-          "data": {
-            "name": "flash_io_in",
-            "range": "[3:0]",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "3",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "2",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "1",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": -1144,
-            "y": 576
+            "x": 1528,
+            "y": 616
           }
         },
         {
@@ -1945,26 +1945,6 @@
           "position": {
             "x": -304,
             "y": 792
-          }
-        },
-        {
-          "id": "5b39608a-8f6c-4d9f-a8d3-26f8b7bc528f",
-          "type": "basic.inputLabel",
-          "data": {
-            "name": "rx_rdy",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": 1464,
-            "y": 800
           }
         },
         {
@@ -3184,8 +3164,8 @@
             ]
           },
           "position": {
-            "x": 1456,
-            "y": 1048
+            "x": 1432,
+            "y": 984
           }
         },
         {
@@ -4077,6 +4057,26 @@
           }
         },
         {
+          "id": "7cfda05c-86df-4b26-b7e7-b9d1601b554b",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "clk",
+            "blockColor": "yellow",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 408,
+            "y": 1312
+          }
+        },
+        {
           "id": "2d47ad6a-521e-4798-8938-a5bdb7c4af39",
           "type": "basic.inputLabel",
           "data": {
@@ -4130,6 +4130,26 @@
           "position": {
             "x": 1712,
             "y": 1344
+          }
+        },
+        {
+          "id": "24889328-2f28-421d-a148-2524bfbfc183",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "resetn",
+            "blockColor": "red",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 416,
+            "y": 1384
           }
         },
         {
@@ -4522,6 +4542,46 @@
           "position": {
             "x": 1696,
             "y": 1408
+          }
+        },
+        {
+          "id": "5b39608a-8f6c-4d9f-a8d3-26f8b7bc528f",
+          "type": "basic.inputLabel",
+          "data": {
+            "name": "rx_rdy",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 1320,
+            "y": 1456
+          }
+        },
+        {
+          "id": "ddde4ba0-60c3-45f4-b7a4-c7873286b6c6",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "cpu_mem_valid",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 360,
+            "y": 1456
           }
         },
         {
@@ -5109,6 +5169,182 @@
           }
         },
         {
+          "id": "2a31b4ca-d09e-40fe-ae20-2247cd0ddd10",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "mem_addr",
+            "range": "[31:0]",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "31",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "30",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "29",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "28",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "27",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "26",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "25",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "24",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "23",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "22",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "21",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "20",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "19",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "18",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "17",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "16",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "15",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "14",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "13",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "12",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "11",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "10",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "9",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "8",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "7",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "6",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "5",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "4",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "3",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "2",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "1",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 360,
+            "y": 1520
+          }
+        },
+        {
           "id": "1c839cab-8f48-4bd2-9c4a-096d139bd472",
           "type": "basic.outputLabel",
           "data": {
@@ -5322,6 +5558,26 @@
           "position": {
             "x": 1752,
             "y": 1584
+          }
+        },
+        {
+          "id": "a7ac8ccf-a0b5-4580-8f67-e71e1bc5cfd3",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "rd",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 368,
+            "y": 1592
           }
         },
         {
@@ -10158,15 +10414,12 @@
                   "size": 30
                 },
                 {
-                  "name": "rx_uart_rdy"
-                },
-                {
                   "name": "uart_lsr_rdy"
                 }
               ]
             },
             "params": [],
-            "code": "\n//----------------------------------\n//-- Verilog from soc-top.v\n//----------------------------------\n`default_nettype none\n`include \"defines_soc.vh\"\n\n`define UART_TX_ADDR      32'h 10_000_000\n\n// uart\nwire uart_rx_valid;\nreg uart_rx_ready;\n\nassign word_aligned_addr = {cpu_mem_addr[31:2]};\n\n/////////////////////////////////////////////////////////////////////////////\nwire uart_lsr_valid_rd = ~uart_lsr_rdy &&\n                          rd && \n                          cpu_mem_valid && \n                          cpu_mem_addr == `UART_LSR_ADDR;\nreg uart_lsr_rdy;\nalways @(posedge clk) \n  uart_lsr_rdy <= !resetn ? 1'b0 : uart_lsr_valid_rd;\n\n/////////////////////////////////////////////////////////////////////////////\n\nwire uart_rx_valid_rd;\n\nassign uart_rx_valid = ~uart_rx_ready && cpu_mem_valid && cpu_mem_addr == `UART_RX_ADDR;\nassign uart_rx_valid_rd = rd && uart_rx_valid;\n\nalways @(posedge clk) begin\n    uart_rx_ready <= !resetn ? 1'b0 : uart_rx_valid_rd;\nend\n\nassign rx_uart_rdy = uart_rx_ready;\n\n\n\n\n"
+            "code": "\n//----------------------------------\n//-- Verilog from soc-top.v\n//----------------------------------\n`default_nettype none\n`include \"defines_soc.vh\"\n\n`define UART_TX_ADDR      32'h 10_000_000\n\nassign word_aligned_addr = {cpu_mem_addr[31:2]};\n\n/////////////////////////////////////////////////////////////////////////////\nwire uart_lsr_valid_rd = ~uart_lsr_rdy &&\n                          rd && \n                          cpu_mem_valid && \n                          cpu_mem_addr == `UART_LSR_ADDR;\nreg uart_lsr_rdy;\nalways @(posedge clk) \n  uart_lsr_rdy <= !resetn ? 1'b0 : uart_lsr_valid_rd;\n\n/////////////////////////////////////////////////////////////////////////////\n\n\n\n\n"
           },
           "position": {
             "x": 592,
@@ -10175,6 +10428,48 @@
           "size": {
             "width": 752,
             "height": 736
+          }
+        },
+        {
+          "id": "d1425552-021c-483d-929d-d896abe37d7f",
+          "type": "basic.code",
+          "data": {
+            "ports": {
+              "in": [
+                {
+                  "name": "clk"
+                },
+                {
+                  "name": "resetn"
+                },
+                {
+                  "name": "cpu_mem_valid"
+                },
+                {
+                  "name": "cpu_mem_addr",
+                  "range": "[31:0]",
+                  "size": 32
+                },
+                {
+                  "name": "rd"
+                }
+              ],
+              "out": [
+                {
+                  "name": "uart_rx_ready"
+                }
+              ]
+            },
+            "params": [],
+            "code": "`define UART_RX_ADDR      32'h 10_000_000\n\nwire uart_rx_valid;\nreg uart_rx_ready;\nwire uart_rx_valid_rd;\n\nassign uart_rx_valid = ~uart_rx_ready &&\n       cpu_mem_valid &&\n       cpu_mem_addr == `UART_RX_ADDR;\n       \nassign uart_rx_valid_rd = rd && uart_rx_valid;\n\nalways @(posedge clk) begin\n    uart_rx_ready <= !resetn ? 1'b0 : uart_rx_valid_rd;\nend\n\n\n"
+          },
+          "position": {
+            "x": 600,
+            "y": 1312
+          },
+          "size": {
+            "width": 592,
+            "height": 344
           }
         }
       ],
@@ -10658,16 +10953,6 @@
           "target": {
             "block": "f98bfafc-1036-4682-b9c1-ef4f0ab2bbda",
             "port": "uart_rx"
-          }
-        },
-        {
-          "source": {
-            "block": "8a22f6e9-6a0a-495b-8867-958fe6678799",
-            "port": "rx_uart_rdy"
-          },
-          "target": {
-            "block": "5b39608a-8f6c-4d9f-a8d3-26f8b7bc528f",
-            "port": "inlabel"
           }
         },
         {
@@ -11724,6 +12009,67 @@
             "port": "io_rdata"
           },
           "size": 32
+        },
+        {
+          "source": {
+            "block": "d1425552-021c-483d-929d-d896abe37d7f",
+            "port": "uart_rx_ready"
+          },
+          "target": {
+            "block": "5b39608a-8f6c-4d9f-a8d3-26f8b7bc528f",
+            "port": "inlabel"
+          }
+        },
+        {
+          "source": {
+            "block": "ddde4ba0-60c3-45f4-b7a4-c7873286b6c6",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "d1425552-021c-483d-929d-d896abe37d7f",
+            "port": "cpu_mem_valid"
+          }
+        },
+        {
+          "source": {
+            "block": "2a31b4ca-d09e-40fe-ae20-2247cd0ddd10",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "d1425552-021c-483d-929d-d896abe37d7f",
+            "port": "cpu_mem_addr"
+          },
+          "size": 32
+        },
+        {
+          "source": {
+            "block": "a7ac8ccf-a0b5-4580-8f67-e71e1bc5cfd3",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "d1425552-021c-483d-929d-d896abe37d7f",
+            "port": "rd"
+          }
+        },
+        {
+          "source": {
+            "block": "7cfda05c-86df-4b26-b7e7-b9d1601b554b",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "d1425552-021c-483d-929d-d896abe37d7f",
+            "port": "clk"
+          }
+        },
+        {
+          "source": {
+            "block": "24889328-2f28-421d-a148-2524bfbfc183",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "d1425552-021c-483d-929d-d896abe37d7f",
+            "port": "resetn"
+          }
         }
       ]
     }
