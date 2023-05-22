@@ -6172,6 +6172,26 @@
           }
         },
         {
+          "id": "4ebd081e-44c8-4538-9cab-cab84a38ca07",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "bram_ready",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 1944,
+            "y": 1632
+          }
+        },
+        {
           "id": "1f440777-9cd1-4b9e-8fbf-9f3499696d15",
           "type": "basic.inputLabel",
           "data": {
@@ -6368,6 +6388,182 @@
           }
         },
         {
+          "id": "47a0f694-a55d-48bc-b8b9-50d3109b48b9",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "bram_rdata",
+            "range": "[31:0]",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "31",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "30",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "29",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "28",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "27",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "26",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "25",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "24",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "23",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "22",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "21",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "20",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "19",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "18",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "17",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "16",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "15",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "14",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "13",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "12",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "11",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "10",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "9",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "8",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "7",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "6",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "5",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "4",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "3",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "2",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "1",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 1776,
+            "y": 1688
+          }
+        },
+        {
           "id": "8e53de7e-5372-402b-a950-4d4a1c5b2ffa",
           "type": "basic.outputLabel",
           "data": {
@@ -6559,8 +6755,8 @@
             ]
           },
           "position": {
-            "x": 1800,
-            "y": 1736
+            "x": 2664,
+            "y": 1712
           }
         },
         {
@@ -6584,6 +6780,46 @@
           }
         },
         {
+          "id": "03fd1dbc-74a5-47b6-a9d4-d9e889aebe10",
+          "type": "basic.inputLabel",
+          "data": {
+            "name": "cpu_mem_ready",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 2304,
+            "y": 1752
+          }
+        },
+        {
+          "id": "34437b46-c569-4021-a32c-af535264f11c",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "spi_ready",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 1776,
+            "y": 1760
+          }
+        },
+        {
           "id": "55a83793-529c-4a1e-820b-1c2db756919c",
           "type": "basic.inputLabel",
           "data": {
@@ -6600,6 +6836,26 @@
           },
           "position": {
             "x": -136,
+            "y": 1776
+          }
+        },
+        {
+          "id": "8c5e673a-120a-4f92-8d84-317027db5159",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "is_io",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 2664,
             "y": 1776
           }
         },
@@ -6624,13 +6880,169 @@
           }
         },
         {
-          "id": "8c5e673a-120a-4f92-8d84-317027db5159",
+          "id": "dc767c83-f79a-4727-84c2-0c02f670d698",
           "type": "basic.outputLabel",
           "data": {
-            "name": "is_io",
+            "name": "spi_data",
+            "range": "[31:0]",
             "blockColor": "fuchsia",
             "virtual": true,
             "pins": [
+              {
+                "index": "31",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "30",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "29",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "28",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "27",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "26",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "25",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "24",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "23",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "22",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "21",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "20",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "19",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "18",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "17",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "16",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "15",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "14",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "13",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "12",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "11",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "10",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "9",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "8",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "7",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "6",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "5",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "4",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "3",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "2",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "1",
+                "name": "NULL",
+                "value": "NULL"
+              },
               {
                 "index": "0",
                 "name": "NULL",
@@ -6639,28 +7051,8 @@
             ]
           },
           "position": {
-            "x": 1800,
-            "y": 1800
-          }
-        },
-        {
-          "id": "b93b0947-bbaf-4d82-899b-f8d99cefeed4",
-          "type": "basic.outputLabel",
-          "data": {
-            "name": "cpu_mem_valid",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": -1144,
-            "y": 1864
+            "x": 1808,
+            "y": 1824
           }
         },
         {
@@ -6835,7 +7227,27 @@
             ]
           },
           "position": {
-            "x": 1776,
+            "x": 2640,
+            "y": 1840
+          }
+        },
+        {
+          "id": "b93b0947-bbaf-4d82-899b-f8d99cefeed4",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "cpu_mem_valid",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": -1144,
             "y": 1864
           }
         },
@@ -6860,6 +7272,222 @@
           }
         },
         {
+          "id": "8ed7607b-0d36-41a4-9ab1-5413ae6945cc",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "freq_ready",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 1840,
+            "y": 1888
+          }
+        },
+        {
+          "id": "0dea1b1b-1568-4193-a7b6-0734f60e2f8b",
+          "type": "basic.inputLabel",
+          "data": {
+            "name": "mem_rdata",
+            "range": "[31:0]",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "31",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "30",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "29",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "28",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "27",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "26",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "25",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "24",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "23",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "22",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "21",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "20",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "19",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "18",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "17",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "16",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "15",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "14",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "13",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "12",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "11",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "10",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "9",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "8",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "7",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "6",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "5",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "4",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "3",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "2",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "1",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 2304,
+            "y": 1888
+          }
+        },
+        {
+          "id": "3cf849b2-6909-4f30-a012-8258af9c375f",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "clint_ready",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 2600,
+            "y": 1904
+          }
+        },
+        {
           "id": "059f1b31-d93a-4130-994c-de6fb86d1ae2",
           "type": "basic.outputLabel",
           "data": {
@@ -6880,13 +7508,169 @@
           }
         },
         {
-          "id": "3cf849b2-6909-4f30-a012-8258af9c375f",
-          "type": "basic.outputLabel",
+          "id": "4a8edf5c-2214-4239-bc16-de94e53644c4",
+          "type": "basic.inputLabel",
           "data": {
-            "name": "clint_ready",
+            "name": "io_rdata",
+            "range": "[31:0]",
             "blockColor": "fuchsia",
             "virtual": true,
             "pins": [
+              {
+                "index": "31",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "30",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "29",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "28",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "27",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "26",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "25",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "24",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "23",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "22",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "21",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "20",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "19",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "18",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "17",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "16",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "15",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "14",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "13",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "12",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "11",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "10",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "9",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "8",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "7",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "6",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "5",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "4",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "3",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "2",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "1",
+                "name": "NULL",
+                "value": "NULL"
+              },
               {
                 "index": "0",
                 "name": "NULL",
@@ -6895,8 +7679,8 @@
             ]
           },
           "position": {
-            "x": 1736,
-            "y": 1928
+            "x": 3080,
+            "y": 1936
           }
         },
         {
@@ -7076,10 +7860,90 @@
           }
         },
         {
-          "id": "4a8edf5c-2214-4239-bc16-de94e53644c4",
+          "id": "fe646df8-801f-4911-8b66-7eefafd0b5c3",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "mem_sdram_ready",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 1864,
+            "y": 1952
+          }
+        },
+        {
+          "id": "a4e9209c-50f6-476d-ac6a-1fc6d2c0a769",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "cpu_mem_valid",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 416,
+            "y": 1984
+          }
+        },
+        {
+          "id": "46547e5e-1947-4fcb-9574-f92696a919fc",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "uart_lsr_rdy",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 2592,
+            "y": 2000
+          }
+        },
+        {
+          "id": "0bbe801c-9310-4deb-bf6e-58bd6f12a9d0",
           "type": "basic.inputLabel",
           "data": {
-            "name": "io_rdata",
+            "name": "spi_valid",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 1384,
+            "y": 2008
+          }
+        },
+        {
+          "id": "d2b6a0c0-012f-412a-b32f-c0961b11d4ab",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "mem_data",
             "range": "[31:0]",
             "blockColor": "fuchsia",
             "virtual": true,
@@ -7247,47 +8111,7 @@
             ]
           },
           "position": {
-            "x": 2216,
-            "y": 1960
-          }
-        },
-        {
-          "id": "a4e9209c-50f6-476d-ac6a-1fc6d2c0a769",
-          "type": "basic.outputLabel",
-          "data": {
-            "name": "cpu_mem_valid",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": 416,
-            "y": 1984
-          }
-        },
-        {
-          "id": "0bbe801c-9310-4deb-bf6e-58bd6f12a9d0",
-          "type": "basic.inputLabel",
-          "data": {
-            "name": "spi_valid",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": 1384,
+            "x": 1896,
             "y": 2008
           }
         },
@@ -7332,10 +8156,10 @@
           }
         },
         {
-          "id": "46547e5e-1947-4fcb-9574-f92696a919fc",
+          "id": "19c88351-d6f7-4153-b487-08036aeb3bb4",
           "type": "basic.outputLabel",
           "data": {
-            "name": "uart_lsr_rdy",
+            "name": "tx_busy",
             "blockColor": "fuchsia",
             "virtual": true,
             "pins": [
@@ -7347,8 +8171,8 @@
             ]
           },
           "position": {
-            "x": 1728,
-            "y": 2024
+            "x": 2552,
+            "y": 2048
           }
         },
         {
@@ -7528,10 +8352,10 @@
           }
         },
         {
-          "id": "19c88351-d6f7-4153-b487-08036aeb3bb4",
+          "id": "e26623b6-d71a-4a9e-a57b-fc692f772993",
           "type": "basic.outputLabel",
           "data": {
-            "name": "tx_busy",
+            "name": "io_ready",
             "blockColor": "fuchsia",
             "virtual": true,
             "pins": [
@@ -7543,8 +8367,8 @@
             ]
           },
           "position": {
-            "x": 1688,
-            "y": 2072
+            "x": 1936,
+            "y": 2064
           }
         },
         {
@@ -7568,6 +8392,26 @@
           }
         },
         {
+          "id": "2c97dca4-f06e-45df-bbd5-5f9e899e4122",
+          "type": "basic.inputLabel",
+          "data": {
+            "name": "io_ready",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 3072,
+            "y": 2096
+          }
+        },
+        {
           "id": "c27be661-d941-445c-ae42-1cabc2e75256",
           "type": "basic.outputLabel",
           "data": {
@@ -7584,26 +8428,6 @@
           },
           "position": {
             "x": 424,
-            "y": 2120
-          }
-        },
-        {
-          "id": "2c97dca4-f06e-45df-bbd5-5f9e899e4122",
-          "type": "basic.inputLabel",
-          "data": {
-            "name": "io_ready",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": 2208,
             "y": 2120
           }
         },
@@ -7779,8 +8603,184 @@
             ]
           },
           "position": {
-            "x": 1712,
-            "y": 2144
+            "x": 2576,
+            "y": 2120
+          }
+        },
+        {
+          "id": "d4112d39-2198-4a3c-b22b-9325c7f52e78",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "io_rdata",
+            "range": "[31:0]",
+            "blockColor": "fuchsia",
+            "virtual": true,
+            "pins": [
+              {
+                "index": "31",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "30",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "29",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "28",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "27",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "26",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "25",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "24",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "23",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "22",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "21",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "20",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "19",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "18",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "17",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "16",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "15",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "14",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "13",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "12",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "11",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "10",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "9",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "8",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "7",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "6",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "5",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "4",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "3",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "2",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "1",
+                "name": "NULL",
+                "value": "NULL"
+              },
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ]
+          },
+          "position": {
+            "x": 2000,
+            "y": 2120
           }
         },
         {
@@ -7799,8 +8799,8 @@
             ]
           },
           "position": {
-            "x": 1752,
-            "y": 2208
+            "x": 2616,
+            "y": 2184
           }
         },
         {
@@ -7839,8 +8839,8 @@
             ]
           },
           "position": {
-            "x": 1784,
-            "y": 2272
+            "x": 2648,
+            "y": 2248
           }
         },
         {
@@ -7915,224 +8915,8 @@
             ]
           },
           "position": {
-            "x": 1872,
-            "y": 2328
-          }
-        },
-        {
-          "id": "4ebd081e-44c8-4538-9cab-cab84a38ca07",
-          "type": "basic.outputLabel",
-          "data": {
-            "name": "bram_ready",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": -968,
-            "y": 2344
-          }
-        },
-        {
-          "id": "47a0f694-a55d-48bc-b8b9-50d3109b48b9",
-          "type": "basic.outputLabel",
-          "data": {
-            "name": "bram_rdata",
-            "range": "[31:0]",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "31",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "30",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "29",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "28",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "27",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "26",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "25",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "24",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "23",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "22",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "21",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "20",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "19",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "18",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "17",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "16",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "15",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "14",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "13",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "12",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "11",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "10",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "9",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "8",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "7",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "6",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "5",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "4",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "3",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "2",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "1",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": -1008,
-            "y": 2400
-          }
-        },
-        {
-          "id": "34437b46-c569-4021-a32c-af535264f11c",
-          "type": "basic.outputLabel",
-          "data": {
-            "name": "spi_ready",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": -1040,
-            "y": 2448
+            "x": 2736,
+            "y": 2304
           }
         },
         {
@@ -8153,202 +8937,6 @@
           "position": {
             "x": 464,
             "y": 2488
-          }
-        },
-        {
-          "id": "dc767c83-f79a-4727-84c2-0c02f670d698",
-          "type": "basic.outputLabel",
-          "data": {
-            "name": "spi_data",
-            "range": "[31:0]",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "31",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "30",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "29",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "28",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "27",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "26",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "25",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "24",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "23",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "22",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "21",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "20",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "19",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "18",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "17",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "16",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "15",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "14",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "13",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "12",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "11",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "10",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "9",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "8",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "7",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "6",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "5",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "4",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "3",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "2",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "1",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": -1040,
-            "y": 2504
-          }
-        },
-        {
-          "id": "03fd1dbc-74a5-47b6-a9d4-d9e889aebe10",
-          "type": "basic.inputLabel",
-          "data": {
-            "name": "cpu_mem_ready",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": -448,
-            "y": 2520
           }
         },
         {
@@ -8392,46 +8980,6 @@
           }
         },
         {
-          "id": "8ed7607b-0d36-41a4-9ab1-5413ae6945cc",
-          "type": "basic.outputLabel",
-          "data": {
-            "name": "freq_ready",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": -1040,
-            "y": 2552
-          }
-        },
-        {
-          "id": "fe646df8-801f-4911-8b66-7eefafd0b5c3",
-          "type": "basic.outputLabel",
-          "data": {
-            "name": "mem_sdram_ready",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": -1048,
-            "y": 2600
-          }
-        },
-        {
           "id": "126f6705-f179-40d8-9db6-370c37d5c131",
           "type": "basic.outputLabel",
           "data": {
@@ -8469,358 +9017,6 @@
           "position": {
             "x": 1224,
             "y": 2640
-          }
-        },
-        {
-          "id": "d2b6a0c0-012f-412a-b32f-c0961b11d4ab",
-          "type": "basic.outputLabel",
-          "data": {
-            "name": "mem_data",
-            "range": "[31:0]",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "31",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "30",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "29",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "28",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "27",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "26",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "25",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "24",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "23",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "22",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "21",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "20",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "19",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "18",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "17",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "16",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "15",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "14",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "13",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "12",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "11",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "10",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "9",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "8",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "7",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "6",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "5",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "4",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "3",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "2",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "1",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": -1048,
-            "y": 2656
-          }
-        },
-        {
-          "id": "0dea1b1b-1568-4193-a7b6-0734f60e2f8b",
-          "type": "basic.inputLabel",
-          "data": {
-            "name": "mem_rdata",
-            "range": "[31:0]",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "31",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "30",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "29",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "28",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "27",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "26",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "25",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "24",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "23",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "22",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "21",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "20",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "19",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "18",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "17",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "16",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "15",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "14",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "13",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "12",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "11",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "10",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "9",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "8",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "7",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "6",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "5",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "4",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "3",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "2",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "1",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": -448,
-            "y": 2656
           }
         },
         {
@@ -8997,202 +9193,6 @@
           "position": {
             "x": 384,
             "y": 2680
-          }
-        },
-        {
-          "id": "e26623b6-d71a-4a9e-a57b-fc692f772993",
-          "type": "basic.outputLabel",
-          "data": {
-            "name": "io_ready",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": -1024,
-            "y": 2704
-          }
-        },
-        {
-          "id": "d4112d39-2198-4a3c-b22b-9325c7f52e78",
-          "type": "basic.outputLabel",
-          "data": {
-            "name": "io_rdata",
-            "range": "[31:0]",
-            "blockColor": "fuchsia",
-            "virtual": true,
-            "pins": [
-              {
-                "index": "31",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "30",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "29",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "28",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "27",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "26",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "25",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "24",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "23",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "22",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "21",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "20",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "19",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "18",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "17",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "16",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "15",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "14",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "13",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "12",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "11",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "10",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "9",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "8",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "7",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "6",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "5",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "4",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "3",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "2",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "1",
-                "name": "NULL",
-                "value": "NULL"
-              },
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ]
-          },
-          "position": {
-            "x": -1024,
-            "y": 2760
           }
         },
         {
@@ -9940,8 +9940,8 @@
           "id": "9e02f599-109a-4f13-8296-2ad22dd40837",
           "type": "2cff4a26c9447be8fabb0f1a7ff58a0b20a794e4",
           "position": {
-            "x": 2024,
-            "y": 1912
+            "x": 2888,
+            "y": 1888
           },
           "size": {
             "width": 96,
@@ -9952,8 +9952,8 @@
           "id": "e8966eee-661b-49c1-a22d-0cbecd9a88c7",
           "type": "df141b594d72b8864aa41c096159adfd5df27e2d",
           "position": {
-            "x": -600,
-            "y": 2440
+            "x": 2152,
+            "y": 1672
           },
           "size": {
             "width": 96,
@@ -10692,7 +10692,13 @@
           "target": {
             "block": "e8966eee-661b-49c1-a22d-0cbecd9a88c7",
             "port": "0a228a69-4f1a-440b-bb28-643b62014f03"
-          }
+          },
+          "vertices": [
+            {
+              "x": 1984,
+              "y": 1912
+            }
+          ]
         },
         {
           "source": {
@@ -11447,8 +11453,8 @@
           },
           "vertices": [
             {
-              "x": 1928,
-              "y": 1936
+              "x": 2792,
+              "y": 1912
             }
           ]
         },
@@ -11463,8 +11469,8 @@
           },
           "vertices": [
             {
-              "x": 1896,
-              "y": 1944
+              "x": 2760,
+              "y": 1920
             }
           ],
           "size": 32
@@ -11480,8 +11486,8 @@
           },
           "vertices": [
             {
-              "x": 1856,
-              "y": 2008
+              "x": 2720,
+              "y": 1984
             }
           ]
         },
@@ -11537,8 +11543,8 @@
           },
           "vertices": [
             {
-              "x": 1904,
-              "y": 2248
+              "x": 2768,
+              "y": 2224
             }
           ]
         },
@@ -11553,8 +11559,8 @@
           },
           "vertices": [
             {
-              "x": 1872,
-              "y": 2200
+              "x": 2736,
+              "y": 2176
             }
           ]
         },
@@ -11569,8 +11575,8 @@
           },
           "vertices": [
             {
-              "x": 1848,
-              "y": 2152
+              "x": 2712,
+              "y": 2128
             }
           ],
           "size": 32
@@ -11586,8 +11592,8 @@
           },
           "vertices": [
             {
-              "x": 1832,
-              "y": 2096
+              "x": 2696,
+              "y": 2072
             }
           ]
         },
@@ -11613,8 +11619,8 @@
           },
           "vertices": [
             {
-              "x": -744,
-              "y": 2664
+              "x": 2008,
+              "y": 1896
             }
           ],
           "size": 32
@@ -11627,7 +11633,13 @@
           "target": {
             "block": "e8966eee-661b-49c1-a22d-0cbecd9a88c7",
             "port": "eb90fd2c-b9a8-4e12-afef-bacaf23f7c48"
-          }
+          },
+          "vertices": [
+            {
+              "x": 1960,
+              "y": 1864
+            }
+          ]
         },
         {
           "source": {
@@ -11638,6 +11650,12 @@
             "block": "e8966eee-661b-49c1-a22d-0cbecd9a88c7",
             "port": "e12e77d9-e9e1-407c-b858-966a05b0742a"
           },
+          "vertices": [
+            {
+              "x": 1928,
+              "y": 1792
+            }
+          ],
           "size": 32
         },
         {
@@ -11651,8 +11669,8 @@
           },
           "vertices": [
             {
-              "x": -744,
-              "y": 2488
+              "x": 1904,
+              "y": 1752
             }
           ]
         }
@@ -39925,7 +39943,8 @@
             {
               "source": {
                 "block": "c7c1a185-e070-4d99-9340-09bd912e5c90",
-                "port": "cpu_mem_rdata"
+                "port": "cpu_mem_rdata",
+                "size": 32
               },
               "target": {
                 "block": "7914644f-fb19-44c8-9c4f-8f093d93dbea",
@@ -39952,7 +39971,8 @@
               },
               "target": {
                 "block": "c7c1a185-e070-4d99-9340-09bd912e5c90",
-                "port": "bram_rdata"
+                "port": "bram_rdata",
+                "size": 32
               },
               "vertices": [],
               "size": 32
@@ -39975,7 +39995,8 @@
               },
               "target": {
                 "block": "c7c1a185-e070-4d99-9340-09bd912e5c90",
-                "port": "spi_nor_mem_data"
+                "port": "spi_nor_mem_data",
+                "size": 32
               },
               "vertices": [],
               "size": 32
@@ -40009,7 +40030,8 @@
               },
               "target": {
                 "block": "c7c1a185-e070-4d99-9340-09bd912e5c90",
-                "port": "mem_sdram_rdata"
+                "port": "mem_sdram_rdata",
+                "size": 32
               },
               "vertices": [],
               "size": 32
@@ -40032,7 +40054,8 @@
               },
               "target": {
                 "block": "c7c1a185-e070-4d99-9340-09bd912e5c90",
-                "port": "io_rdata"
+                "port": "io_rdata",
+                "size": 32
               },
               "vertices": [],
               "size": 32
@@ -40050,7 +40073,8 @@
             {
               "source": {
                 "block": "e41f45fd-49ff-4916-b5f2-e68994f56158",
-                "port": "out"
+                "port": "out",
+                "size": 32
               },
               "target": {
                 "block": "d31cf14e-e3aa-4da6-9040-c6a1035305e0",
@@ -40071,7 +40095,8 @@
             {
               "source": {
                 "block": "e12e77d9-e9e1-407c-b858-966a05b0742a",
-                "port": "out"
+                "port": "out",
+                "size": 32
               },
               "target": {
                 "block": "c7a3af04-8199-4e42-bf6e-bb0b364dc221",
@@ -40102,7 +40127,8 @@
             {
               "source": {
                 "block": "9daad775-aab4-4fa9-8873-5f50b5205d21",
-                "port": "out"
+                "port": "out",
+                "size": 32
               },
               "target": {
                 "block": "6d42fc69-854a-4941-99da-5d5bf0177ade",
@@ -40123,7 +40149,8 @@
             {
               "source": {
                 "block": "e74f0173-a2c1-4859-80ec-3a7c5f302a85",
-                "port": "out"
+                "port": "out",
+                "size": 32
               },
               "target": {
                 "block": "4be155a1-7866-4aad-b857-50fd4c6f7e00",
@@ -40148,7 +40175,8 @@
               },
               "target": {
                 "block": "f0ee0041-0daf-41b0-b9a9-cf4dd74e24a9",
-                "port": "in"
+                "port": "in",
+                "size": 32
               },
               "size": 32
             }
