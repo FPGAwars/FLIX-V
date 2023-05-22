@@ -700,7 +700,7 @@
             ]
           },
           "position": {
-            "x": 1336,
+            "x": 1496,
             "y": 248
           }
         },
@@ -9438,14 +9438,14 @@
               ]
             },
             "params": [],
-            "code": "// reset\nreg [11:0] rst_cnt = 0;\nassign resetn = &rst_cnt;\n\nalways @(posedge clk) begin\n    if (!locked) rst_cnt <= 0;\n    else if (!resetn) rst_cnt <= rst_cnt + 1;\nend"
+            "code": "// reset\nreg [11:0] rst_cnt = 0;\nassign resetn = &rst_cnt;\n\nalways @(posedge clk) begin\n    if (!locked) rst_cnt <= 0;\n    else rst_cnt <= rst_cnt + !resetn;\nend"
           },
           "position": {
             "x": 960,
             "y": 200
           },
           "size": {
-            "width": 312,
+            "width": 448,
             "height": 152
           }
         },
