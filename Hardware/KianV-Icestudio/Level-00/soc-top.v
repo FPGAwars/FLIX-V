@@ -88,7 +88,7 @@ module soc (
 
      //////////////////////////////////////////////////////////////////////////////
     //-- IO Leds
-    reg [7:0] led_r = 8'hF9;
+    reg [7:0] led_r = 8'hF0;
     assign led = led_r;
 
     wire led_valid = cpu_mem_valid && cpu_mem_addr == 32'h1200_0000 && wr;
@@ -122,7 +122,7 @@ module soc (
 
     always @(posedge clk) begin
         if (!locked) rst_cnt <= 0;
-        else if (!resetn) rst_cnt <= rst_cnt + 1;
+        else rst_cnt <= rst_cnt + !resetn;
     end
 
 
@@ -173,8 +173,6 @@ module soc (
     // SPI nor flash
     assign spi_nor_mem_valid = !spi_nor_mem_ready && cpu_mem_valid &&
            (cpu_mem_addr >= `SPI_NOR_MEM_ADDR_START && cpu_mem_addr < `SPI_NOR_MEM_ADDR_END) && !wr;
-
-    wire spi_state;
 
     qqspi #(
               .QUAD_MODE(`QUAD_SPI_FLASH_MODE),
@@ -320,7 +318,7 @@ module soc (
 
     // BRAM
     assign bram_valid = !bram_ready && cpu_mem_valid && (cpu_mem_addr < (`BRAM_WORDS << 2));
-    always @(posedge clk) bram_ready <= !resetn ? 0 : bram_valid;
+    always @(posedge clk) bram_ready <= !resetn ? 1'b0 : bram_valid;
 
     bram #(
              .WIDTH        (BRAM_ADDR_WIDTH),
