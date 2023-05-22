@@ -157,7 +157,7 @@ module mt48lc16m16a2_ctrl #(
     if (~resetn) begin
       state <= RESET;
       ret_state <= RESET;
-      ready <= 1'b1;
+      ready <= 1'b0;
       wait_states <= 0;
       dout <= 0;
       command <= CMD_NOP;
@@ -256,6 +256,7 @@ module mt48lc16m16a2_ctrl #(
           saddr_nxt       = {addr[24:23], addr[20:10]};
           wait_states_nxt = TRCD;
           ret_state_nxt   = |wmask ? COL_WRITEL : COL_READ;
+          update_ready_nxt = 1'b1;
           state_nxt       = WAIT_STATE;
         end else begin
           /* autorefresh */
@@ -264,6 +265,7 @@ module mt48lc16m16a2_ctrl #(
           ba_nxt = 0;
           wait_states_nxt = 3;  //TRC;
           ret_state_nxt = IDLE;
+          update_ready_nxt = 1'b0;
           state_nxt = WAIT_STATE;
         end
       end
@@ -292,7 +294,6 @@ module mt48lc16m16a2_ctrl #(
         dqm_nxt          = 2'b00;
         dout_nxt[31:16]  = sdram_dq;
         wait_states_nxt  = TRP;
-        update_ready_nxt = 1'b1;
         ret_state_nxt    = IDLE;
         state_nxt        = WAIT_STATE;
       end
@@ -317,7 +318,6 @@ module mt48lc16m16a2_ctrl #(
         dq_nxt           = din[31:16];
         oe_nxt           = 1'b1;
         wait_states_nxt  = TRP;
-        update_ready_nxt = 1'b1;
         ret_state_nxt    = IDLE;
         state_nxt        = WAIT_STATE;
       end
